@@ -1,7 +1,9 @@
-[gd_scene load_steps=23 format=3 uid="uid://7va2it4641m0"]
+[gd_scene load_steps=25 format=3 uid="uid://7va2it4641m0"]
 
 [ext_resource type="Texture2D" uid="uid://bemmf3nsf6ldg" path="res://Assets/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" id="1_40svl"]
 [ext_resource type="Texture2D" uid="uid://0pp27aeonmft" path="res://Assets/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Actions.png" id="2_al8ar"]
+[ext_resource type="Script" uid="uid://cniptk8qu1tc6" path="res://Scripts/state_machines/node_state_machine.gd" id="3_gy20a"]
+[ext_resource type="Script" uid="uid://curo7r414x3rw" path="res://Scenes/Characters/idle_state.gd" id="4_cqrjx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gy20a"]
 atlas = ExtResource("1_40svl")
@@ -192,8 +194,11 @@ autoplay = "idle_front"
 position = Vector2(0, -8)
 shape = SubResource("CircleShape2D_ddhxa")
 
-[node name="StateMachine" type="Node" parent="."]
+[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_node_state")]
+script = ExtResource("3_gy20a")
+initial_node_state = NodePath("Idle")
 
 [node name="Idle" type="Node" parent="StateMachine"]
+script = ExtResource("4_cqrjx")
 
 [node name="Walk" type="Node" parent="StateMachine"]
