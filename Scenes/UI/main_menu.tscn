@@ -1,0 +1,101 @@
+[gd_scene load_steps=6 format=3 uid="uid://ci7tpbjwuxpl5"]
+
+[ext_resource type="Texture2D" uid="uid://bmkpl0r1xncvy" path="res://Assets/UI/BG/lnlutd.png" id="1_i2xx2"]
+[ext_resource type="Texture2D" uid="uid://div4qgsifb8bw" path="res://Assets/UI/Logo/156699177_10364000.png" id="2_o14dv"]
+[ext_resource type="FontFile" uid="uid://j7c0bunflsdf" path="res://Assets/Fonts/BLKCHCRY.TTF" id="3_o14dv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u7lva"]
+texture = ExtResource("1_i2xx2")
+modulate_color = Color(0.28134215, 0.27566248, 0.28000394, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_36iwh"]
+bg_color = Color(0.7294118, 0.3372549, 0.14117648, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 20
+corner_detail = 10
+shadow_size = 6
+shadow_offset = Vector2(0, 2.71)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_u7lva")
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+self_modulate = Color(18.892157, 9.313817, 0, 1)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -134.0
+offset_top = -21.0
+offset_right = 139.5
+offset_bottom = 153.0
+grow_horizontal = 2
+texture = ExtResource("2_o14dv")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -86.25
+offset_top = -8.0
+offset_right = 86.25
+offset_bottom = 95.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 43
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 9
+size_flags_stretch_ratio = 0.0
+theme_override_colors/font_color = Color(0.9882353, 0.87058824, 0.6117647, 1)
+theme_override_colors/font_pressed_color = Color(0.40784314, 0.18039216, 0.0627451, 1)
+theme_override_colors/font_hover_color = Color(1, 0.64705884, 0.32156864, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.40784314, 0.18039216, 0.0627451, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_o14dv")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_36iwh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_36iwh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_36iwh")
+text = "Inizia il Viaggio"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 9
+size_flags_stretch_ratio = 0.0
+theme_override_colors/font_color = Color(0.9882353, 0.87058824, 0.6117647, 1)
+theme_override_colors/font_pressed_color = Color(0.40784314, 0.18039216, 0.0627451, 1)
+theme_override_colors/font_hover_color = Color(1, 0.64705884, 0.32156864, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.40784314, 0.18039216, 0.0627451, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("3_o14dv")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_36iwh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_36iwh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_36iwh")
+text = "Abbandona il viaggio"
