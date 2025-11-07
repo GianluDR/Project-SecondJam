@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://0pp27aeonmft" path="res://Assets/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Actions.png" id="2_al8ar"]
 [ext_resource type="Script" uid="uid://cniptk8qu1tc6" path="res://Scripts/state_machines/node_state_machine.gd" id="3_gy20a"]
 [ext_resource type="Script" uid="uid://curo7r414x3rw" path="res://Scenes/Characters/idle_state.gd" id="4_cqrjx"]
-[ext_resource type="Script" uid="uid://c0meruq0edi8g" path="res://Scenes/Characters/walk_state.gd" id="5_cqrjx"]
+[ext_resource type="Script" path="res://Scenes/Characters/walk_state.gd" id="5_cqrjx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gy20a"]
 atlas = ExtResource("1_40svl")
