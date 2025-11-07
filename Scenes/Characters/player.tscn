@@ -1,9 +1,11 @@
-[gd_scene load_steps=25 format=3 uid="uid://7va2it4641m0"]
+[gd_scene load_steps=27 format=3 uid="uid://7va2it4641m0"]
 
 [ext_resource type="Texture2D" uid="uid://bemmf3nsf6ldg" path="res://Assets/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" id="1_40svl"]
+[ext_resource type="Script" uid="uid://bu4qjbgjvdeh6" path="res://Scenes/Characters/player.gd" id="1_khnq4"]
 [ext_resource type="Texture2D" uid="uid://0pp27aeonmft" path="res://Assets/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Actions.png" id="2_al8ar"]
 [ext_resource type="Script" uid="uid://cniptk8qu1tc6" path="res://Scripts/state_machines/node_state_machine.gd" id="3_gy20a"]
 [ext_resource type="Script" uid="uid://curo7r414x3rw" path="res://Scenes/Characters/idle_state.gd" id="4_cqrjx"]
+[ext_resource type="Script" uid="uid://c0meruq0edi8g" path="res://Scenes/Characters/walk_state.gd" id="5_cqrjx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gy20a"]
 atlas = ExtResource("1_40svl")
@@ -183,6 +185,7 @@ animations = [{
 radius = 8.0
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_khnq4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -8)
@@ -198,7 +201,13 @@ shape = SubResource("CircleShape2D_ddhxa")
 script = ExtResource("3_gy20a")
 initial_node_state = NodePath("Idle")
 
-[node name="Idle" type="Node" parent="StateMachine"]
+[node name="Idle" type="Node" parent="StateMachine" node_paths=PackedStringArray("player", "animated_sprite_2d")]
 script = ExtResource("4_cqrjx")
+player = NodePath("../..")
+animated_sprite_2d = NodePath("../../AnimatedSprite2D")
 
-[node name="Walk" type="Node" parent="StateMachine"]
+[node name="Walk" type="Node" parent="StateMachine" node_paths=PackedStringArray("player", "animated_sprite_2d")]
+script = ExtResource("5_cqrjx")
+player = NodePath("../..")
+animated_sprite_2d = NodePath("../../AnimatedSprite2D")
+speed = null
