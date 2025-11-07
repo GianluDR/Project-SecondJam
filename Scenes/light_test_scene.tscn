@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=4 uid="uid://dypvaultx7nlq"]
+[gd_scene load_steps=13 format=4 uid="uid://dypvaultx7nlq"]
 
 [ext_resource type="Texture2D" uid="uid://bs4qt724a5oe5" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="1_3gqcc"]
 [ext_resource type="Texture2D" uid="uid://djub65ssuic3p" path="res://Assets/sprites/tileset.png" id="2_goqd5"]
 [ext_resource type="Texture2D" uid="uid://c8nr3kga8kfq2" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png" id="3_eufum"]
 [ext_resource type="PackedScene" uid="uid://7va2it4641m0" path="res://Scenes/Characters/player.tscn" id="4_jg2qr"]
+[ext_resource type="PackedScene" uid="uid://k87qm5ukwygx" path="res://Scenes/Interactable/InteractArea.tscn" id="5_6egxi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8od7v"]
 texture = ExtResource("1_3gqcc")
@@ -27,6 +28,15 @@ texture = ExtResource("3_eufum")
 sources/0 = SubResource("TileSetAtlasSource_35xla")
 sources/1 = SubResource("TileSetAtlasSource_i3aeo")
 
+[sub_resource type="Gradient" id="Gradient_eksyf"]
+offsets = PackedFloat32Array(0, 0.69666666)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_6egxi"]
+gradient = SubResource("Gradient_eksyf")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
 [node name="Test" type="Node2D"]
 
 [node name="Tilemaps" type="Node2D" parent="."]
@@ -41,3 +51,13 @@ tile_set = SubResource("TileSet_5wyu1")
 
 [node name="Player" parent="." instance=ExtResource("4_jg2qr")]
 position = Vector2(298, 249)
+
+[node name="PointLight2D" type="PointLight2D" parent="Player"]
+texture = SubResource("GradientTexture2D_6egxi")
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+color = Color(0.83889705, 0.83889705, 0.838897, 1)
+blend_mode = 1
+
+[node name="Area2D" parent="." instance=ExtResource("5_6egxi")]
+position = Vector2(504, 267)
