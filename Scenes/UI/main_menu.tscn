@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://ci7tpbjwuxpl5"]
+[gd_scene load_steps=9 format=3 uid="uid://ci7tpbjwuxpl5"]
 
 [ext_resource type="Texture2D" uid="uid://bmkpl0r1xncvy" path="res://Assets/UI/BG/lnlutd.png" id="1_i2xx2"]
+[ext_resource type="Script" uid="uid://3xruftj3gh1m" path="res://Scenes/UI/main_menu.gd" id="1_u7lva"]
 [ext_resource type="Texture2D" uid="uid://div4qgsifb8bw" path="res://Assets/UI/Logo/156699177_10364000.png" id="2_o14dv"]
 [ext_resource type="FontFile" uid="uid://j7c0bunflsdf" path="res://Assets/Fonts/BLKCHCRY.TTF" id="3_o14dv"]
 
@@ -8,19 +9,50 @@
 texture = ExtResource("1_i2xx2")
 modulate_color = Color(0.28134215, 0.27566248, 0.28000394, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_36iwh"]
-bg_color = Color(0.7294118, 0.3372549, 0.14117648, 1)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 20
-corner_detail = 10
-shadow_size = 6
-shadow_offset = Vector2(0, 2.71)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o14dv"]
+bg_color = Color(0.6, 0.0059999945, 0.0059999945, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 40
+shadow_color = Color(0, 0, 0, 0.59607846)
+shadow_size = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u7lva"]
+bg_color = Color(0.2808198, 0.0016073565, 0.0015943191, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 40
+shadow_color = Color(0, 0, 0, 0.59607846)
+shadow_size = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mrfpk"]
+bg_color = Color(0.40916786, 0.003459476, 0.0034468598, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 40
+shadow_color = Color(0, 0, 0, 0.59607846)
+shadow_size = 25
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -29,6 +61,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_u7lva")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -42,60 +75,58 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_u7lva")
 [node name="TextureRect" type="TextureRect" parent="Panel"]
 self_modulate = Color(18.892157, 9.313817, 0, 1)
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -134.0
-offset_top = -21.0
-offset_right = 139.5
-offset_bottom = 153.0
+offset_left = -360.0
+offset_top = -84.0
+offset_right = 379.0
+offset_bottom = 495.0
 grow_horizontal = 2
 texture = ExtResource("2_o14dv")
 expand_mode = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="StartBtn" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -86.25
-offset_top = -8.0
-offset_right = 86.25
-offset_bottom = 95.0
+offset_left = -293.875
+offset_top = -83.125
+offset_right = 293.875
+offset_bottom = 83.125
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 43
-
-[node name="Button" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 9
-size_flags_stretch_ratio = 0.0
-theme_override_colors/font_color = Color(0.9882353, 0.87058824, 0.6117647, 1)
-theme_override_colors/font_pressed_color = Color(0.40784314, 0.18039216, 0.0627451, 1)
-theme_override_colors/font_hover_color = Color(1, 0.64705884, 0.32156864, 1)
-theme_override_colors/font_hover_pressed_color = Color(0.40784314, 0.18039216, 0.0627451, 1)
-theme_override_constants/outline_size = 1
+theme_override_colors/font_color = Color(1, 1, 0, 1)
 theme_override_fonts/font = ExtResource("3_o14dv")
-theme_override_font_sizes/font_size = 14
-theme_override_styles/normal = SubResource("StyleBoxFlat_36iwh")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_36iwh")
-theme_override_styles/hover = SubResource("StyleBoxFlat_36iwh")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_o14dv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_u7lva")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mrfpk")
 text = "Inizia il Viaggio"
 
-[node name="Button2" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 9
-size_flags_stretch_ratio = 0.0
-theme_override_colors/font_color = Color(0.9882353, 0.87058824, 0.6117647, 1)
-theme_override_colors/font_pressed_color = Color(0.40784314, 0.18039216, 0.0627451, 1)
-theme_override_colors/font_hover_color = Color(1, 0.64705884, 0.32156864, 1)
-theme_override_colors/font_hover_pressed_color = Color(0.40784314, 0.18039216, 0.0627451, 1)
-theme_override_constants/outline_size = 1
+[node name="ExitBtn" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -293.875
+offset_top = -353.0
+offset_right = 293.875
+offset_bottom = -186.75
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
 theme_override_fonts/font = ExtResource("3_o14dv")
-theme_override_font_sizes/font_size = 14
-theme_override_styles/normal = SubResource("StyleBoxFlat_36iwh")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_36iwh")
-theme_override_styles/hover = SubResource("StyleBoxFlat_36iwh")
-text = "Abbandona il viaggio"
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxFlat_o14dv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_u7lva")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mrfpk")
+text = "Abbandona il Viaggio"
+
+[connection signal="pressed" from="StartBtn" to="." method="_on_start_btn_pressed"]
+[connection signal="pressed" from="ExitBtn" to="." method="_on_exit_btn_pressed"]
