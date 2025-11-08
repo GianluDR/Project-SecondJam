@@ -12,7 +12,26 @@ func _on_physics_process(_delta : float) -> void:
 	var direction: Vector2 = GameInputEvents.movement_input()
 
 	if direction == Vector2.ZERO:
-		animated_sprite_2d.play("idle_front")
+		# no input: use last known player direction if available
+		var last_dir: Vector2 = Vector2.ZERO
+		if player and player.player_direction and player.player_direction != Vector2.ZERO:
+			last_dir = player.player_direction
+
+		if last_dir == Vector2.ZERO:
+			animated_sprite_2d.play("idle_front")
+			return
+
+		# pick animation based on last known direction (dominant axis for diagonals)
+		if abs(last_dir.x) > abs(last_dir.y):
+			if last_dir.x < 0:
+				animated_sprite_2d.play("idle_left")
+			else:
+				animated_sprite_2d.play("idle_right")
+		else:
+			if last_dir.y < 0:
+				animated_sprite_2d.play("idle_back")
+			else:
+				animated_sprite_2d.play("idle_front")
 		return
 
 	# for diagonals pick the dominant axis to choose an appropriate animation
