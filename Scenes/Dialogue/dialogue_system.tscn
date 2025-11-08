@@ -32,17 +32,21 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -750.0
-offset_top = 40.0
+offset_top = 350.0
 offset_right = 750.0
-offset_bottom = 140.0
+offset_bottom = 450.0
 grow_horizontal = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5ybjj")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
 offset_left = -750.0
-offset_top = 40.0
+offset_top = 350.0
 offset_right = 750.0
-offset_bottom = 140.0
+offset_bottom = 450.0
+grow_horizontal = 2
 
 [node name="SpeakerParent" type="Control" parent="HBoxContainer"]
 custom_minimum_size = Vector2(100, 0)
@@ -71,11 +75,10 @@ visible = false
 layout_mode = 2
 
 [node name="ContinueText" type="RichTextLabel" parent="."]
-visible = false
-offset_left = 704.0
-offset_top = 118.0
-offset_right = 744.0
-offset_bottom = 135.0
+offset_left = 707.0
+offset_top = 430.0
+offset_right = 747.0
+offset_bottom = 447.0
 size_flags_vertical = 3
 theme_override_fonts/normal_font = ExtResource("1_3vq3u")
 theme_override_fonts/bold_font = ExtResource("2_sx7yp")
@@ -96,7 +99,7 @@ autostart = true
 max_polyphony = 1000
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(2.2888184e-05, 90)
+position = Vector2(2.2888185e-05, 400.0001)
 scale = Vector2(23.500002, 1.6249999)
 texture = SubResource("GradientTexture2D_aqiq2")
 

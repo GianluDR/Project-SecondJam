@@ -51,6 +51,7 @@ func _activate_dialogue() -> void:
 		new_dialogue.global_position = desired_dialogue_pos
 		new_dialogue.dialogue = dialogue
 		get_parent().add_child(new_dialogue)
+		new_dialogue.global_position.x = get_viewport().get_camera_2d().get_screen_center_position().x
 
 func _on_body_entered(body: Node2D) -> void:
 	if only_activate_once and has_activated_already:
