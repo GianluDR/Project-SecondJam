@@ -23,4 +23,3 @@ func _on_enter() -> void:
 
 func _on_exit() -> void:
 	pass
-

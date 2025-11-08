@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=4 uid="uid://b0vh5e0yw57v7"]
+[gd_scene load_steps=32 format=4 uid="uid://b3n3la0geajb6"]
 
 [ext_resource type="Texture2D" uid="uid://cxac0a1g484jy" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Shadow.png" id="1_v5nmd"]
 [ext_resource type="Script" uid="uid://l8uqxqjy8fq6" path="res://Scripts/menu_panel.gd" id="2_ubcqc"]
@@ -12,6 +12,7 @@
 [ext_resource type="Script" uid="uid://bu54caqonn1bx" path="res://Scripts/dialogue/dialogue_text_resource.gd" id="9_ka3r2"]
 [ext_resource type="Texture2D" uid="uid://cvs8ytedoffh2" path="res://Assets/sprites/redcube.png" id="10_01mhr"]
 [ext_resource type="AudioStream" uid="uid://bv3082wp6ro30" path="res://Assets/Sounds/soundtest.wav" id="11_sk7qh"]
+[ext_resource type="Script" uid="uid://qf30somm886x" path="res://Scripts/tutorial_area_2d.gd" id="15_ipbmu"]
 [ext_resource type="PackedScene" uid="uid://7va2it4641m0" path="res://Scenes/Characters/player.tscn" id="15_yfuoy"]
 [ext_resource type="PackedScene" uid="uid://k87qm5ukwygx" path="res://Scenes/Interactable/InteractArea.tscn" id="16_rm0hi"]
 [ext_resource type="PackedScene" path="res://Scenes/Characters/npc_rombo.tscn" id="17_ftp5k"]
@@ -366,6 +367,9 @@ metadata/_custom_type_script = "uid://bu54caqonn1bx"
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5cwei"]
 size = Vector2(48.571434, 78.75003)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pggu4"]
+size = Vector2(197.14294, 180.71436)
+
 [node name="Test" type="Node2D"]
 
 [node name="Tilemaps" type="Node2D" parent="."]
@@ -427,9 +431,20 @@ position = Vector2(-1.4285581, -7.8571167)
 scale = Vector2(0.9999994, 0.9999994)
 shape = SubResource("RectangleShape2D_5cwei")
 
+[node name="Area2D" type="Area2D" parent="NpcRombo"]
+script = ExtResource("15_ipbmu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NpcRombo/Area2D"]
+position = Vector2(0, 0.35714722)
+scale = Vector2(0.9999996, 0.9999996)
+shape = SubResource("RectangleShape2D_pggu4")
+
 [node name="Player" parent="." instance=ExtResource("15_yfuoy")]
 position = Vector2(540, 659)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(961, 542)
 zoom = Vector2(1.3, 1.3)
+
+[connection signal="body_entered" from="NpcRombo/Area2D" to="NpcRombo/Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="NpcRombo/Area2D" to="NpcRombo/Area2D" method="_on_body_exited"]
