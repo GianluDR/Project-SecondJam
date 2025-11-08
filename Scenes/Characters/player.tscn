@@ -414,7 +414,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_01b8d"]
-size = Vector2(20, 5)
+size = Vector2(50, 11)
 
 [sub_resource type="Gradient" id="Gradient_eksyf"]
 offsets = PackedFloat32Array(0, 0.69666666)
@@ -437,11 +437,11 @@ texture = ExtResource("2_xccyk")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_fepmq")
-animation = &"walk_front"
+animation = &"walk_left"
 autoplay = "idle_front"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(2, 22.5)
+position = Vector2(-1, 23.5)
 shape = SubResource("RectangleShape2D_01b8d")
 
 [node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_node_state")]
