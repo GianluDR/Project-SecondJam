@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cwtjc74l43yq0"]
+[gd_scene load_steps=8 format=3 uid="uid://cwtjc74l43yq0"]
 
 [ext_resource type="FontFile" uid="uid://d1rkf5yux54bf" path="res://Assets/Fonts/PixelifySans-Regular.ttf" id="1_3vq3u"]
 [ext_resource type="Script" uid="uid://daxjawm36owa1" path="res://Scripts/dialogue/dialogue_system.gd" id="1_sx7yp"]
 [ext_resource type="FontFile" uid="uid://nnyqryeaumh5" path="res://Assets/Fonts/PixelifySans-Bold.ttf" id="2_sx7yp"]
+[ext_resource type="Script" uid="uid://duhndpjouhw4y" path="res://Scripts/dialogue/dialogue_continue.gd" id="4_aqiq2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5ybjj"]
 bg_color = Color(0, 0, 0, 1)
@@ -55,6 +56,7 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_fonts/normal_font = ExtResource("1_3vq3u")
 theme_override_fonts/bold_font = ExtResource("2_sx7yp")
+theme_override_font_sizes/normal_font_size = 14
 bbcode_enabled = true
 scroll_active = false
 vertical_alignment = 1
@@ -64,6 +66,28 @@ visible_characters_behavior = 1
 visible = false
 layout_mode = 2
 
+[node name="ContinueText" type="RichTextLabel" parent="."]
+visible = false
+offset_left = 149.0
+offset_top = 13.0
+offset_right = 203.0
+offset_bottom = 33.0
+size_flags_vertical = 3
+theme_override_fonts/normal_font = ExtResource("1_3vq3u")
+theme_override_fonts/bold_font = ExtResource("2_sx7yp")
+theme_override_font_sizes/normal_font_size = 11
+bbcode_enabled = true
+text = "[u]spazio[/u]"
+fit_content = true
+scroll_active = false
+vertical_alignment = 1
+visible_characters_behavior = 1
+script = ExtResource("4_aqiq2")
+
+[node name="Timer" type="Timer" parent="ContinueText"]
+wait_time = 0.5
+autostart = true
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 max_polyphony = 1000
 
@@ -71,3 +95,5 @@ max_polyphony = 1000
 position = Vector2(-2.0861626e-07, 3.9999974)
 scale = Vector2(5.9999995, 0.93749994)
 texture = SubResource("GradientTexture2D_aqiq2")
+
+[connection signal="timeout" from="ContinueText/Timer" to="ContinueText" method="_on_timer_timeout"]

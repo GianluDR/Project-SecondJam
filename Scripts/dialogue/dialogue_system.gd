@@ -169,9 +169,12 @@ func _text_resource(i: DialogueText) -> void:
 	while true:
 		await get_tree().process_frame
 		if dialogue_label.visible_characters == total_characters:
+			$ContinueText.visible = true
 			if Input.is_action_just_pressed("ui_accept"):
 				current_dialogue_item += 1
 				next_item = true
+		else:
+			$ContinueText.visible = false
 
 func _text_without_square_brackets(text: String) -> String:
 	var result: String = ""
