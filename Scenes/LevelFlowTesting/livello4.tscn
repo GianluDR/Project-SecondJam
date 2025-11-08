@@ -258,3 +258,7 @@ dialogue = Array[ExtResource("7_0s83u")]([SubResource("Resource_7cotb"), SubReso
 position = Vector2(-1.5446472, 1.4910736)
 scale = Vector2(0.9999996, 0.9999996)
 shape = SubResource("RectangleShape2D_ibxpi")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(434, 276)
+zoom = Vector2(1.25, 1.25)

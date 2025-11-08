@@ -264,3 +264,7 @@ position = Vector2(377, 427)
 interactionType = 1
 scene_index = 4
 scene_paths = ["res://scenes/levelflowtesting/livello0.tscn", "res://scenes/levelflowtesting/livello1.tscn", "res://scenes/levelflowtesting/livello2.tscn", "res://scenes/levelflowtesting/livello3.tscn", "res://scenes/levelflowtesting/livello4.tscn"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(434, 276)
+zoom = Vector2(1.25, 1.25)

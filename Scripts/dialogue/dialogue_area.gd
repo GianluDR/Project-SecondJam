@@ -50,7 +50,7 @@ func _activate_dialogue() -> void:
 			desired_dialogue_pos = dialogue_bottom_pos
 		new_dialogue.global_position = desired_dialogue_pos
 		new_dialogue.dialogue = dialogue
-		player_node.add_child(new_dialogue)
+		get_parent().add_child(new_dialogue)
 
 func _on_body_entered(body: Node2D) -> void:
 	if only_activate_once and has_activated_already:
