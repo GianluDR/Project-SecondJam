@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://67ac0f6vtfnt"]
+
+[ext_resource type="FontFile" uid="uid://d1rkf5yux54bf" path="res://Assets/Fonts/PixelifySans-Regular.ttf" id="1_5mmbm"]
+
+[node name="DialogueButton" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.9582626, 0.98159105, 0, 1)
+theme_override_colors/icon_focus_color = Color(0.95686275, 0.98039216, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0.95686275, 0.98039216, 0, 1)
+theme_override_fonts/font = ExtResource("1_5mmbm")

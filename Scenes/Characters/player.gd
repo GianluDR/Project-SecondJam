@@ -2,7 +2,11 @@ class_name Player
 extends CharacterBody2D
 
 var player_direction: Vector2
+var can_move: bool = true
 @export var light: PointLight2D
+
+func _ready():
+	add_to_group("player")
 
 func _physics_process(delta):
 	var nearest = _get_nearest_interactable()
@@ -12,7 +16,7 @@ func _physics_process(delta):
 		return
 	
 	var dist = global_position.distance_to(nearest.global_position)
-	print(dist)
+	#print(dist)
 
 	# Calcolo intensità (regola i valori come vuoi)
 	var intensity = clamp(200.0 / dist, 0.5, 4.0)
