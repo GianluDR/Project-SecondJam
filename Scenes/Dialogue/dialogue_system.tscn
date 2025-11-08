@@ -31,10 +31,10 @@ script = ExtResource("1_sx7yp")
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -765.0
-offset_top = 400.0
-offset_right = 765.0
-offset_bottom = 500.0
+offset_left = -680.0
+offset_top = 234.99994
+offset_right = 680.0
+offset_bottom = 334.99994
 grow_horizontal = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5ybjj")
 
@@ -42,10 +42,10 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_5ybjj")
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -765.0
-offset_top = 400.0
-offset_right = 765.0
-offset_bottom = 500.0
+offset_left = -680.0
+offset_top = 234.99994
+offset_right = 680.0
+offset_bottom = 334.99994
 grow_horizontal = 2
 
 [node name="SpeakerParent" type="Control" parent="HBoxContainer"]
@@ -75,10 +75,10 @@ visible = false
 layout_mode = 2
 
 [node name="ContinueText" type="RichTextLabel" parent="."]
-offset_left = 675.0
-offset_top = 461.0
-offset_right = 750.0
-offset_bottom = 489.0
+offset_left = 588.00006
+offset_top = 294.99994
+offset_right = 663.00006
+offset_bottom = 322.99994
 size_flags_vertical = 3
 theme_override_fonts/normal_font = ExtResource("1_3vq3u")
 theme_override_fonts/bold_font = ExtResource("2_sx7yp")
@@ -99,8 +99,8 @@ autostart = true
 max_polyphony = 1000
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(-5.2452087e-05, 450.0001)
-scale = Vector2(23.96875, 1.6249999)
+position = Vector2(3.8146973e-06, 285)
+scale = Vector2(21.312502, 1.6249999)
 texture = SubResource("GradientTexture2D_aqiq2")
 
 [connection signal="timeout" from="ContinueText/Timer" to="ContinueText" method="_on_timer_timeout"]
