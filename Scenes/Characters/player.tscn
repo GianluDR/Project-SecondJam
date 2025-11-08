@@ -1,8 +1,9 @@
-[gd_scene load_steps=68 format=3 uid="uid://7va2it4641m0"]
+[gd_scene load_steps=69 format=3 uid="uid://7va2it4641m0"]
 
 [ext_resource type="Script" uid="uid://bu4qjbgjvdeh6" path="res://Scenes/Characters/player.gd" id="1_khnq4"]
 [ext_resource type="Texture2D" uid="uid://0pp27aeonmft" path="res://Assets/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Actions.png" id="2_al8ar"]
 [ext_resource type="Texture2D" uid="uid://1qiv1onovt7u" path="res://Assets/sprites/Circle_Animation_back.png" id="2_fcmex"]
+[ext_resource type="Texture2D" uid="uid://btslmsyi153d3" path="res://Assets/sprites/ombra_personaggio.png" id="2_xccyk"]
 [ext_resource type="Texture2D" uid="uid://cvxvcidxevjcw" path="res://Assets/sprites/Circle_Idle_Animation_front.png" id="3_25bbb"]
 [ext_resource type="Script" uid="uid://cniptk8qu1tc6" path="res://Scripts/state_machines/node_state_machine.gd" id="3_gy20a"]
 [ext_resource type="Script" uid="uid://curo7r414x3rw" path="res://Scenes/Characters/idle_state.gd" id="4_cqrjx"]
@@ -427,6 +428,11 @@ fill_from = Vector2(0.5, 0.5)
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("light")]
 script = ExtResource("1_khnq4")
 light = NodePath("PointLight2D")
+
+[node name="Ombra" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.6666667)
+position = Vector2(1, -5)
+texture = ExtResource("2_xccyk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -8)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://dypvaultx7nlq"]
+[gd_scene load_steps=34 format=4 uid="uid://dypvaultx7nlq"]
 
 [ext_resource type="Script" path="res://Scripts/menu_panel.gd" id="1_4f1n4"]
 [ext_resource type="Texture2D" uid="uid://bs4qt724a5oe5" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="1_w2rtb"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://culf0sotauivt" path="res://Scenes/Characters/npc_square.tscn" id="14_ibxpi"]
 [ext_resource type="Texture2D" uid="uid://b6n7i764slo5o" path="res://Assets/sprites/Characters/quadrato_3.png" id="15_jpjhf"]
 [ext_resource type="Texture2D" uid="uid://cwv4iwc5vkpwp" path="res://Assets/sprites/Characters_BordoBianco/quadrato_3_bordobianco.png" id="16_4f1n4"]
+[ext_resource type="PackedScene" uid="uid://b0252fryees5t" path="res://Scenes/Characters/npc_pentagono.tscn" id="18_02eho"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jpjhf"]
 texture = ExtResource("4_pn8ks")
@@ -1181,6 +1182,7 @@ position = Vector2(362, 140)
 position = Vector2(593, 293)
 
 [node name="NpcRombo" parent="." instance=ExtResource("13_5cwei")]
+visible = false
 position = Vector2(580, 408.99997)
 scale = Vector2(1.4, 1.4)
 
@@ -1194,4 +1196,7 @@ shape = SubResource("RectangleShape2D_5cwei")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(434, 276)
-zoom = Vector2(2, 2)
+
+[node name="NpcPentagono2" parent="." instance=ExtResource("18_02eho")]
+position = Vector2(565, 378)
+scale = Vector2(1.4, 1.4)

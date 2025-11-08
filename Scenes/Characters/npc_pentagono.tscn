@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://b0252fryees5t"]
+[gd_scene load_steps=5 format=3 uid="uid://b0252fryees5t"]
 
+[ext_resource type="Texture2D" uid="uid://btslmsyi153d3" path="res://Assets/sprites/ombra_personaggio.png" id="1_jpbca"]
 [ext_resource type="Texture2D" uid="uid://bou6qihq2na1c" path="res://Assets/sprites/Characters/pentagono_1.png" id="1_x2cd7"]
 [ext_resource type="Texture2D" uid="uid://brlf0wu2edfws" path="res://Assets/sprites/Characters_BordoBianco/pentagono_1_bordobianco.png" id="2_jpbca"]
 
@@ -7,6 +8,12 @@
 size = Vector2(19, 48)
 
 [node name="NpcRombo" type="CharacterBody2D"]
+
+[node name="Ombra" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.6627451)
+position = Vector2(-1, -2.3841858e-07)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_jpbca")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_x2cd7")

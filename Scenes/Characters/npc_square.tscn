@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://culf0sotauivt"]
+[gd_scene load_steps=6 format=3 uid="uid://culf0sotauivt"]
 
 [ext_resource type="Script" uid="uid://dj7rsoabju6cd" path="res://Scenes/Characters/npc.gd" id="1_boc2x"]
 [ext_resource type="Texture2D" uid="uid://ba4hnc18ev3e0" path="res://Assets/sprites/Characters/quadrato_1.png" id="2_07crs"]
+[ext_resource type="Texture2D" uid="uid://btslmsyi153d3" path="res://Assets/sprites/ombra_personaggio.png" id="2_7oths"]
 [ext_resource type="Texture2D" uid="uid://bfttwh7xsw1lw" path="res://Assets/sprites/Characters_BordoBianco/quadrato_1_bordobianco.png" id="3_boc2x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n41cf"]
@@ -9,6 +10,11 @@ size = Vector2(21, 60)
 
 [node name="NpcSquare" type="CharacterBody2D"]
 script = ExtResource("1_boc2x")
+
+[node name="Ombra" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.5882353)
+position = Vector2(-1, 7)
+texture = ExtResource("2_7oths")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_07crs")
