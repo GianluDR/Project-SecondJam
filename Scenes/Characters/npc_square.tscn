@@ -1,15 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://culf0sotauivt"]
+[gd_scene load_steps=5 format=3 uid="uid://culf0sotauivt"]
 
-[ext_resource type="Texture2D" uid="uid://b62gd037uagx4" path="res://Assets/sprites/quadrato_personaggio.png" id="1_n41cf"]
-[ext_resource type="Texture2D" uid="uid://du6e4hird7p35" path="res://Assets/sprites/quadrato_bianco.png" id="2_07crs"]
+[ext_resource type="Script" uid="uid://dj7rsoabju6cd" path="res://Scenes/Characters/npc.gd" id="1_boc2x"]
+[ext_resource type="Texture2D" uid="uid://ba4hnc18ev3e0" path="res://Assets/sprites/Characters/quadrato_1.png" id="2_07crs"]
+[ext_resource type="Texture2D" uid="uid://bfttwh7xsw1lw" path="res://Assets/sprites/Characters_BordoBianco/quadrato_1_bordobianco.png" id="3_boc2x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n41cf"]
 size = Vector2(21, 60)
 
 [node name="NpcSquare" type="CharacterBody2D"]
+script = ExtResource("1_boc2x")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_n41cf")
+texture = ExtResource("2_07crs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 0)
@@ -17,4 +19,4 @@ shape = SubResource("RectangleShape2D_n41cf")
 
 [node name="Sprite2D_Highlight" type="Sprite2D" parent="."]
 visible = false
-texture = ExtResource("2_07crs")
+texture = ExtResource("3_boc2x")
