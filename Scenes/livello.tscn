@@ -212,7 +212,7 @@ tile_map_data = PackedByteArray("AAAFAAMACAABAAEAAAAFAAQACAABAAEAAAAEAAQACAABAAE
 tile_set = SubResource("TileSet_5wyu1")
 
 [node name="NpcTriangle" parent="." instance=ExtResource("5_pn8ks")]
-position = Vector2(412, 245)
+position = Vector2(598, 171)
 scale = Vector2(1.4, 1.4)
 
 [node name="DialogueArea2D" parent="NpcTriangle" instance=ExtResource("7_0tayc")]
@@ -238,7 +238,7 @@ position = Vector2(362, 140)
 position = Vector2(593, 293)
 
 [node name="NpcRombo" parent="." instance=ExtResource("13_5cwei")]
-position = Vector2(479, 329)
+position = Vector2(580, 408.99997)
 scale = Vector2(1.4, 1.4)
 
 [node name="DialogueArea2D" parent="NpcRombo" instance=ExtResource("7_0tayc")]
@@ -250,7 +250,7 @@ scale = Vector2(0.9999996, 0.9999996)
 shape = SubResource("RectangleShape2D_5cwei")
 
 [node name="NpcSquare" parent="." instance=ExtResource("14_ibxpi")]
-position = Vector2(430, 140)
+position = Vector2(410, 264)
 
 [node name="DialogueArea2D" parent="NpcSquare" instance=ExtResource("7_0tayc")]
 dialogue = Array[ExtResource("8_83c2l")]([SubResource("Resource_7cotb"), SubResource("Resource_55ph6")])

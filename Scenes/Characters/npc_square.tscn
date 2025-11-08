@@ -1,8 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://culf0sotauivt"]
+[gd_scene load_steps=4 format=3 uid="uid://culf0sotauivt"]
 
 [ext_resource type="Texture2D" uid="uid://b62gd037uagx4" path="res://Assets/sprites/quadrato_personaggio.png" id="1_n41cf"]
+[ext_resource type="Texture2D" uid="uid://du6e4hird7p35" path="res://Assets/sprites/quadrato_bianco.png" id="2_07crs"]
 
-[node name="NpcSquare" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n41cf"]
+size = Vector2(21, 60)
+
+[node name="NpcSquare" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_n41cf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_n41cf")
+
+[node name="Sprite2D_Highlight" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("2_07crs")
