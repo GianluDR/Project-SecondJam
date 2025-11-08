@@ -38,7 +38,7 @@ func _on_start_btn_pressed() -> void:
 	AudioManager.menu_music.stop()
 	AudioManager.candela_sfxloop.stop()
 
-	get_tree().change_scene_to_file("res://Scenes/livello.tscn")
+	get_tree().change_scene_to_file("res://Scenes/livello-0.tscn")
 	
 
 func start_wait(seconds: float):

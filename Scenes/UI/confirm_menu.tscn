@@ -1,0 +1,134 @@
+[gd_scene load_steps=11 format=3 uid="uid://i6dhnf1eu4tu"]
+
+[ext_resource type="Script" uid="uid://bf827lokigg0n" path="res://Scripts/confirm_menu.gd" id="1_tt7v6"]
+[ext_resource type="Shader" uid="uid://cq0liixu6w1qd" path="res://blur.gdshader" id="2_q4mwk"]
+[ext_resource type="FontFile" uid="uid://4uw73reh3jtr" path="res://Assets/Fonts/PixelifySans-VariableFont_wght.ttf" id="3_l7hy8"]
+[ext_resource type="Script" uid="uid://cq0dr35bf3ghn" path="res://Scripts/btn_outline.gd" id="4_iri87"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r2i2h"]
+shader = ExtResource("2_q4mwk")
+shader_parameter/lod = 2.56800012198
+
+[sub_resource type="FontVariation" id="FontVariation_oykix"]
+base_font = ExtResource("3_l7hy8")
+spacing_glyph = 1
+spacing_space = 3
+baseline_offset = -0.065
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kdnb7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_23me3"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_702e2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qyryt"]
+
+[node name="ConfirmMenu" type="CanvasLayer"]
+process_mode = 3
+follow_viewport_enabled = true
+script = ExtResource("1_tt7v6")
+
+[node name="BlurRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_r2i2h")
+offset_right = 1923.0
+offset_bottom = 1081.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+
+[node name="OverlayRect" type="ColorRect" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.06073352, 0.06704624, 0, 0.87058824)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -742.0
+offset_top = -421.5
+offset_right = 742.0
+offset_bottom = 421.5
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.49803922)
+
+[node name="Label" type="Label" parent="."]
+visibility_layer = 2
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 453.0
+offset_top = 26.0
+offset_right = -491.0
+offset_bottom = 111.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 1
+focus_mode = 2
+mouse_filter = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("FontVariation_oykix")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxTexture_kdnb7")
+theme_override_styles/focus = SubResource("StyleBoxTexture_23me3")
+text = "vuoi cacarti nelle mutande?"
+autowrap_trim_flags = 128
+
+[node name="YesBtn" type="Button" parent="."]
+visibility_layer = 2
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 125.0
+offset_top = 236.0
+offset_right = 583.0
+offset_bottom = 321.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.8392157, 0.41960785, 0.09803922, 1)
+theme_override_colors/font_hover_color = Color(0.9372549, 0.9882353, 0.6156863, 1)
+theme_override_fonts/font = SubResource("FontVariation_oykix")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxTexture_kdnb7")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_702e2")
+theme_override_styles/hover = SubResource("StyleBoxTexture_qyryt")
+theme_override_styles/focus = SubResource("StyleBoxTexture_23me3")
+action_mode = 0
+text = "Sì"
+script = ExtResource("4_iri87")
+
+[node name="NoBtn" type="Button" parent="."]
+visibility_layer = 2
+offset_left = 398.0
+offset_top = 780.0
+offset_right = 679.0
+offset_bottom = 865.0
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.8392157, 0.41960785, 0.09803922, 1)
+theme_override_colors/font_hover_color = Color(0.9372549, 0.9882353, 0.6156863, 1)
+theme_override_fonts/font = SubResource("FontVariation_oykix")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxTexture_kdnb7")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_702e2")
+theme_override_styles/hover = SubResource("StyleBoxTexture_qyryt")
+theme_override_styles/focus = SubResource("StyleBoxTexture_23me3")
+action_mode = 0
+text = "No"
+script = ExtResource("4_iri87")
+
+[connection signal="mouse_entered" from="YesBtn" to="." method="_on_yes_btn_mouse_entered"]
+[connection signal="pressed" from="YesBtn" to="." method="_on_yes_btn_pressed"]
+[connection signal="mouse_entered" from="NoBtn" to="." method="_on_no_btn_mouse_entered"]
+[connection signal="pressed" from="NoBtn" to="." method="_on_no_btn_pressed"]

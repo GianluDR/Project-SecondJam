@@ -1,0 +1,103 @@
+[gd_scene load_steps=11 format=3 uid="uid://cj1h3vsr21xls"]
+
+[ext_resource type="Script" uid="uid://btk388unc76qq" path="res://pause_menu.gd" id="1_r2i2h"]
+[ext_resource type="Shader" uid="uid://cq0liixu6w1qd" path="res://blur.gdshader" id="2_kdnb7"]
+[ext_resource type="FontFile" uid="uid://4uw73reh3jtr" path="res://Assets/Fonts/PixelifySans-VariableFont_wght.ttf" id="3_702e2"]
+[ext_resource type="Script" uid="uid://cq0dr35bf3ghn" path="res://Scripts/btn_outline.gd" id="4_qyryt"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r2i2h"]
+shader = ExtResource("2_kdnb7")
+shader_parameter/lod = 2.56800012198
+
+[sub_resource type="FontVariation" id="FontVariation_oykix"]
+base_font = ExtResource("3_702e2")
+spacing_glyph = 1
+spacing_space = 3
+baseline_offset = -0.065
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kdnb7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_702e2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qyryt"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_23me3"]
+
+[node name="PauseMenu" type="CanvasLayer"]
+process_mode = 3
+follow_viewport_enabled = true
+script = ExtResource("1_r2i2h")
+
+[node name="BlurRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_r2i2h")
+offset_right = 1923.0
+offset_bottom = 1081.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+
+[node name="OverlayRect" type="ColorRect" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.7490196)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 219.0
+offset_top = 125.0
+offset_right = 1703.0
+offset_bottom = 968.0
+color = Color(0, 0, 0, 0.4862745)
+
+[node name="quitBtn" type="Button" parent="."]
+visibility_layer = 2
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 722.0
+offset_top = 71.0
+offset_right = -740.0
+offset_bottom = 156.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.8392157, 0.41960785, 0.09803922, 1)
+theme_override_colors/font_hover_color = Color(0.9372549, 0.9882353, 0.6156863, 1)
+theme_override_fonts/font = SubResource("FontVariation_oykix")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxTexture_kdnb7")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_702e2")
+theme_override_styles/hover = SubResource("StyleBoxTexture_qyryt")
+theme_override_styles/focus = SubResource("StyleBoxTexture_23me3")
+action_mode = 0
+text = "Esci dal gioco"
+script = ExtResource("4_qyryt")
+
+[node name="resumeBtn" type="Button" parent="."]
+visibility_layer = 2
+offset_left = 799.0
+offset_top = 468.0
+offset_right = 1080.0
+offset_bottom = 553.0
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.8392157, 0.41960785, 0.09803922, 1)
+theme_override_colors/font_hover_color = Color(0.9372549, 0.9882353, 0.6156863, 1)
+theme_override_fonts/font = SubResource("FontVariation_oykix")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = SubResource("StyleBoxTexture_kdnb7")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_702e2")
+theme_override_styles/hover = SubResource("StyleBoxTexture_qyryt")
+theme_override_styles/focus = SubResource("StyleBoxTexture_23me3")
+action_mode = 0
+text = "Riprendi"
+script = ExtResource("4_qyryt")
+
+[connection signal="mouse_entered" from="quitBtn" to="." method="_on_quit_btn_mouse_entered"]
+[connection signal="pressed" from="quitBtn" to="." method="_on_quit_btn_pressed"]
+[connection signal="mouse_entered" from="resumeBtn" to="." method="_on_resume_btn_mouse_entered"]
+[connection signal="pressed" from="resumeBtn" to="." method="_on_resume_btn_pressed"]

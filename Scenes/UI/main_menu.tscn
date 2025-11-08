@@ -9,8 +9,8 @@
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_i2xx2"]
 seed = 1
-frequency = 0.0024
-offset = Vector3(0, 0, 0.73)
+frequency = 0.0012
+offset = Vector3(965, 976.9, 0.73)
 fractal_octaves = 10
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_o14dv"]
@@ -18,7 +18,7 @@ noise = SubResource("FastNoiseLite_i2xx2")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u7lva"]
 texture = SubResource("NoiseTexture2D_o14dv")
-modulate_color = Color(0.08, 0.0784, 0.079626665, 1)
+modulate_color = Color(0.06469658, 0.06469651, 0.06469655, 1)
 
 [sub_resource type="FontVariation" id="FontVariation_o14dv"]
 base_font = ExtResource("2_i2xx2")
@@ -78,6 +78,7 @@ theme_override_font_sizes/font_size = 140
 text = "DEEP CANDLE"
 
 [node name="StartBtn" type="Button" parent="."]
+process_mode = 3
 visible = false
 visibility_layer = 2
 layout_mode = 1
@@ -106,6 +107,7 @@ text = "Inizia una partita"
 script = ExtResource("4_4pqbp")
 
 [node name="ExitBtn" type="Button" parent="."]
+process_mode = 3
 visible = false
 visibility_layer = 2
 layout_mode = 1
