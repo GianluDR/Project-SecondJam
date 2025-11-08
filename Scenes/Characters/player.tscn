@@ -1,11 +1,11 @@
-[gd_scene load_steps=27 format=3 uid="uid://7va2it4641m0"]
+[gd_scene load_steps=29 format=3 uid="uid://7va2it4641m0"]
 
 [ext_resource type="Texture2D" uid="uid://bemmf3nsf6ldg" path="res://Assets/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" id="1_40svl"]
 [ext_resource type="Script" uid="uid://bu4qjbgjvdeh6" path="res://Scenes/Characters/player.gd" id="1_khnq4"]
 [ext_resource type="Texture2D" uid="uid://0pp27aeonmft" path="res://Assets/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Actions.png" id="2_al8ar"]
 [ext_resource type="Script" uid="uid://cniptk8qu1tc6" path="res://Scripts/state_machines/node_state_machine.gd" id="3_gy20a"]
 [ext_resource type="Script" uid="uid://curo7r414x3rw" path="res://Scenes/Characters/idle_state.gd" id="4_cqrjx"]
-[ext_resource type="Script" path="res://Scenes/Characters/walk_state.gd" id="5_cqrjx"]
+[ext_resource type="Script" uid="uid://c0meruq0edi8g" path="res://Scenes/Characters/walk_state.gd" id="5_cqrjx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gy20a"]
 atlas = ExtResource("1_40svl")
@@ -184,8 +184,18 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_ddhxa"]
 radius = 8.0
 
-[node name="Player" type="CharacterBody2D"]
+[sub_resource type="Gradient" id="Gradient_eksyf"]
+offsets = PackedFloat32Array(0, 0.69666666)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_khnq4"]
+gradient = SubResource("Gradient_eksyf")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("light")]
 script = ExtResource("1_khnq4")
+light = NodePath("PointLight2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -8)
@@ -211,3 +221,6 @@ script = ExtResource("5_cqrjx")
 player = NodePath("../..")
 animated_sprite_2d = NodePath("../../AnimatedSprite2D")
 speed = null
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+texture = SubResource("GradientTexture2D_khnq4")
