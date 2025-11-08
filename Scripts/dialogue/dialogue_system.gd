@@ -78,7 +78,7 @@ func _choice_resource(i: DialogueChoice) -> void:
 		$HBoxContainer/SpeakerParent.visible = true
 		speaker_sprite.texture = i.speaker_img
 		speaker_sprite.hframes = i.speaker_img_Hframe
-		speaker_sprite.frame = min(i.speaker_img_select_frame, i.speaker_img_Hframe-1)
+		speaker_sprite.frame = min(i.speaker_img_rest_frame, i.speaker_img_Hframe-1)
 	else:
 		$HBoxContainer/SpeakerParent.visible = false
 	$HBoxContainer/VBoxContainer/ButtonContainer.visible = true

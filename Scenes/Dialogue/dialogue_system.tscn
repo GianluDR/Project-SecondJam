@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cwtjc74l43yq0"]
+[gd_scene load_steps=7 format=3 uid="uid://cwtjc74l43yq0"]
 
 [ext_resource type="FontFile" uid="uid://d1rkf5yux54bf" path="res://Assets/Fonts/PixelifySans-Regular.ttf" id="1_3vq3u"]
 [ext_resource type="Script" uid="uid://daxjawm36owa1" path="res://Scripts/dialogue/dialogue_system.gd" id="1_sx7yp"]
@@ -15,6 +15,13 @@ expand_margin_left = 2.0
 expand_margin_top = 2.0
 expand_margin_right = 2.0
 expand_margin_bottom = 2.0
+
+[sub_resource type="Gradient" id="Gradient_sx7yp"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_aqiq2"]
+gradient = SubResource("Gradient_sx7yp")
 
 [node name="dialogue_system" type="Node2D"]
 script = ExtResource("1_sx7yp")
@@ -58,3 +65,8 @@ layout_mode = 2
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 max_polyphony = 1000
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(3.8146973e-06, -9.536743e-07)
+scale = Vector2(4.5625, 0.9375)
+texture = SubResource("GradientTexture2D_aqiq2")

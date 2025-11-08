@@ -72,7 +72,7 @@ position = Vector2(298, 249)
 zoom = Vector2(5, 5)
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
-color = Color(0.2520276, 0.25202766, 0.25202763, 1)
+color = Color(0.8732984, 0.8732984, 0.8732984, 1)
 blend_mode = 1
 
 [node name="Area2D" parent="." instance=ExtResource("5_6egxi")]
@@ -82,7 +82,7 @@ position = Vector2(504, 267)
 position = Vector2(542, 220)
 
 [node name="DialogueArea2D" parent="." instance=ExtResource("6_mk45j")]
-position = Vector2(183, 170)
+position = Vector2(255, 246)
 dialogue = Array[ExtResource("7_v6xen")]([SubResource("Resource_7cotb"), SubResource("Resource_55ph6")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DialogueArea2D"]

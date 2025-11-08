@@ -8,8 +8,8 @@ const DialogueSystemPreload = preload("res://Scenes/Dialogue/dialogue_system.tsc
 @export var ovverride_position: Vector2
 @export var dialogue: Array[DE]
 
-var dialogue_top_pos: Vector2 = Vector2(160, 48)
-var dialogue_bottom_pos: Vector2 = Vector2(160,192)
+var dialogue_top_pos: Vector2 = Vector2(0, -65)
+var dialogue_bottom_pos: Vector2 = Vector2(0, 65)
 
 var player_body_in: bool = false
 var has_activated_already: bool = false
@@ -39,6 +39,7 @@ func _process(_delta: float) -> void:
 
 func _activate_dialogue() -> void:
 	player_node.can_move = false
+	has_activated_already = true
 	
 	var new_dialogue = DialogueSystemPreload.instantiate()
 	if override_dialogue_position:
@@ -50,7 +51,7 @@ func _activate_dialogue() -> void:
 			desired_dialogue_pos = dialogue_bottom_pos
 		new_dialogue.global_position = desired_dialogue_pos
 		new_dialogue.dialogue = dialogue
-		get_parent().add_child(new_dialogue)
+		player_node.add_child(new_dialogue)
 
 func _on_body_entered(body: Node2D) -> void:
 	if only_activate_once and has_activated_already:
@@ -58,7 +59,8 @@ func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		player_body_in = true
 		if activate_instant:
-			_activate_dialogue()
+			if only_activate_once and !has_activated_already:
+				_activate_dialogue()
 
 func _on_body_exited(body: Node2D) -> void:
 	if body.is_in_group("player"):
