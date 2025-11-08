@@ -31,10 +31,10 @@ script = ExtResource("1_sx7yp")
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -750.0
-offset_top = 350.0
-offset_right = 750.0
-offset_bottom = 450.0
+offset_left = -765.0
+offset_top = 400.0
+offset_right = 765.0
+offset_bottom = 500.0
 grow_horizontal = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5ybjj")
 
@@ -42,10 +42,10 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_5ybjj")
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -750.0
-offset_top = 350.0
-offset_right = 750.0
-offset_bottom = 450.0
+offset_left = -765.0
+offset_top = 400.0
+offset_right = 765.0
+offset_bottom = 500.0
 grow_horizontal = 2
 
 [node name="SpeakerParent" type="Control" parent="HBoxContainer"]
@@ -64,7 +64,7 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_fonts/normal_font = ExtResource("1_3vq3u")
 theme_override_fonts/bold_font = ExtResource("2_sx7yp")
-theme_override_font_sizes/normal_font_size = 14
+theme_override_font_sizes/normal_font_size = 22
 bbcode_enabled = true
 scroll_active = false
 vertical_alignment = 1
@@ -75,14 +75,14 @@ visible = false
 layout_mode = 2
 
 [node name="ContinueText" type="RichTextLabel" parent="."]
-offset_left = 707.0
-offset_top = 430.0
-offset_right = 747.0
-offset_bottom = 447.0
+offset_left = 675.0
+offset_top = 461.0
+offset_right = 750.0
+offset_bottom = 489.0
 size_flags_vertical = 3
 theme_override_fonts/normal_font = ExtResource("1_3vq3u")
 theme_override_fonts/bold_font = ExtResource("2_sx7yp")
-theme_override_font_sizes/normal_font_size = 11
+theme_override_font_sizes/normal_font_size = 22
 bbcode_enabled = true
 text = "[u]spazio[/u]"
 fit_content = true
@@ -99,8 +99,8 @@ autostart = true
 max_polyphony = 1000
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(2.2888185e-05, 400.0001)
-scale = Vector2(23.500002, 1.6249999)
+position = Vector2(-5.2452087e-05, 450.0001)
+scale = Vector2(23.96875, 1.6249999)
 texture = SubResource("GradientTexture2D_aqiq2")
 
 [connection signal="timeout" from="ContinueText/Timer" to="ContinueText" method="_on_timer_timeout"]
