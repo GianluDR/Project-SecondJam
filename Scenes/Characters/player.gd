@@ -12,18 +12,19 @@ func _physics_process(delta):
 	var nearest = _get_nearest_interactable()
 	if nearest == null:
 		# Nessuna area vicina → luce bassa
-		light.energy = lerp(light.energy, 0.5, 0.1)
+		light.energy = lerp(light.energy, 0.25, 0.1)
 		return
 	
 	var dist = global_position.distance_to(nearest.global_position)
 	#print(dist)
 
 	# Calcolo intensità (regola i valori come vuoi)
-	var intensity = clamp(200.0 / dist, 0.5, 4.0)
+	var intensityTextureScale = clamp(600.0 / dist, 1.5, 6.0)
+	var intensityEnergy = clamp(500.0 / dist, 0.5, 1.5)
 
 	# Transizione morbida
-	light.energy = lerp(light.energy, intensity, 0.1)
-	light.texture_scale = lerp(light.texture_scale, intensity * 0.8, 0.1)
+	light.energy = lerp(light.energy, intensityEnergy, 0.1)
+	light.texture_scale = lerp(light.texture_scale, intensityTextureScale * 0.8, 0.05)
 	
 
 func _get_nearest_interactable() -> Node2D:

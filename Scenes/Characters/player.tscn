@@ -412,8 +412,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_ddhxa"]
-radius = 8.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_01b8d"]
+size = Vector2(20, 5)
 
 [sub_resource type="Gradient" id="Gradient_eksyf"]
 offsets = PackedFloat32Array(0, 0.69666666)
@@ -431,13 +431,12 @@ light = NodePath("PointLight2D")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_fepmq")
-animation = &"walk_back"
+animation = &"walk_front"
 autoplay = "idle_front"
-frame_progress = 0.3646461
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -8)
-shape = SubResource("CircleShape2D_ddhxa")
+position = Vector2(2, 22.5)
+shape = SubResource("RectangleShape2D_01b8d")
 
 [node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_node_state")]
 script = ExtResource("3_gy20a")
@@ -455,4 +454,6 @@ animated_sprite_2d = NodePath("../../AnimatedSprite2D")
 speed = 100
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(2, -19)
+energy = 0.25
 texture = SubResource("GradientTexture2D_khnq4")
