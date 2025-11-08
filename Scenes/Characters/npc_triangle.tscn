@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://d16ntihuhttq4"]
+
+[ext_resource type="Texture2D" uid="uid://dwwyr5mfa7pmq" path="res://Assets/sprites/triangolo_personaggio.png" id="1_3qqhl"]
+
+[node name="NpcTriangle" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_3qqhl")

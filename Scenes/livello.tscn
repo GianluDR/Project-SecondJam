@@ -1,11 +1,17 @@
-[gd_scene load_steps=14 format=4 uid="uid://dypvaultx7nlq"]
+[gd_scene load_steps=23 format=4 uid="uid://dypvaultx7nlq"]
 
 [ext_resource type="Texture2D" uid="uid://bs4qt724a5oe5" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="1_w2rtb"]
 [ext_resource type="Texture2D" uid="uid://djub65ssuic3p" path="res://Assets/sprites/tileset.png" id="2_gprc5"]
 [ext_resource type="Texture2D" uid="uid://bgau2aqvo8ho7" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Plain.png" id="3_ss66i"]
 [ext_resource type="Texture2D" uid="uid://cxac0a1g484jy" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Shadow.png" id="4_pn8ks"]
+[ext_resource type="PackedScene" uid="uid://d16ntihuhttq4" path="res://Scenes/Characters/npc_triangle.tscn" id="5_pn8ks"]
 [ext_resource type="PackedScene" uid="uid://7va2it4641m0" path="res://Scenes/Characters/player.tscn" id="6_kmlea"]
+[ext_resource type="PackedScene" uid="uid://dkfqntuiwig8s" path="res://Scenes/Dialogue/dialogue_area.tscn" id="7_0tayc"]
 [ext_resource type="PackedScene" uid="uid://k87qm5ukwygx" path="res://Scenes/Interactable/InteractArea.tscn" id="7_o36yp"]
+[ext_resource type="Script" uid="uid://d082swllv5wkl" path="res://Scripts/dialogue/dialogue_export_resource.gd" id="8_83c2l"]
+[ext_resource type="Script" uid="uid://bu54caqonn1bx" path="res://Scripts/dialogue/dialogue_text_resource.gd" id="9_5cwei"]
+[ext_resource type="Texture2D" uid="uid://cvs8ytedoffh2" path="res://Assets/sprites/redcube.png" id="10_ibxpi"]
+[ext_resource type="AudioStream" uid="uid://bv3082wp6ro30" path="res://Assets/Sounds/soundtest.wav" id="11_jpjhf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8od7v"]
 texture = ExtResource("1_w2rtb")
@@ -162,6 +168,26 @@ sources/4 = SubResource("TileSetAtlasSource_w2rtb")
 sources/7 = SubResource("TileSetAtlasSource_y21wc")
 sources/8 = SubResource("TileSetAtlasSource_iojje")
 
+[sub_resource type="Resource" id="Resource_7cotb"]
+script = ExtResource("9_5cwei")
+speaker_img = ExtResource("10_ibxpi")
+text = "Ciao, sono il signor Triangolo!"
+text_speed = 15.0
+text_sound = ExtResource("11_jpjhf")
+text_volume_db = -15
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_55ph6"]
+script = ExtResource("9_5cwei")
+speaker_img = ExtResource("10_ibxpi")
+text = "Qui ha inizio la tua avventura...."
+text_speed = 15.0
+text_sound = ExtResource("11_jpjhf")
+text_volume_db = -15
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4f1n4"]
+
 [node name="Test" type="Node2D"]
 
 [node name="Tilemaps" type="Node2D" parent="."]
@@ -175,6 +201,16 @@ position = Vector2(-17, 3)
 tile_map_data = PackedByteArray("AAAFAAMACAABAAEAAAAFAAQACAABAAEAAAAEAAQACAABAAEAAAADAAQACAABAAEAAAADAAMACAABAAEAAAAEAAMACAABAAEAAAAFAAIACAABAAEAAAABAAEACAABAAEAAAABAAIACAABAAEAAAABAAMACAABAAEAAAABAAQACAABAAEAAAABAAUACAABAAEAAAABAAYACAABAAEAAAACAAEACAABAAEAAAACAAIACAABAAEAAAACAAMACAABAAEAAAACAAQACAABAAEAAAACAAUACAABAAEAAAACAAYACAABAAEAAAADAAEACAABAAEAAAADAAIACAABAAEAAAADAAUACAABAAEAAAADAAYACAABAAEAAAAEAAEACAABAAEAAAAEAAIACAABAAEAAAAEAAUACAABAAEAAAAEAAYACAABAAEAAAAFAAEACAABAAEAAAAFAAUACAABAAEAAAAFAAYACAABAAEAAAAGAAEACAABAAEAAAAGAAIACAABAAEAAAAGAAMACAABAAEAAAAGAAQACAABAAEAAAAGAAUACAABAAEAAAAGAAYACAABAAEAAAAHAAEACAABAAEAAAAHAAIACAABAAEAAAAHAAMACAABAAEAAAAHAAQACAABAAEAAAAHAAUACAABAAEAAAAHAAYACAABAAEAAAAIAAEACAABAAEAAAAIAAIACAABAAEAAAAIAAMACAABAAEAAAAIAAQACAABAAEAAAAIAAUACAABAAEAAAAIAAYACAABAAEAAAAJAAEACAABAAEAAAAJAAIACAABAAEAAAAJAAMACAABAAEAAAAJAAQACAABAAEAAAAJAAUACAABAAEAAAAJAAYACAABAAEAAAAKAAEACAABAAEAAAAKAAIACAABAAEAAAAKAAMACAABAAEAAAAKAAQACAABAAEAAAAKAAUACAABAAEAAAAKAAYACAABAAEAAAALAAEACAABAAEAAAALAAIACAABAAEAAAALAAMACAABAAEAAAALAAQACAABAAEAAAALAAUACAABAAEAAAALAAYACAABAAEAAAAAAAAABwABAAEAAAAAAAEABwABAAEAAAAAAAIABwABAAEAAAAAAAMABwABAAEAAAAAAAQABwABAAEAAAAAAAUABwABAAEAAAAAAAYABwABAAEAAAAAAAcABwABAAEAAAABAAcABwABAAEAAAACAAcABwABAAEAAAADAAcABwABAAEAAAAEAAcABwABAAEAAAAFAAcABwABAAEAAAAGAAcABwABAAEAAAAHAAcABwABAAEAAAAIAAcABwABAAEAAAAJAAcABwABAAEAAAAKAAcABwABAAEAAAALAAcABwABAAEAAAAMAAcABwABAAEAAAAMAAYABwABAAEAAAAMAAUABwABAAEAAAAMAAQABwABAAEAAAAMAAMABwABAAEAAAAMAAIABwABAAEAAAAMAAEABwABAAEAAAAMAAAABwABAAEAAAALAAAABwABAAEAAAAKAAAABwABAAEAAAAJAAAABwABAAEAAAAIAAAABwABAAEAAAAHAAAABwABAAEAAAAGAAAABwABAAEAAAAFAAAABwABAAEAAAAEAAAABwABAAEAAAADAAAABwABAAEAAAACAAAABwABAAEAAAABAAAABwABAAEAAAA=")
 tile_set = SubResource("TileSet_5wyu1")
 
+[node name="NpcTriangle" parent="." instance=ExtResource("5_pn8ks")]
+position = Vector2(311, 253)
+scale = Vector2(1.4, 1.4)
+
+[node name="DialogueArea2D" parent="NpcTriangle" instance=ExtResource("7_0tayc")]
+dialogue = Array[ExtResource("8_83c2l")]([SubResource("Resource_7cotb"), SubResource("Resource_55ph6")])
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NpcTriangle/DialogueArea2D"]
+shape = SubResource("RectangleShape2D_4f1n4")
+
 [node name="Player" parent="." instance=ExtResource("6_kmlea")]
 position = Vector2(262, 260)
 
@@ -184,7 +220,7 @@ color = Color(0.83889705, 0.83889705, 0.838897, 1)
 blend_mode = 1
 
 [node name="Area2D" parent="." instance=ExtResource("7_o36yp")]
-position = Vector2(412, 160)
+position = Vector2(362, 140)
 
 [node name="Area2D2" parent="." instance=ExtResource("7_o36yp")]
 position = Vector2(593, 293)
