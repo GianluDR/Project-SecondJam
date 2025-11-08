@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcotquxpvfmrn"
-path="res://.godot/imported/Tilled Dirt.png-6d66d40703009ea48981ea4bb1229847.ctex"
+uid="uid://cxac0a1g484jy"
+path="res://.godot/imported/[64x64] Dungeon Bricks Shadow.png-adfcdb44d697dc3487e4cb5f36d2e252.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/Tilled Dirt.png"
-dest_files=["res://.godot/imported/Tilled Dirt.png-6d66d40703009ea48981ea4bb1229847.ctex"]
+source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Shadow.png"
+dest_files=["res://.godot/imported/[64x64] Dungeon Bricks Shadow.png-adfcdb44d697dc3487e4cb5f36d2e252.ctex"]
 
 [params]
 

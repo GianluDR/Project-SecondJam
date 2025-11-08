@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cu7ba3nkjou0f"
-path="res://.godot/imported/Tilled_Dirt_Wide_v2.png-eb0b8a13f5a922e9ffcbb5af6c4260c7.ctex"
+uid="uid://dwwyr5mfa7pmq"
+path="res://.godot/imported/triangolo_personaggio.png-57550a10e85cc41d06a9b2a6ed968aa2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/Tilled_Dirt_Wide_v2.png"
-dest_files=["res://.godot/imported/Tilled_Dirt_Wide_v2.png-eb0b8a13f5a922e9ffcbb5af6c4260c7.ctex"]
+source_file="res://Assets/sprites/triangolo_personaggio.png"
+dest_files=["res://.godot/imported/triangolo_personaggio.png-57550a10e85cc41d06a9b2a6ed968aa2.ctex"]
 
 [params]
 

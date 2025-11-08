@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwcd5yo7krsn4"
-path="res://.godot/imported/Doors.png-7a8c21e2a948fe679a99859a2949a007.ctex"
+uid="uid://c2ub6gs268bff"
+path="res://.godot/imported/rombo_personaggio.png-5a176e5b74317d97f4ce7f84585c3608.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/Doors.png"
-dest_files=["res://.godot/imported/Doors.png-7a8c21e2a948fe679a99859a2949a007.ctex"]
+source_file="res://Assets/sprites/rombo_personaggio.png"
+dest_files=["res://.godot/imported/rombo_personaggio.png-5a176e5b74317d97f4ce7f84585c3608.ctex"]
 
 [params]
 

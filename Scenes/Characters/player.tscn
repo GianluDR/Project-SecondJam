@@ -170,7 +170,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle_back",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -193,7 +193,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle_front",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -216,7 +216,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle_left",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -239,7 +239,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle_right",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -250,7 +250,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"tiling_front",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -261,7 +261,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk_back",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -272,7 +272,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk_front",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -283,7 +283,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk_left",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -294,7 +294,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk_right",
-"speed": 3.0
+"speed": 5.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ddhxa"]
@@ -316,9 +316,8 @@ light = NodePath("PointLight2D")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -8)
 sprite_frames = SubResource("SpriteFrames_fepmq")
-animation = &"idle_left"
+animation = &"idle_back"
 autoplay = "idle_front"
-frame_progress = 0.90455496
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -8)
@@ -343,4 +342,4 @@ speed = null
 texture = SubResource("GradientTexture2D_khnq4")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(5, 5)
+zoom = Vector2(3, 3)

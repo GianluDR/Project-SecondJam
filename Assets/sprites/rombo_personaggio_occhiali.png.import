@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bltfmq2i5tbue"
-path="res://.godot/imported/Wooden_House_Roof_Tilset.png-8955410c62a67ace21c745b263e993d7.ctex"
+uid="uid://bq87q4pk7pb0"
+path="res://.godot/imported/rombo_personaggio_occhiali.png-a358fa98f500659aad374454fdb4f7f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/Wooden_House_Roof_Tilset.png"
-dest_files=["res://.godot/imported/Wooden_House_Roof_Tilset.png-8955410c62a67ace21c745b263e993d7.ctex"]
+source_file="res://Assets/sprites/rombo_personaggio_occhiali.png"
+dest_files=["res://.godot/imported/rombo_personaggio_occhiali.png-a358fa98f500659aad374454fdb4f7f1.ctex"]
 
 [params]
 

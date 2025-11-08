@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdl02ueci84qa"
-path="res://.godot/imported/Hills.png-2208bd296452bc2d3eb6f1668ddaff43.ctex"
+uid="uid://bgau2aqvo8ho7"
+path="res://.godot/imported/[64x64] Dungeon Bricks Plain.png-983f64c6fb9b198d52be0ba4e152eeb5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/Hills.png"
-dest_files=["res://.godot/imported/Hills.png-2208bd296452bc2d3eb6f1668ddaff43.ctex"]
+source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Plain.png"
+dest_files=["res://.godot/imported/[64x64] Dungeon Bricks Plain.png-983f64c6fb9b198d52be0ba4e152eeb5.ctex"]
 
 [params]
 
