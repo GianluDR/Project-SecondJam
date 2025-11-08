@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bclsslqc0cflw"]
+
+[ext_resource type="Texture2D" uid="uid://c2ub6gs268bff" path="res://Assets/sprites/rombo_personaggio.png" id="1_r0hsv"]
+
+[node name="NpcRombo" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_r0hsv")

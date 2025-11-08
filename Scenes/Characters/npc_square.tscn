@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://culf0sotauivt"]
+[gd_scene load_steps=2 format=3 uid="uid://culf0sotauivt"]
+
+[ext_resource type="Texture2D" uid="uid://b62gd037uagx4" path="res://Assets/sprites/quadrato_personaggio.png" id="1_n41cf"]
 
 [node name="NpcSquare" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_n41cf")
