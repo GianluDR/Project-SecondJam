@@ -19,7 +19,6 @@ var player_node: CharacterBody2D = null
 
 func _ready() -> void:
 	for i in get_tree().get_nodes_in_group("player"):
-		print("player trovato")
 		player_node = i
 
 func _process(_delta: float) -> void:

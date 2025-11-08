@@ -23,7 +23,7 @@ func _on_start_btn_pressed() -> void:
 	$Fade/fadeTimer.start()
 	$Fade/AnimationPlayer.play("fadeOut")
 	await get_tree().create_timer(4.0).timeout
-	get_tree().change_scene_to_file("res://Scenes/light_test_scene.tscn")
+	get_tree().change_scene_to_file("res://Scenes/livello.tscn")
 	
 
 func _on_exit_btn_pressed() -> void:
