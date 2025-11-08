@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://div4qgsifb8bw"
-path="res://.godot/imported/156699177_10364000.png-08c8fd5b9bb1a69ea85a84b652b9b0a8.ctex"
+uid="uid://cqhyg86baeqo0"
+path="res://.godot/imported/Sprite-candela-spenta.png-34818cd1a1b102d4a9650c8d8f331a13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UI/Logo/156699177_10364000.png"
-dest_files=["res://.godot/imported/156699177_10364000.png-08c8fd5b9bb1a69ea85a84b652b9b0a8.ctex"]
+source_file="res://Assets/UI/Logo/Sprite-candela-spenta.png"
+dest_files=["res://.godot/imported/Sprite-candela-spenta.png-34818cd1a1b102d4a9650c8d8f331a13.ctex"]
 
 [params]
 

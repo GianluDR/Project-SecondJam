@@ -1,23 +1,23 @@
-[gd_scene load_steps=16 format=3 uid="uid://ci7tpbjwuxpl5"]
+[gd_scene load_steps=14 format=3 uid="uid://ci7tpbjwuxpl5"]
 
 [ext_resource type="Script" uid="uid://3xruftj3gh1m" path="res://Scripts/main_menu.gd" id="1_u7lva"]
 [ext_resource type="FontFile" uid="uid://4uw73reh3jtr" path="res://Assets/Fonts/PixelifySans-VariableFont_wght.ttf" id="2_i2xx2"]
 [ext_resource type="Script" uid="uid://l8uqxqjy8fq6" path="res://Scripts/menu_panel.gd" id="2_o14dv"]
-[ext_resource type="Texture2D" uid="uid://dnw52et3ls4gk" path="res://Assets/UI/Logo/Sprite-candela.png" id="4_u7lva"]
-[ext_resource type="PackedScene" uid="uid://ccci65hiwv7wl" path="res://Scenes/Effects/fade.tscn" id="5_mrfpk"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_i2xx2"]
 seed = 1
-frequency = 0.0024
-offset = Vector3(0, 0, 0.73)
-fractal_octaves = 10
+frequency = 0.0004
+offset = Vector3(-575.34, -1000, 729.73)
+fractal_octaves = 4
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_o14dv"]
+width = 1920
+height = 1080
 noise = SubResource("FastNoiseLite_i2xx2")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u7lva"]
 texture = SubResource("NoiseTexture2D_o14dv")
-modulate_color = Color(0.08, 0.0784, 0.079626665, 1)
+modulate_color = Color(0.06, 0.0588, 0.05972, 1)
 
 [sub_resource type="FontVariation" id="FontVariation_o14dv"]
 base_font = ExtResource("2_i2xx2")
@@ -63,15 +63,15 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -312.0
-offset_top = -285.0
-offset_right = 534.0
-offset_bottom = -10.0
+offset_left = -317.0
+offset_top = -86.0
+offset_right = 132.0
+offset_bottom = 59.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_i2xx2")
-theme_override_font_sizes/font_size = 220
-text = "DioCane"
+theme_override_font_sizes/font_size = 120
+text = "Diocane"
 
 [node name="StartBtn" type="Button" parent="."]
 layout_mode = 1
@@ -80,10 +80,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -288.0
-offset_top = 127.0
-offset_right = 356.0
-offset_bottom = 212.0
+offset_left = -322.0
+offset_top = 156.0
+offset_right = 322.0
+offset_bottom = 241.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -104,10 +104,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -283.0
-offset_top = 300.25
-offset_right = 75.0
-offset_bottom = 366.25
+offset_left = -317.0
+offset_top = 329.25
+offset_right = 41.0
+offset_bottom = 395.25
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -120,23 +120,6 @@ theme_override_styles/pressed = SubResource("StyleBoxTexture_4pqbp")
 theme_override_styles/hover = SubResource("StyleBoxTexture_gih0s")
 text = "Esci dal gioco"
 alignment = 0
-
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = 52.0
-offset_top = -253.0
-offset_right = 993.0
-offset_bottom = 1158.5
-mouse_filter = 2
-texture = ExtResource("4_u7lva")
-
-[node name="Fade" parent="." instance=ExtResource("5_mrfpk")]
-visible = false
-layout_mode = 0
-mouse_filter = 2
-
-[node name="fadeTimer" type="Timer" parent="Fade"]
-wait_time = 10.081
 
 [connection signal="mouse_entered" from="StartBtn" to="." method="_on_start_btn_mouse_entered"]
 [connection signal="pressed" from="StartBtn" to="." method="_on_start_btn_pressed"]
