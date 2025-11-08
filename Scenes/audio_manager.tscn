@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://corw37r5uvyj8"]
+[gd_scene load_steps=8 format=3 uid="uid://corw37r5uvyj8"]
 
 [ext_resource type="Script" uid="uid://cdfsee4bf0j22" path="res://Scripts/audio_manager.gd" id="1_sm2tf"]
 [ext_resource type="AudioStream" uid="uid://cecq7cl7occg" path="res://Assets/Sounds/SFX/GUI/on_hover.wav" id="2_qixve"]
 [ext_resource type="AudioStream" uid="uid://bx1ks1igdipd8" path="res://Assets/Sounds/SFX/GUI/on_click.mp3" id="3_0hehx"]
-[ext_resource type="AudioStream" uid="uid://3w6mwbr26gek" path="res://Assets/Sounds/Music/MenuMusic.mp3" id="4_qixve"]
+[ext_resource type="AudioStream" uid="uid://c0d2rm1j8tuhl" path="res://Assets/Sounds/SFX/fiammifero.mp3" id="4_mjqhu"]
+[ext_resource type="AudioStream" uid="uid://dn14pfd41401v" path="res://Assets/Sounds/Music/menuBg.mp3" id="4_qixve"]
+[ext_resource type="AudioStream" uid="uid://q87niikw0443" path="res://Assets/Sounds/SFX/fuoco.mp3" id="5_5kf6k"]
+[ext_resource type="AudioStream" uid="uid://bayegahblbsyl" path="res://Assets/Sounds/SFX/soffio.mp3" id="6_5kf6k"]
 
 [node name="AudioManager" type="Node"]
 script = ExtResource("1_sm2tf")
@@ -20,11 +23,24 @@ stream = ExtResource("3_0hehx")
 volume_db = -5.445
 bus = &"SFX"
 
+[node name="FiammiferoSfx" type="AudioStreamPlayer" parent="Sfx"]
+stream = ExtResource("4_mjqhu")
+
+[node name="CandelaSfxloop" type="AudioStreamPlayer" parent="Sfx"]
+stream = ExtResource("5_5kf6k")
+volume_db = -6.695
+parameters/looping = true
+
+[node name="SoffioSfx" type="AudioStreamPlayer" parent="Sfx"]
+stream = ExtResource("6_5kf6k")
+volume_db = -6.005
+pitch_scale = 0.96
+
 [node name="Music" type="Node" parent="."]
 
 [node name="MenuMusic" type="AudioStreamPlayer" parent="Music"]
 stream = ExtResource("4_qixve")
-volume_db = -17.789
+volume_db = -14.268
 bus = &"Music"
 playback_type = 1
 parameters/looping = true
