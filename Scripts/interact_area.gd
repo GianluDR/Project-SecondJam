@@ -2,6 +2,7 @@ extends Area2D
 
 # --- Costanti e variabili di configurazione ---
 @export var interactionType: int
+@export var testoPG: String
 @export var scene_index: int
 @export var scene_paths = [
 	"res://scenes/levelflowtesting/level0.tscn",
@@ -43,6 +44,7 @@ func _on_body_entered(body: Node2D) -> void:
 		elif(interactionType == 2):
 			print("pg")
 			$Label.visible = true
+			$Label.text = testoPG
 			#$PointLight2D.enabled = true
 		else:
 			print("nuovolivello")

@@ -19,6 +19,7 @@ fill_from = Vector2(0.5, 0.5)
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_qxccg")
+testoPG = "Prova"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_6evr2")
@@ -36,6 +37,8 @@ offset_top = -95.0
 offset_right = 67.0
 offset_bottom = -72.0
 text = "TESTO PENSIERO"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ContinueText" type="RichTextLabel" parent="."]
 visible = false
