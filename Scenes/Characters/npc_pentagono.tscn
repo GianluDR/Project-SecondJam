@@ -1,13 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://b0252fryees5t"]
+[gd_scene load_steps=6 format=3 uid="uid://b0252fryees5t"]
 
 [ext_resource type="Texture2D" uid="uid://btslmsyi153d3" path="res://Assets/sprites/ombra_personaggio.png" id="1_jpbca"]
+[ext_resource type="Script" uid="uid://dj7rsoabju6cd" path="res://Scenes/Characters/npc.gd" id="1_mbnn1"]
 [ext_resource type="Texture2D" uid="uid://bou6qihq2na1c" path="res://Assets/sprites/Characters/pentagono_1.png" id="1_x2cd7"]
 [ext_resource type="Texture2D" uid="uid://brlf0wu2edfws" path="res://Assets/sprites/Characters_BordoBianco/pentagono_1_bordobianco.png" id="2_jpbca"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r0hsv"]
-size = Vector2(19, 48)
+size = Vector2(30, 64)
 
-[node name="NpcRombo" type="CharacterBody2D"]
+[node name="NpcPentagono" type="CharacterBody2D"]
+script = ExtResource("1_mbnn1")
 
 [node name="Ombra" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.6627451)
@@ -19,7 +21,7 @@ texture = ExtResource("1_jpbca")
 texture = ExtResource("1_x2cd7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -4)
+position = Vector2(0, -4)
 shape = SubResource("RectangleShape2D_r0hsv")
 
 [node name="Sprite2D_Highlight" type="Sprite2D" parent="."]
