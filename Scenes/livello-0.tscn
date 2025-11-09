@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bs4qt724a5oe5" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="4_jm38t"]
 [ext_resource type="Texture2D" uid="uid://bd510yyqt5xmc" path="res://Assets/sprites/scale.png" id="4_pru5s"]
 [ext_resource type="Texture2D" uid="uid://bgau2aqvo8ho7" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Plain.png" id="5_c6j86"]
-[ext_resource type="Script" path="res://Scripts/tutorial.gd" id="7_pggu4"]
+[ext_resource type="Script" uid="uid://dwjo8vmdnso2u" path="res://Scripts/tutorial.gd" id="7_pggu4"]
 [ext_resource type="PackedScene" uid="uid://dkfqntuiwig8s" path="res://Scenes/Dialogue/dialogue_area.tscn" id="7_qa0m7"]
 [ext_resource type="Script" uid="uid://d082swllv5wkl" path="res://Scripts/dialogue/dialogue_export_resource.gd" id="8_yxtnq"]
 [ext_resource type="Script" uid="uid://bu54caqonn1bx" path="res://Scripts/dialogue/dialogue_text_resource.gd" id="9_ka3r2"]
@@ -15,7 +15,7 @@
 [ext_resource type="Script" uid="uid://qf30somm886x" path="res://Scripts/tutorial_area_2d.gd" id="15_ipbmu"]
 [ext_resource type="PackedScene" uid="uid://7va2it4641m0" path="res://Scenes/Characters/player.tscn" id="15_yfuoy"]
 [ext_resource type="PackedScene" uid="uid://k87qm5ukwygx" path="res://Scenes/Interactable/InteractArea.tscn" id="16_rm0hi"]
-[ext_resource type="PackedScene" path="res://Scenes/Characters/npc_rombo.tscn" id="17_ftp5k"]
+[ext_resource type="PackedScene" uid="uid://bclsslqc0cflw" path="res://Scenes/Characters/npc_rombo.tscn" id="17_ftp5k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jpjhf"]
 texture = ExtResource("1_v5nmd")
@@ -414,9 +414,9 @@ blend_mode = 1
 [node name="Area2D2" parent="." instance=ExtResource("16_rm0hi")]
 position = Vector2(1408, 696)
 
-[node name="Area2D3" parent="." instance=ExtResource("16_rm0hi")]
-position = Vector2(416.00003, 282)
-scale = Vector2(7, 7)
+[node name="StairArea" parent="." instance=ExtResource("16_rm0hi")]
+position = Vector2(416, 282)
+interactionType = 1
 
 [node name="NpcRombo" parent="." instance=ExtResource("17_ftp5k")]
 position = Vector2(1408, 696)

@@ -1,8 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://k87qm5ukwygx"]
+[gd_scene load_steps=6 format=3 uid="uid://k87qm5ukwygx"]
 
 [ext_resource type="Script" uid="uid://wei4nwc2eigx" path="res://Scripts/interact_area.gd" id="1_qxccg"]
+[ext_resource type="FontFile" uid="uid://d1rkf5yux54bf" path="res://Assets/Fonts/PixelifySans-Regular.ttf" id="2_tdxfm"]
+[ext_resource type="FontFile" uid="uid://nnyqryeaumh5" path="res://Assets/Fonts/PixelifySans-Bold.ttf" id="3_dd2sg"]
+[ext_resource type="Script" uid="uid://duhndpjouhw4y" path="res://Scripts/dialogue/dialogue_continue.gd" id="4_b0qlr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6evr2"]
+size = Vector2(126, 128)
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_qxccg")
@@ -10,6 +14,29 @@ script = ExtResource("1_qxccg")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_6evr2")
 
+[node name="ContinueText" type="RichTextLabel" parent="."]
+visible = false
+offset_left = -34.0
+offset_top = -64.0
+offset_right = 41.0
+offset_bottom = -36.0
+size_flags_vertical = 3
+theme_override_fonts/normal_font = ExtResource("2_tdxfm")
+theme_override_fonts/bold_font = ExtResource("3_dd2sg")
+theme_override_font_sizes/normal_font_size = 22
+bbcode_enabled = true
+text = "[u]spazio[/u]"
+fit_content = true
+scroll_active = false
+vertical_alignment = 1
+visible_characters_behavior = 1
+script = ExtResource("4_b0qlr")
+
+[node name="Timer" type="Timer" parent="ContinueText"]
+wait_time = 0.5
+autostart = true
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
 [connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
+[connection signal="timeout" from="ContinueText/Timer" to="ContinueText" method="_on_timer_timeout"]

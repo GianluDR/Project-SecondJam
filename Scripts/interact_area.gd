@@ -38,6 +38,7 @@ func _on_body_entered(body: Node2D) -> void:
 			print("interazione")
 		else:
 			print("nuovolivello")
+			$ContinueText.visible = true
 			player_body_in = true
 
 func _on_body_exited(body: Node2D) -> void:
@@ -47,4 +48,5 @@ func _on_body_exited(body: Node2D) -> void:
 			print("interazione")
 		else:
 			print("nuovolivello")
+			$ContinueText.visible = false
 			player_body_in = false
