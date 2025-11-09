@@ -17,4 +17,6 @@ func _on_body_exited(body: Node2D) -> void:
 	if body.is_in_group("player"): 
 		if $"../DialogueArea2D".has_activated_already:
 			$"../DialogueArea2D".monitoring = false
+			$"..".collision_layer = 2
 			$"..".visible = false
+			$"../../Area2D2".remove_from_group("Interactable")

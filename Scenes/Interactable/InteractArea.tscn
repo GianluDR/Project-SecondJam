@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://k87qm5ukwygx"]
+[gd_scene load_steps=8 format=3 uid="uid://k87qm5ukwygx"]
 
 [ext_resource type="Script" uid="uid://wei4nwc2eigx" path="res://Scripts/interact_area.gd" id="1_qxccg"]
 [ext_resource type="FontFile" uid="uid://d1rkf5yux54bf" path="res://Assets/Fonts/PixelifySans-Regular.ttf" id="2_tdxfm"]
@@ -8,11 +8,34 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6evr2"]
 size = Vector2(126, 128)
 
+[sub_resource type="Gradient" id="Gradient_eksyf"]
+offsets = PackedFloat32Array(0, 0.69666666)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_tdxfm"]
+gradient = SubResource("Gradient_eksyf")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_qxccg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_6evr2")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(2, -19)
+enabled = false
+energy = 0.25
+texture = SubResource("GradientTexture2D_tdxfm")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = -63.0
+offset_top = -95.0
+offset_right = 67.0
+offset_bottom = -72.0
+text = "TESTO PENSIERO"
 
 [node name="ContinueText" type="RichTextLabel" parent="."]
 visible = false

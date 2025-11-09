@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bf827lokigg0n" path="res://Scripts/confirm_menu.gd" id="1_tt7v6"]
 [ext_resource type="Shader" uid="uid://cq0liixu6w1qd" path="res://blur.gdshader" id="2_q4mwk"]
 [ext_resource type="FontFile" uid="uid://4uw73reh3jtr" path="res://Assets/Fonts/PixelifySans-VariableFont_wght.ttf" id="3_l7hy8"]
-[ext_resource type="Script" uid="uid://cq0dr35bf3ghn" path="res://Scripts/btn_outline.gd" id="4_iri87"]
+[ext_resource type="Script" path="res://Scripts/btn_outline.gd" id="4_iri87"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_r2i2h"]
 shader = ExtResource("2_q4mwk")
@@ -65,10 +65,10 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 453.0
-offset_top = 26.0
-offset_right = -491.0
-offset_bottom = 111.0
+offset_left = 222.0
+offset_top = -462.0
+offset_right = -222.0
+offset_bottom = 373.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 1
@@ -79,7 +79,9 @@ theme_override_fonts/font = SubResource("FontVariation_oykix")
 theme_override_font_sizes/font_size = 70
 theme_override_styles/normal = SubResource("StyleBoxTexture_kdnb7")
 theme_override_styles/focus = SubResource("StyleBoxTexture_23me3")
-text = "vuoi cacarti nelle mutande?"
+text = "Vuoi interrompere?"
+horizontal_alignment = 1
+vertical_alignment = 1
 autowrap_trim_flags = 128
 
 [node name="YesBtn" type="Button" parent="."]
@@ -89,17 +91,17 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 125.0
-offset_top = 236.0
-offset_right = 583.0
-offset_bottom = 321.0
+offset_left = -284.0
+offset_top = 25.0
+offset_right = 174.0
+offset_bottom = 110.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.8392157, 0.41960785, 0.09803922, 1)
 theme_override_colors/font_hover_color = Color(0.9372549, 0.9882353, 0.6156863, 1)
 theme_override_fonts/font = SubResource("FontVariation_oykix")
-theme_override_font_sizes/font_size = 70
+theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxTexture_kdnb7")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_702e2")
 theme_override_styles/hover = SubResource("StyleBoxTexture_qyryt")
@@ -110,16 +112,16 @@ script = ExtResource("4_iri87")
 
 [node name="NoBtn" type="Button" parent="."]
 visibility_layer = 2
-offset_left = 398.0
-offset_top = 780.0
-offset_right = 679.0
-offset_bottom = 865.0
+offset_left = 793.0
+offset_top = 565.0
+offset_right = 1277.0
+offset_bottom = 650.0
 size_flags_vertical = 4
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.8392157, 0.41960785, 0.09803922, 1)
 theme_override_colors/font_hover_color = Color(0.9372549, 0.9882353, 0.6156863, 1)
 theme_override_fonts/font = SubResource("FontVariation_oykix")
-theme_override_font_sizes/font_size = 70
+theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxTexture_kdnb7")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_702e2")
 theme_override_styles/hover = SubResource("StyleBoxTexture_qyryt")

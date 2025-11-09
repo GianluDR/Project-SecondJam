@@ -16,7 +16,8 @@ var player_body_in: bool = false
 var player_node: CharacterBody2D = null
 
 func _ready() -> void:
-	add_to_group("Interactable")
+	if interactionType != 2:
+		add_to_group("Interactable")
 	for i in get_tree().get_nodes_in_group("player"):
 		player_node = i
 
@@ -36,6 +37,10 @@ func _on_body_entered(body: Node2D) -> void:
 		print("Player ha raggiunto l'area!")
 		if(interactionType == 0):
 			print("interazione")
+		elif(interactionType == 2):
+			print("pg")
+			$Label.visible = true
+			#$PointLight2D.enabled = true
 		else:
 			print("nuovolivello")
 			$ContinueText.visible = true
@@ -46,6 +51,11 @@ func _on_body_exited(body: Node2D) -> void:
 		print("Player uscito dall'area!")
 		if(interactionType == 0):
 			print("interazione")
+			$Label.visible = false
+		elif(interactionType == 2):
+			print("pg")
+			$Label.visible = false
+			#$PointLight2D.enabled = false
 		else:
 			print("nuovolivello")
 			$ContinueText.visible = false
