@@ -9,3 +9,5 @@ extends Node
 @onready var slash_sfx: AudioStreamPlayer = $Sfx/SlashSfx
 @onready var paperbag_sfx: AudioStreamPlayer = $Sfx/PaperbagSfx
 @onready var bodyfall_sfx: AudioStreamPlayer = $Sfx/BodyfallSfx
+@onready var ambience_music: AudioStreamPlayer = $Music/AmbienceMusic
+@onready var final_music: AudioStreamPlayer = $Music/FinalMusic

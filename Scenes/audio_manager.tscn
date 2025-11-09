@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bbaxwhy8c8wiu"]
+[gd_scene load_steps=14 format=3 uid="uid://bbaxwhy8c8wiu"]
 
 [ext_resource type="Script" uid="uid://cdfsee4bf0j22" path="res://Scripts/audio_manager.gd" id="1_sm2tf"]
 [ext_resource type="AudioStream" uid="uid://cecq7cl7occg" path="res://Assets/Sounds/SFX/GUI/on_hover.wav" id="2_qixve"]
@@ -11,6 +11,8 @@
 [ext_resource type="AudioStream" uid="uid://cw06re8lqiapc" path="res://Assets/Sounds/SFX/slash.ogg" id="8_5nrbi"]
 [ext_resource type="AudioStream" uid="uid://crc4uuyd6w478" path="res://Assets/Sounds/SFX/paperbag.mp3" id="9_pn88s"]
 [ext_resource type="AudioStream" uid="uid://dd0uefrx3h8tb" path="res://Assets/Sounds/SFX/bodyfall.mp3" id="10_fasow"]
+[ext_resource type="AudioStream" uid="uid://c8t40mbv5cad6" path="res://Assets/Sounds/Music/Ambience.mp3" id="12_fasow"]
+[ext_resource type="AudioStream" uid="uid://bncf4wvi33jyw" path="res://Assets/Sounds/Music/music.mp3" id="13_1bal0"]
 
 [node name="AudioManager" type="Node"]
 script = ExtResource("1_sm2tf")
@@ -61,3 +63,10 @@ volume_db = -14.268
 bus = &"Music"
 playback_type = 1
 parameters/looping = true
+
+[node name="AmbienceMusic" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource("12_fasow")
+
+[node name="FinalMusic" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource("13_1bal0")
+autoplay = true
