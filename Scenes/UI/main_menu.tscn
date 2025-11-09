@@ -217,13 +217,13 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -352.0
 offset_top = -368.0
-offset_right = 496.0
+offset_right = 715.0
 offset_bottom = -93.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_i2xx2")
 theme_override_font_sizes/font_size = 140
-text = "DEEP CANDLE"
+text = "MIND THE FLAME"
 
 [node name="StartBtn" type="Button" parent="."]
 process_mode = 3
