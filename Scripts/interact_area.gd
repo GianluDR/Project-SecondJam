@@ -41,7 +41,7 @@ func _on_body_entered(body: Node2D) -> void:
 		print("Player ha raggiunto l'area!")
 		if(interactionType == 0):
 			print("interazione")
-		elif(interactionType == 2):
+		elif(interactionType == 1):
 			print("pg")
 			$Label.visible = true
 			$Label.text = testoPG
@@ -57,7 +57,7 @@ func _on_body_exited(body: Node2D) -> void:
 		if(interactionType == 0):
 			print("interazione")
 			$Label.visible = false
-		elif(interactionType == 2):
+		elif(interactionType == 1):
 			print("pg")
 			$Label.visible = false
 			#$PointLight2D.enabled = false
