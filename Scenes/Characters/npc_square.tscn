@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bfttwh7xsw1lw" path="res://Assets/sprites/Characters_BordoBianco/quadrato_1_bordobianco.png" id="3_boc2x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n41cf"]
-size = Vector2(21, 60)
+size = Vector2(44, 87)
 
 [node name="NpcSquare" type="CharacterBody2D"]
 script = ExtResource("1_boc2x")
@@ -20,7 +20,7 @@ texture = ExtResource("2_7oths")
 texture = ExtResource("2_07crs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 0)
+position = Vector2(0, 2.5)
 shape = SubResource("RectangleShape2D_n41cf")
 
 [node name="Sprite2D_Highlight" type="Sprite2D" parent="."]

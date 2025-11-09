@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bclsslqc0cflw"]
+[gd_scene load_steps=6 format=3 uid="uid://bclsslqc0cflw"]
 
 [ext_resource type="Texture2D" uid="uid://br6hj1hxa2b53" path="res://Assets/sprites/Characters/rombo_1.png" id="1_bgkra"]
+[ext_resource type="Script" uid="uid://dj7rsoabju6cd" path="res://Scenes/Characters/npc.gd" id="1_k630d"]
 [ext_resource type="Texture2D" uid="uid://btslmsyi153d3" path="res://Assets/sprites/ombra_personaggio.png" id="1_m5t41"]
 [ext_resource type="Texture2D" uid="uid://dnupr6ipyjvlx" path="res://Assets/sprites/Characters_BordoBianco/rombo_1_bordobianco.png" id="1_r0hsv"]
 
@@ -8,6 +9,7 @@
 size = Vector2(31, 66)
 
 [node name="NpcRombo" type="CharacterBody2D"]
+script = ExtResource("1_k630d")
 
 [node name="Ombra" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.65882355)
