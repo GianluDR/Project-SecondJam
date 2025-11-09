@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=4 uid="uid://5y4jilj611on"]
+[gd_scene load_steps=51 format=4 uid="uid://5y4jilj611on"]
 
 [ext_resource type="Texture2D" uid="uid://cxac0a1g484jy" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Shadow.png" id="1_k6fuu"]
 [ext_resource type="Script" uid="uid://l8uqxqjy8fq6" path="res://Scripts/menu_panel.gd" id="2_kji8q"]
@@ -24,7 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://dkfqntuiwig8s" path="res://Scenes/Dialogue/dialogue_area.tscn" id="19_ttkvf"]
 [ext_resource type="Script" uid="uid://d082swllv5wkl" path="res://Scripts/dialogue/dialogue_export_resource.gd" id="20_0oo3t"]
 [ext_resource type="Script" uid="uid://bu54caqonn1bx" path="res://Scripts/dialogue/dialogue_text_resource.gd" id="21_r61a1"]
-[ext_resource type="Texture2D" uid="uid://dl68ix80d5870" path="res://Assets/sprites/Busti_64rombopg.png" id="22_cl30r"]
+[ext_resource type="Texture2D" uid="uid://dbd2clio8r6ap" path="res://Assets/sprites/Busti_64pentangonopg.png" id="22_0oo3t"]
 [ext_resource type="AudioStream" uid="uid://bv3082wp6ro30" path="res://Assets/Sounds/soundtest.wav" id="23_lpyxo"]
 [ext_resource type="PackedScene" uid="uid://culf0sotauivt" path="res://Scenes/Characters/npc_square.tscn" id="24_eopi5"]
 [ext_resource type="PackedScene" uid="uid://7va2it4641m0" path="res://Scenes/Characters/player.tscn" id="25_wtb5w"]
@@ -444,62 +444,53 @@ sources/3 = SubResource("TileSetAtlasSource_1w3v0")
 
 [sub_resource type="Resource" id="Resource_7cotb"]
 script = ExtResource("21_r61a1")
-speaker_img = ExtResource("22_cl30r")
-text = "Ciao Circulus, come hai potuto notare siamo tutti “quadrati” qui eh eh eh"
+speaker_img = ExtResource("22_0oo3t")
+text = "Siamo arrivati al limite… "
 text_speed = 15.0
 text_sound = ExtResource("23_lpyxo")
 text_volume_db = -30
-text_volume_pitch_max = 1.5
+text_volume_pitch_max = 0.5
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
 [sub_resource type="Resource" id="Resource_55ph6"]
 script = ExtResource("21_r61a1")
-speaker_img = ExtResource("22_cl30r")
-text = "io a differenza degli altri però sento che c’è qualcosa di strano… come se mi fossi svegliato con il piede storto… o forse la testa eh eh eh."
+speaker_img = ExtResource("22_0oo3t")
+text = "tutto questo deve finire…"
 text_speed = 15.0
 text_sound = ExtResource("23_lpyxo")
 text_volume_db = -30
-text_volume_pitch_max = 1.5
+text_volume_pitch_max = 0.5
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
 [sub_resource type="Resource" id="Resource_1ydfs"]
 script = ExtResource("21_r61a1")
-speaker_img = ExtResource("22_cl30r")
-text = "Cerchiamo di fuggire da noi stessi, di reprimere il nostro essere per cercare di somigliare a qualcuno che in realtà non fa altro che screditarci e ridicolizzarci"
+speaker_img = ExtResource("22_0oo3t")
+text = " i quattro lati credono di essere superiori, MA SI SBAGLIANO"
 text_speed = 15.0
 text_sound = ExtResource("23_lpyxo")
 text_volume_db = -30
-text_volume_pitch_max = 1.5
+text_volume_pitch_max = 0.5
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
 [sub_resource type="Resource" id="Resource_wef0v"]
 script = ExtResource("21_r61a1")
-speaker_img = ExtResource("22_cl30r")
-text = "ogni volta che ci guardiamo in faccia è come se mentissimo a noi stessi con lo sguardo"
+speaker_img = ExtResource("22_0oo3t")
+text = "sono feccia, feccia come voi Circulus e come tutti gli altri, veniamo derisi e messi al vostro pari e per cosa? per essere noi stessi?"
 text_speed = 15.0
 text_sound = ExtResource("23_lpyxo")
 text_volume_db = -30
-text_volume_pitch_max = 1.5
+text_volume_pitch_max = 0.5
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
 [sub_resource type="Resource" id="Resource_w8l3c"]
 script = ExtResource("21_r61a1")
-speaker_img = ExtResource("22_cl30r")
-text = "Chi sei quando non sai chi essere?"
-text_speed = 15.0
-text_sound = ExtResource("23_lpyxo")
-text_volume_db = -30
-text_volume_pitch_max = 1.5
-metadata/_custom_type_script = "uid://bu54caqonn1bx"
-
-[sub_resource type="Resource" id="Resource_lly2k"]
-script = ExtResource("21_r61a1")
-speaker_img = ExtResource("22_cl30r")
-text = "Vabbè… il mondo è bello perchè è quadrato… wd
+speaker_img = ExtResource("22_0oo3t")
+text = "Cosa vuoi capirne tu, sei solo uno stupido Circulus, SPARISCI !
 "
 text_speed = 15.0
 text_sound = ExtResource("23_lpyxo")
-text_volume_pitch_max = 1.5
+text_volume_db = -30
+text_volume_pitch_max = 0.5
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ox1l1"]
@@ -557,7 +548,7 @@ scale = Vector2(1.2, 1.2)
 npc_texture = ExtResource("14_5sr52")
 
 [node name="NpcSquare3" parent="." instance=ExtResource("24_eopi5")]
-position = Vector2(567, 200)
+position = Vector2(575, 255)
 scale = Vector2(1.2, 1.2)
 npc_texture = ExtResource("15_fskgn")
 
@@ -568,7 +559,7 @@ npc_texture = ExtResource("17_6ux3g")
 highlight_texture = ExtResource("18_oywym")
 
 [node name="DialogueArea2D" parent="NpcPentagono1" instance=ExtResource("19_ttkvf")]
-dialogue = Array[ExtResource("20_0oo3t")]([SubResource("Resource_7cotb"), SubResource("Resource_55ph6"), SubResource("Resource_1ydfs"), SubResource("Resource_wef0v"), SubResource("Resource_w8l3c"), SubResource("Resource_lly2k")])
+dialogue = Array[ExtResource("20_0oo3t")]([SubResource("Resource_7cotb"), SubResource("Resource_55ph6"), SubResource("Resource_1ydfs"), SubResource("Resource_wef0v"), SubResource("Resource_w8l3c")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NpcPentagono1/DialogueArea2D"]
 visible = false
@@ -581,8 +572,33 @@ position = Vector2(-714.28564, 274.28568)
 interactionType = 1
 testoPG = "Hmpf"
 
+[node name="Area2D2" parent="NpcPentagono1" instance=ExtResource("11_hydej")]
+position = Vector2(291.87497, -42.5)
+interactionType = 1
+testoPG = "<maledetti...>"
+
+[node name="Area2D3" parent="NpcPentagono1" instance=ExtResource("11_hydej")]
+position = Vector2(21.25, -187.5)
+interactionType = 1
+testoPG = "<ssshhh>"
+
+[node name="Area2D4" parent="NpcPentagono1" instance=ExtResource("11_hydej")]
+position = Vector2(111.874985, -188.125)
+interactionType = 1
+testoPG = "Hmpf"
+
+[node name="Area2D5" parent="NpcPentagono1" instance=ExtResource("11_hydej")]
+position = Vector2(466.24997, -194.375)
+interactionType = 1
+testoPG = "<FATE SILENZIO>"
+
+[node name="Area2D6" parent="NpcPentagono1" instance=ExtResource("11_hydej")]
+position = Vector2(698.125, 116.25001)
+interactionType = 1
+testoPG = "<Circulus schifoso>"
+
 [node name="NpcPentagono2" parent="." instance=ExtResource("14_q88cr")]
-position = Vector2(430, 211)
+position = Vector2(429, 265)
 scale = Vector2(1.6, 1.6)
 npc_texture = ExtResource("16_1w3v0")
 

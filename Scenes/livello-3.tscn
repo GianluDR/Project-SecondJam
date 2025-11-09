@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=4 uid="uid://cfc6ml0tk05wq"]
+[gd_scene load_steps=55 format=4 uid="uid://cfc6ml0tk05wq"]
 
 [ext_resource type="Texture2D" uid="uid://cxac0a1g484jy" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Shadow.png" id="1_eg5m1"]
 [ext_resource type="Script" uid="uid://l8uqxqjy8fq6" path="res://Scripts/menu_panel.gd" id="2_7y4il"]
@@ -21,8 +21,13 @@
 [ext_resource type="Texture2D" uid="uid://bbu36w6uw1cmk" path="res://Assets/sprites/Characters/triangolo_personaggio_nuovo_finito.png" id="19_xhnv3"]
 [ext_resource type="Texture2D" uid="uid://b3kbfx36abi67" path="res://Assets/sprites/Characters_BordoBianco/triangolo_1_bordobianco.png" id="20_gotme"]
 [ext_resource type="Texture2D" uid="uid://bryditghc12u8" path="res://Assets/sprites/Characters/triangolo_2_nuovo.png" id="20_xxa8k"]
+[ext_resource type="PackedScene" uid="uid://dkfqntuiwig8s" path="res://Scenes/Dialogue/dialogue_area.tscn" id="21_nubk4"]
 [ext_resource type="Texture2D" uid="uid://clnowsqn75i1a" path="res://Assets/sprites/Characters/traingolo_3_nuovo.png" id="22_uvtpi"]
+[ext_resource type="Script" uid="uid://d082swllv5wkl" path="res://Scripts/dialogue/dialogue_export_resource.gd" id="22_yvns6"]
+[ext_resource type="Script" uid="uid://bu54caqonn1bx" path="res://Scripts/dialogue/dialogue_text_resource.gd" id="23_s6jqg"]
 [ext_resource type="PackedScene" uid="uid://7va2it4641m0" path="res://Scenes/Characters/player.tscn" id="23_vsttp"]
+[ext_resource type="Texture2D" uid="uid://wocabbx8scr2" path="res://Assets/sprites/Busti_64triangolopg.png" id="24_2gfww"]
+[ext_resource type="AudioStream" uid="uid://bv3082wp6ro30" path="res://Assets/Sounds/soundtest.wav" id="25_lvm3q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jpjhf"]
 texture = ExtResource("1_eg5m1")
@@ -448,6 +453,89 @@ sources/9 = SubResource("TileSetAtlasSource_1ydfs")
 sources/3 = SubResource("TileSetAtlasSource_1w3v0")
 sources/10 = SubResource("TileSetAtlasSource_7y4il")
 
+[sub_resource type="Resource" id="Resource_jemxp"]
+script = ExtResource("23_s6jqg")
+speaker_img = ExtResource("24_2gfww")
+text = "Non azzardarti a farti trovare qui con noi quando la troveremo…"
+text_speed = 15.0
+text_sound = ExtResource("25_lvm3q")
+text_volume_db = -30
+text_volume_pitch_max = 2.0
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_quacf"]
+script = ExtResource("23_s6jqg")
+speaker_img = ExtResource("24_2gfww")
+text = " sarà nostra…"
+text_speed = 15.0
+text_sound = ExtResource("25_lvm3q")
+text_volume_db = -30
+text_volume_pitch_max = 2.0
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_4gcxp"]
+script = ExtResource("23_s6jqg")
+speaker_img = ExtResource("24_2gfww")
+text = " la conserveremo per i padroni fino al loro arrivo…"
+text_speed = 15.0
+text_sound = ExtResource("25_lvm3q")
+text_volume_db = -30
+text_volume_pitch_max = 2.0
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_qf55o"]
+script = ExtResource("23_s6jqg")
+speaker_img = ExtResource("24_2gfww")
+text = "verremo ripagati del duro lavoro, loro credono in noi e noi ripagheremo la loro fiducia, saremo considerati dai padroni"
+text_speed = 15.0
+text_sound = ExtResource("25_lvm3q")
+text_volume_db = -30
+text_volume_pitch_max = 2.0
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_n0cmh"]
+script = ExtResource("23_s6jqg")
+speaker_img = ExtResource("24_2gfww")
+text = " siano benedetti i quattro lati"
+text_speed = 15.0
+text_sound = ExtResource("25_lvm3q")
+text_volume_db = -30
+text_volume_pitch_max = 2.0
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_ubhw8"]
+script = ExtResource("23_s6jqg")
+speaker_img = ExtResource("24_2gfww")
+text = "lunga vita…"
+text_speed = 15.0
+text_sound = ExtResource("25_lvm3q")
+text_volume_db = -30
+text_volume_pitch_max = 2.0
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_6yhid"]
+script = ExtResource("23_s6jqg")
+speaker_img = ExtResource("24_2gfww")
+text = "lunga vita…"
+text_speed = 15.0
+text_sound = ExtResource("25_lvm3q")
+text_volume_db = -30
+text_volume_pitch_max = 2.0
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_hxpee"]
+script = ExtResource("23_s6jqg")
+speaker_img = ExtResource("24_2gfww")
+text = "lunga vita…"
+text_speed = 15.0
+text_sound = ExtResource("25_lvm3q")
+text_volume_db = -30
+text_volume_pitch_max = 2.0
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qj4ii"]
+size = Vector2(48.571434, 78.75003)
+
 [node name="Test" type="Node2D"]
 
 [node name="Tilemaps" type="Node2D" parent="."]
@@ -492,17 +580,17 @@ interactionType = 2
 scene_index = 4
 
 [node name="NpcSquare4" parent="." instance=ExtResource("13_4gcxp")]
-position = Vector2(1282, 630)
+position = Vector2(1078, 631)
 scale = Vector2(1.2, 1.2)
 npc_texture = ExtResource("14_o8kng")
 
 [node name="NpcSquare5" parent="." instance=ExtResource("13_4gcxp")]
-position = Vector2(1041, 195)
+position = Vector2(1043, 239.00002)
 scale = Vector2(1.2, 1.2)
 npc_texture = ExtResource("15_jsqfa")
 
 [node name="NpcSquare6" parent="." instance=ExtResource("13_4gcxp")]
-position = Vector2(1282, 812)
+position = Vector2(1082, 818)
 scale = Vector2(1.2, 1.2)
 npc_texture = ExtResource("16_jsqfa")
 
@@ -512,9 +600,43 @@ scale = Vector2(1.4, 1.4)
 npc_texture = ExtResource("19_xhnv3")
 highlight_texture = ExtResource("20_gotme")
 
+[node name="DialogueArea2D" parent="NpcTriangle1" instance=ExtResource("21_nubk4")]
+dialogue = Array[ExtResource("22_yvns6")]([SubResource("Resource_jemxp"), SubResource("Resource_quacf"), SubResource("Resource_4gcxp"), SubResource("Resource_qf55o"), SubResource("Resource_n0cmh"), SubResource("Resource_ubhw8"), SubResource("Resource_6yhid"), SubResource("Resource_hxpee")])
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NpcTriangle1/DialogueArea2D"]
+visible = false
+position = Vector2(-1.4285581, -7.8571167)
+scale = Vector2(0.9999994, 0.9999994)
+shape = SubResource("RectangleShape2D_qj4ii")
+
 [node name="Area2D4" parent="NpcTriangle1" instance=ExtResource("12_quacf")]
-position = Vector2(0.71435547, 3.0517578e-05)
-scale = Vector2(0.7142857, 0.7142857)
+position = Vector2(0.71435547, 4.5776367e-05)
+scale = Vector2(0.7142856, 0.7142856)
+
+[node name="Area2D" parent="NpcTriangle1" instance=ExtResource("12_quacf")]
+position = Vector2(413.5714, 87.14286)
+interactionType = 1
+testoPG = "Hmpf"
+
+[node name="Area2D2" parent="NpcTriangle1" instance=ExtResource("12_quacf")]
+position = Vector2(-89.28572, 450)
+interactionType = 1
+testoPG = "<ci tengono al sicuro…>"
+
+[node name="Area2D3" parent="NpcTriangle1" instance=ExtResource("12_quacf")]
+position = Vector2(766.4285, 279.2857)
+interactionType = 1
+testoPG = "<gli hai visti? gli hai visti?>"
+
+[node name="Area2D5" parent="NpcTriangle1" instance=ExtResource("12_quacf")]
+position = Vector2(506.42865, 370.7143)
+interactionType = 1
+testoPG = "Hmpf"
+
+[node name="Area2D6" parent="NpcTriangle1" instance=ExtResource("12_quacf")]
+position = Vector2(445.00003, 487.85715)
+interactionType = 1
+testoPG = "Hmpf"
 
 [node name="NpcTriangle2" parent="." instance=ExtResource("18_y1fty")]
 position = Vector2(1538, 531.99994)

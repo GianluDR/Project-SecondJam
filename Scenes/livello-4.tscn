@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=4 uid="uid://dshs2l2f4g8sg"]
+[gd_scene load_steps=60 format=4 uid="uid://dshs2l2f4g8sg"]
 
 [ext_resource type="Texture2D" uid="uid://cxac0a1g484jy" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Shadow.png" id="1_7j4aj"]
 [ext_resource type="Script" uid="uid://l8uqxqjy8fq6" path="res://Scripts/menu_panel.gd" id="2_3hr1e"]
@@ -18,8 +18,22 @@
 [ext_resource type="Texture2D" uid="uid://jw3adamveo6o" path="res://Assets/sprites/Characters/quadrato_8.png" id="16_vpthm"]
 [ext_resource type="Texture2D" uid="uid://cvftlkhsdxt2g" path="res://Assets/sprites/Characters/quadrato_9.png" id="17_c6tvj"]
 [ext_resource type="Texture2D" uid="uid://dkbgayf42s4id" path="res://Assets/sprites/Characters/quadrato_10.png" id="18_c6tvj"]
+[ext_resource type="Texture2D" uid="uid://bp5gtiumyij3q" path="res://Assets/sprites/Characters/cerchio_di_spalle_1.png" id="20_rhaum"]
 [ext_resource type="PackedScene" uid="uid://jdfekj7o45xw" path="res://Scenes/Characters/npc_cerchio.tscn" id="20_ybsp2"]
+[ext_resource type="Texture2D" uid="uid://b6fdone88pqos" path="res://Assets/sprites/Characters/cerchio_di_spalle_2.png" id="21_uwjof"]
+[ext_resource type="Texture2D" uid="uid://m1w67fqdjneg" path="res://Assets/sprites/Characters/cerchio_di_spalle_3.png" id="22_3ottq"]
 [ext_resource type="PackedScene" uid="uid://7va2it4641m0" path="res://Scenes/Characters/player.tscn" id="22_h2tgb"]
+[ext_resource type="Texture2D" uid="uid://8nn0s7374f28" path="res://Assets/sprites/Characters/cerchio_di_spalle_4.png" id="23_e04cs"]
+[ext_resource type="Texture2D" uid="uid://d0xd4n4jqdq4d" path="res://Assets/sprites/Characters/cerchio_di_spalle_5.png" id="24_j81wk"]
+[ext_resource type="Texture2D" uid="uid://b3ss6j5mfbfo8" path="res://Assets/sprites/Characters/cerchio_di_spalle_6.png" id="25_ctq4e"]
+[ext_resource type="Texture2D" uid="uid://don7c4y4uc24h" path="res://Assets/sprites/Characters_BordoBianco/cerchio_di_spalle_6_bordobianco.png" id="26_j81wk"]
+[ext_resource type="Texture2D" uid="uid://dl0dt4p1jyral" path="res://Assets/sprites/Characters/cerchio_di_spalle_7.png" id="26_qhhhw"]
+[ext_resource type="PackedScene" uid="uid://dkfqntuiwig8s" path="res://Scenes/Dialogue/dialogue_area.tscn" id="27_ctq4e"]
+[ext_resource type="Texture2D" uid="uid://bltjnrm6qdeqr" path="res://Assets/sprites/Characters/cerchio_di_spalle_8.png" id="27_u7iiv"]
+[ext_resource type="Script" uid="uid://d082swllv5wkl" path="res://Scripts/dialogue/dialogue_export_resource.gd" id="28_qhhhw"]
+[ext_resource type="Script" uid="uid://bu54caqonn1bx" path="res://Scripts/dialogue/dialogue_text_resource.gd" id="29_u7iiv"]
+[ext_resource type="Texture2D" uid="uid://br5yq20fd48ju" path="res://Assets/sprites/busto_circle.png" id="30_qhhhw"]
+[ext_resource type="AudioStream" uid="uid://bv3082wp6ro30" path="res://Assets/Sounds/soundtest.wav" id="31_u7iiv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jpjhf"]
 texture = ExtResource("1_7j4aj")
@@ -445,6 +459,67 @@ sources/9 = SubResource("TileSetAtlasSource_1ydfs")
 sources/3 = SubResource("TileSetAtlasSource_1w3v0")
 sources/10 = SubResource("TileSetAtlasSource_c6tvj")
 
+[sub_resource type="Resource" id="Resource_31cty"]
+script = ExtResource("29_u7iiv")
+speaker_img = ExtResource("30_qhhhw")
+text = "Basta… Basta… "
+text_speed = 15.0
+text_sound = ExtResource("31_u7iiv")
+text_volume_db = -30
+text_volume_pitch_max = 1.7
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_flh7p"]
+script = ExtResource("29_u7iiv")
+speaker_img = ExtResource("30_qhhhw")
+text = "Conti i giorni, smetti di contarli"
+text_speed = 15.5
+text_sound = ExtResource("31_u7iiv")
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_p2uih"]
+script = ExtResource("29_u7iiv")
+speaker_img = ExtResource("30_qhhhw")
+text = "odi chi ti controlla, smetti di odiarliodi chi ti controlla, smetti di odiarli"
+text_speed = 15.0
+text_sound = ExtResource("31_u7iiv")
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_8vg31"]
+script = ExtResource("29_u7iiv")
+speaker_img = ExtResource("30_qhhhw")
+text = "è stancante ricordarsi di essere qualcuno ogni giorno"
+text_speed = 15.0
+text_sound = ExtResource("31_u7iiv")
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_xvitk"]
+script = ExtResource("29_u7iiv")
+speaker_img = ExtResource("30_qhhhw")
+text = "ho smesso di provare qualsiasi cosa, ho smesso di voler essere me stesso"
+text_speed = 15.0
+text_sound = ExtResource("31_u7iiv")
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_2c1bv"]
+script = ExtResource("29_u7iiv")
+speaker_img = ExtResource("30_qhhhw")
+text = " se non si è dei quattro lati allora che senso ha la nostra esistenza?"
+text_speed = 15.0
+text_sound = ExtResource("31_u7iiv")
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_ive0b"]
+script = ExtResource("29_u7iiv")
+speaker_img = ExtResource("30_qhhhw")
+text = "..."
+text_speed = 15.0
+text_sound = ExtResource("31_u7iiv")
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h2tgb"]
+size = Vector2(48.571434, 78.75003)
+
 [node name="Test" type="Node2D"]
 
 [node name="Tilemaps" type="Node2D" parent="."]
@@ -472,6 +547,11 @@ script = ExtResource("2_3hr1e")
 position = Vector2(447, 184)
 tile_map_data = PackedByteArray("AAD+/wgABQAAAAEAAAD//wAABQABAAAAAAD//wEABgAAAAAAAAD//wIABgAAAAAAAAD//wgABgAAAAAAAAD//wkABgAAAAAAAAAAAAAABQABAAAAAAAAAAEABgAAAAAAAAAAAAIABgAAAAAAAAAAAAgABgAAAAAAAAAAAAkABgAAAAAAAAABAAAABQABAAAAAAABAAEABgAAAAAAAAABAAIABQABAAEAAAABAAYABgAAAAAAAAABAAcABgAAAAAAAAABAAgABgAAAAAAAAABAAkABgAAAAAAAAACAAAABQABAAAAAAACAAEABgAAAAAAAAACAAYABQAAAAQAAAACAAcABgAAAAAAAAACAAgABgAAAAAAAAACAAkABgAAAAAAAAADAAYABQABAAAAAAADAAcABgAAAAAAAAAFAAcABgAAAAAAAAAFAAgABgAAAAAAAAAFAAkABgAAAAAAAAAGAAcABgAAAAAAAAAGAAgABgAAAAAAAAALAAcABgAAAAAAAAAMAAcABgAAAAAAAAAOAAcABgAAAAAAAAAOAAgACgACAAIAAAAPAAYABQABAAAAAAAPAAcABgAAAAAAAAAPAAgABgAAAAAAAAAPAAkABgAAAAAAAAAQAAcABgAAAAAAAAAQAAgABgAAAAAAAAAQAAkABgAAAAAAAAAPAAoABQABAAIAAAAQAAoABQABAAIAAAARAAYABQACAAAAAAARAAcABQACAAEAAAARAAgABQACAAEAAAARAAkABQACAAEAAAAAAAQABgAAAAAAAAABAAQABgAAAAAAAAACAAQABQAAAAMAAAACAAUABQACAAEAAAABAAUABgAAAAAAAAAAAAUABgAAAAAAAAD9/wAACAACAAYAAAD9/wEACAACAAYAAAD9/wIACAACAAYAAAD9/wMACAACAAYAAAD+////CAACAAYAAAASAAQACAACAAYAAAASAAUACAACAAYAAAASAAYACAACAAYAAAAMAAsACAACAAYAAAALAAsACAACAAYAAAALAAoABQABAAIAAAALAAkABgAAAAAAAAAKAAgABgAAAAAAAAAKAAcABgAAAAAAAAAIAAcABgAAAAAAAAAHAAcABgAAAAAAAAAHAAgABgAAAAAAAAAGAAkABgAAAAAAAAAEAAsACAACAAYAAAADAAsACAACAAYAAAACAAsACAACAAYAAAABAAsACAACAAYAAAAAAAsACAACAAYAAAD//wsACAACAAYAAAD+/wsACAACAAYAAAAJAAcABgAAAAAAAAAJAAgABgAAAAAAAAAIAAgABgAAAAAAAAAKAAkABgAAAAAAAAAKAAoABQABAAIAAAARAAoABQACAAIAAAAHAAkABgAAAAAAAAAEAAgABgAAAAAAAAADAAgABgAAAAAAAAACAAMABgAAAAAAAAAMAAoABQABAAIAAAAMAAkABgAAAAAAAAAOAAoABQABAAIAAAAOAAkABgAAAAAAAAAQAAYABQABAAAAAAALAAgABgAAAAAAAAAMAAgABgAAAAAAAAANAAgABgAAAAAAAAANAAkABgAAAAAAAAANAAoABQABAAIAAAD+/wkABQAAAAEAAAD+/woABQAAAAIAAAD//wMABgAAAAAAAAD//woABQABAAIAAAAAAAMABgAAAAAAAAAAAAoABQABAAIAAAABAAMABgAAAAAAAAABAAoABQABAAIAAAACAAoABQABAAIAAAADAAkABgAAAAAAAAADAAoABQABAAIAAAAEAAkABgAAAAAAAAAEAAoABQABAAIAAAAFAAoABQABAAIAAAANAAcABgAAAAAAAAALAAYABQABAAAAAAAKAAYABQABAAAAAAAJAAYABQABAAAAAAAIAAYABQABAAAAAAAMAAYABQABAAAAAAANAAYABQABAAAAAAAHAAYABQABAAAAAAACAAIABgAAAAAAAAAEAAcABgAAAAAAAAAIAAkABgAAAAAAAAAJAAkABgAAAAAAAAAJAAoABQABAAIAAAAGAAYABQABAAAAAAAFAAYABQABAAAAAAAEAAYABQABAAAAAAAOAAYABQABAAAAAAAAAAcABgAAAAAAAAD//wcABgAAAAAAAAD//wYABgAAAAAAAAAAAAYABgAAAAAAAAD//wUABgAAAAAAAAD//wQABgAAAAAAAAAIAAoABQABAAIAAAAHAAoABQABAAIAAAAGAAoABQABAAIAAAD+/wEABQAAAAEAAAD+/wIABQAAAAEAAAD+/wMABQAAAAEAAAD+/wQABQAAAAEAAAD+/wUABQAAAAEAAAD+/wYABQAAAAEAAAD+/wcABQAAAAEAAAD+/wAABQAAAAAAAAAFAAIACgABAAEAABADAAMABgAAAAAAAAAEAAMABgAAAAAAAAAFAAMABgAAAAAAAAAGAAMABgAAAAAAAAAGAAIABgAAAAAAAAAFAAQABQABAAIAAAAEAAQABQABAAIAAAADAAQABQABAAIAAAAGAAEABgAAAAAAAAAFAAEABgAAAAAAAAAEAAEABgAAAAAAAAADAAEABgAAAAAAAAADAAIABgAAAAAAAAAEAAIABgAAAAAAAAADAAAABQABAAAAAAAEAAAABQABAAAAAAAFAAAABQABAAAAAAAGAAAABQABAAAAAAAGAAQABQABAAIAAAAHAAQABQACAAIAAAAHAAAABQACAAAAAAAHAAEABQACAAEAAAAHAAIABQACAAEAAAAHAAMABQACAAEAAAA=")
 tile_set = SubResource("TileSet_5wyu1")
+
+[node name="Area2D" parent="Tilemaps" instance=ExtResource("12_ctq4e")]
+position = Vector2(707, 420)
+interactionType = 1
+testoPG = "Hmpf"
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
 visible = false
@@ -508,34 +588,53 @@ npc_texture = ExtResource("18_c6tvj")
 [node name="NpcCerchio" parent="." instance=ExtResource("20_ybsp2")]
 position = Vector2(966, 642)
 scale = Vector2(1.2, 1.2)
+npc_texture = ExtResource("20_rhaum")
 
 [node name="NpcCerchio2" parent="." instance=ExtResource("20_ybsp2")]
 position = Vector2(724, 642)
 scale = Vector2(1.2, 1.2)
+npc_texture = ExtResource("21_uwjof")
 
 [node name="NpcCerchio3" parent="." instance=ExtResource("20_ybsp2")]
 position = Vector2(366, 750)
 scale = Vector2(1.2, 1.2)
+npc_texture = ExtResource("22_3ottq")
 
 [node name="NpcCerchio4" parent="." instance=ExtResource("20_ybsp2")]
 position = Vector2(368.00003, 594)
 scale = Vector2(1.2, 1.2)
+npc_texture = ExtResource("23_e04cs")
 
 [node name="NpcCerchio5" parent="." instance=ExtResource("20_ybsp2")]
 position = Vector2(368, 448)
 scale = Vector2(1.2, 1.2)
+npc_texture = ExtResource("24_j81wk")
 
 [node name="NpcCerchio6" parent="." instance=ExtResource("20_ybsp2")]
 position = Vector2(369, 321)
 scale = Vector2(1.2, 1.2)
+npc_texture = ExtResource("25_ctq4e")
+highlight_texture = ExtResource("26_j81wk")
+
+[node name="DialogueArea2D" parent="NpcCerchio6" instance=ExtResource("27_ctq4e")]
+position = Vector2(9.166666, -1.6666666)
+dialogue = Array[ExtResource("28_qhhhw")]([SubResource("Resource_31cty"), SubResource("Resource_flh7p"), SubResource("Resource_p2uih"), SubResource("Resource_8vg31"), SubResource("Resource_xvitk"), SubResource("Resource_2c1bv"), SubResource("Resource_ive0b")])
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NpcCerchio6/DialogueArea2D"]
+visible = false
+position = Vector2(-1.4285581, -7.8571167)
+scale = Vector2(0.9999994, 0.9999994)
+shape = SubResource("RectangleShape2D_h2tgb")
 
 [node name="NpcCerchio7" parent="." instance=ExtResource("20_ybsp2")]
 position = Vector2(512, 254)
 scale = Vector2(1.2, 1.2)
+npc_texture = ExtResource("26_qhhhw")
 
 [node name="NpcCerchio8" parent="." instance=ExtResource("20_ybsp2")]
 position = Vector2(849, 817)
 scale = Vector2(1.2, 1.2)
+npc_texture = ExtResource("27_u7iiv")
 
 [node name="Player" parent="." instance=ExtResource("22_h2tgb")]
 position = Vector2(1254, 725)
@@ -543,3 +642,53 @@ position = Vector2(1254, 725)
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(961, 542)
 zoom = Vector2(1.3, 1.3)
+
+[node name="Area2D" parent="." instance=ExtResource("12_ctq4e")]
+position = Vector2(1154, 803)
+interactionType = 1
+testoPG = "Hmpf"
+
+[node name="Area2D9" parent="." instance=ExtResource("12_ctq4e")]
+position = Vector2(508, 276)
+interactionType = 1
+testoPG = "..."
+
+[node name="Area2D10" parent="." instance=ExtResource("12_ctq4e")]
+position = Vector2(408, 460)
+interactionType = 1
+testoPG = "..."
+
+[node name="Area2D8" parent="." instance=ExtResource("12_ctq4e")]
+position = Vector2(411, 612)
+interactionType = 1
+testoPG = "..."
+
+[node name="Area2D7" parent="." instance=ExtResource("12_ctq4e")]
+position = Vector2(408, 767)
+interactionType = 1
+testoPG = "..."
+
+[node name="Area2D6" parent="." instance=ExtResource("12_ctq4e")]
+position = Vector2(728, 655)
+interactionType = 1
+testoPG = "..."
+
+[node name="Area2D4" parent="." instance=ExtResource("12_ctq4e")]
+position = Vector2(969, 653)
+interactionType = 1
+testoPG = "..."
+
+[node name="Area2D3" parent="." instance=ExtResource("12_ctq4e")]
+position = Vector2(851, 797)
+interactionType = 1
+testoPG = "..."
+
+[node name="Area2D11" parent="." instance=ExtResource("12_ctq4e")]
+position = Vector2(541, 800)
+interactionType = 1
+testoPG = "Hmpf"
+
+[node name="Area2D12" parent="." instance=ExtResource("12_ctq4e")]
+position = Vector2(710, 259)
+interactionType = 1
+testoPG = "Hmpf"

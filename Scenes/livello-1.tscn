@@ -493,7 +493,7 @@ metadata/_custom_type_script = "uid://bu54caqonn1bx"
 [sub_resource type="Resource" id="Resource_lly2k"]
 script = ExtResource("11_6alkw")
 speaker_img = ExtResource("23_1ydfs")
-text = "Vabbè… il mondo è bello perchè è quadrato… wd
+text = "Vabbè… il mondo è bello perchè è quadrato…
 "
 text_speed = 15.0
 text_sound = ExtResource("13_1ydfs")
@@ -533,6 +533,7 @@ tile_map_data = PackedByteArray("AAD+/wAAAgAAAAAAAAD+/wEAAgAAAAEAAAD+/wIAAgAAAAI
 tile_set = SubResource("TileSet_5wyu1")
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+visible = false
 color = Color(0.83889705, 0.83889705, 0.838897, 1)
 energy = 1.2
 blend_mode = 1
@@ -609,4 +610,4 @@ testoPG = "(area = lato al quadrato)"
 [node name="Area2D6" parent="." instance=ExtResource("7_35q4w")]
 position = Vector2(1327, 605)
 interactionType = 1
-testoPG = "sai cosa mangia a colazione un cannibale? Tè e biscotti."
+testoPG = "sai cosa mangia a colazione un cannibale?[br]Tè e biscotti."
