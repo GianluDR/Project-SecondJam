@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=3 uid="uid://dhdej737bnbi7"]
+
+[ext_resource type="Texture2D" uid="uid://bcvya8o2x5t7q" path="res://Assets/sprites/Characters/Terzo_finale_Idle_Animation_front.png" id="1_1bceg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x2set"]
+atlas = ExtResource("1_1bceg")
+region = Rect2(0, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tqgvr"]
+atlas = ExtResource("1_1bceg")
+region = Rect2(64, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kctja"]
+atlas = ExtResource("1_1bceg")
+region = Rect2(128, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4ovb"]
+atlas = ExtResource("1_1bceg")
+region = Rect2(192, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5lu1m"]
+atlas = ExtResource("1_1bceg")
+region = Rect2(256, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_utmpx"]
+atlas = ExtResource("1_1bceg")
+region = Rect2(320, 0, 64, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1jpdf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x2set")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tqgvr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kctja")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x4ovb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5lu1m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_utmpx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="PlayerEvil" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1jpdf")
+autoplay = "default"
+frame_progress = 0.23149781

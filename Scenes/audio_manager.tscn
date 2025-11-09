@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://corw37r5uvyj8"]
+[gd_scene load_steps=12 format=3 uid="uid://bbaxwhy8c8wiu"]
 
 [ext_resource type="Script" uid="uid://cdfsee4bf0j22" path="res://Scripts/audio_manager.gd" id="1_sm2tf"]
 [ext_resource type="AudioStream" uid="uid://cecq7cl7occg" path="res://Assets/Sounds/SFX/GUI/on_hover.wav" id="2_qixve"]
@@ -8,6 +8,9 @@
 [ext_resource type="AudioStream" uid="uid://q87niikw0443" path="res://Assets/Sounds/SFX/fuoco.mp3" id="5_5kf6k"]
 [ext_resource type="AudioStream" uid="uid://bayegahblbsyl" path="res://Assets/Sounds/SFX/soffio.mp3" id="6_5kf6k"]
 [ext_resource type="AudioStream" uid="uid://dr1hoc3il3vpe" path="res://Assets/Sounds/SFX/step.mp3" id="7_tnn7g"]
+[ext_resource type="AudioStream" uid="uid://cw06re8lqiapc" path="res://Assets/Sounds/SFX/slash.ogg" id="8_5nrbi"]
+[ext_resource type="AudioStream" uid="uid://crc4uuyd6w478" path="res://Assets/Sounds/SFX/paperbag.mp3" id="9_pn88s"]
+[ext_resource type="AudioStream" uid="uid://dd0uefrx3h8tb" path="res://Assets/Sounds/SFX/bodyfall.mp3" id="10_fasow"]
 
 [node name="AudioManager" type="Node"]
 script = ExtResource("1_sm2tf")
@@ -40,6 +43,15 @@ pitch_scale = 0.96
 [node name="StepSfx" type="AudioStreamPlayer" parent="Sfx"]
 stream = ExtResource("7_tnn7g")
 bus = &"SFX"
+
+[node name="SlashSfx" type="AudioStreamPlayer" parent="Sfx"]
+stream = ExtResource("8_5nrbi")
+
+[node name="PaperbagSfx" type="AudioStreamPlayer" parent="Sfx"]
+stream = ExtResource("9_pn88s")
+
+[node name="BodyfallSfx" type="AudioStreamPlayer" parent="Sfx"]
+stream = ExtResource("10_fasow")
 
 [node name="Music" type="Node" parent="."]
 

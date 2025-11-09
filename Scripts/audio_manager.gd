@@ -6,3 +6,6 @@ extends Node
 @onready var candela_sfxloop: AudioStreamPlayer = $Sfx/CandelaSfxloop
 @onready var soffio_sfx: AudioStreamPlayer = $Sfx/SoffioSfx
 @onready var step_sfx: AudioStreamPlayer = $Sfx/StepSfx
+@onready var slash_sfx: AudioStreamPlayer = $Sfx/SlashSfx
+@onready var paperbag_sfx: AudioStreamPlayer = $Sfx/PaperbagSfx
+@onready var bodyfall_sfx: AudioStreamPlayer = $Sfx/BodyfallSfx
