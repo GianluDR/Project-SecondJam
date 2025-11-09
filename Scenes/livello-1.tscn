@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=4 uid="uid://bembuapns823c"]
+[gd_scene load_steps=50 format=4 uid="uid://bembuapns823c"]
 
 [ext_resource type="Texture2D" uid="uid://cxac0a1g484jy" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Shadow.png" id="1_bnv5w"]
 [ext_resource type="Script" uid="uid://l8uqxqjy8fq6" path="res://Scripts/menu_panel.gd" id="2_7l75n"]
@@ -20,12 +20,12 @@
 [ext_resource type="Texture2D" uid="uid://cexplvtnq8uwu" path="res://Assets/sprites/sprite_sheet/scale_interrate_caverna.png" id="10_ceqyn"]
 [ext_resource type="Texture2D" uid="uid://ochmbvw1qppw" path="res://Assets/sprites/Characters_BordoBianco/rombo_3_bordobianco.png" id="10_n4v74"]
 [ext_resource type="Script" uid="uid://bu54caqonn1bx" path="res://Scripts/dialogue/dialogue_text_resource.gd" id="11_6alkw"]
-[ext_resource type="Texture2D" uid="uid://cvs8ytedoffh2" path="res://Assets/sprites/redcube.png" id="12_ceqyn"]
 [ext_resource type="AudioStream" uid="uid://bv3082wp6ro30" path="res://Assets/Sounds/soundtest.wav" id="13_1ydfs"]
 [ext_resource type="PackedScene" uid="uid://7va2it4641m0" path="res://Scenes/Characters/player.tscn" id="14_w8l3c"]
 [ext_resource type="Texture2D" uid="uid://gww4q02f65wa" path="res://Assets/sprites/Characters/rombo_2.png" id="15_7l75n"]
 [ext_resource type="Texture2D" uid="uid://y4faflx35sjs" path="res://Assets/sprites/Characters_BordoBianco/rombo_2_bordobianco.png" id="16_u1mpn"]
 [ext_resource type="PackedScene" uid="uid://culf0sotauivt" path="res://Scenes/Characters/npc_square.tscn" id="21_2rses"]
+[ext_resource type="Texture2D" uid="uid://dl68ix80d5870" path="res://Assets/sprites/Busti_64rombopg.png" id="23_1ydfs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jpjhf"]
 texture = ExtResource("1_bnv5w")
@@ -442,20 +442,62 @@ sources/3 = SubResource("TileSetAtlasSource_w8l3c")
 
 [sub_resource type="Resource" id="Resource_7cotb"]
 script = ExtResource("11_6alkw")
-speaker_img = ExtResource("12_ceqyn")
-text = "Ciao, sono il signor Triangolo!"
+speaker_img = ExtResource("23_1ydfs")
+text = "Ciao Circulus, come hai potuto notare siamo tutti “quadrati” qui eh eh eh"
 text_speed = 15.0
 text_sound = ExtResource("13_1ydfs")
-text_volume_db = -15
+text_volume_db = -30
+text_volume_pitch_max = 1.5
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
 [sub_resource type="Resource" id="Resource_55ph6"]
 script = ExtResource("11_6alkw")
-speaker_img = ExtResource("12_ceqyn")
-text = "Qui ha inizio la tua avventura...."
+speaker_img = ExtResource("23_1ydfs")
+text = "io a differenza degli altri però sento che c’è qualcosa di strano… come se mi fossi svegliato con il piede storto… o forse la testa eh eh eh."
 text_speed = 15.0
 text_sound = ExtResource("13_1ydfs")
-text_volume_db = -15
+text_volume_db = -30
+text_volume_pitch_max = 1.5
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_1ydfs"]
+script = ExtResource("11_6alkw")
+speaker_img = ExtResource("23_1ydfs")
+text = "Cerchiamo di fuggire da noi stessi, di reprimere il nostro essere per cercare di somigliare a qualcuno che in realtà non fa altro che screditarci e ridicolizzarci"
+text_speed = 15.0
+text_sound = ExtResource("13_1ydfs")
+text_volume_db = -30
+text_volume_pitch_max = 1.5
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_wef0v"]
+script = ExtResource("11_6alkw")
+speaker_img = ExtResource("23_1ydfs")
+text = "ogni volta che ci guardiamo in faccia è come se mentissimo a noi stessi con lo sguardo"
+text_speed = 15.0
+text_sound = ExtResource("13_1ydfs")
+text_volume_db = -30
+text_volume_pitch_max = 1.5
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_w8l3c"]
+script = ExtResource("11_6alkw")
+speaker_img = ExtResource("23_1ydfs")
+text = "Chi sei quando non sai chi essere?"
+text_speed = 15.0
+text_sound = ExtResource("13_1ydfs")
+text_volume_db = -30
+text_volume_pitch_max = 1.5
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_lly2k"]
+script = ExtResource("11_6alkw")
+speaker_img = ExtResource("23_1ydfs")
+text = "Vabbè… il mondo è bello perchè è quadrato… wd
+"
+text_speed = 15.0
+text_sound = ExtResource("13_1ydfs")
+text_volume_pitch_max = 1.5
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5cwei"]
@@ -474,9 +516,10 @@ rendering_quadrant_size = 64
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 1.0
-offset_right = 1921.0
-offset_bottom = 1082.0
+offset_left = 2.0
+offset_top = 3.0
+offset_right = 1923.0
+offset_bottom = 1084.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
@@ -527,7 +570,7 @@ position = Vector2(1497.9999, 256.00003)
 scale = Vector2(1.4, 1.4)
 
 [node name="DialogueArea2D" parent="NpcRombo1" instance=ExtResource("9_0h6q2")]
-dialogue = Array[ExtResource("10_bwtd0")]([SubResource("Resource_7cotb"), SubResource("Resource_55ph6")])
+dialogue = Array[ExtResource("10_bwtd0")]([SubResource("Resource_7cotb"), SubResource("Resource_55ph6"), SubResource("Resource_1ydfs"), SubResource("Resource_wef0v"), SubResource("Resource_w8l3c"), SubResource("Resource_lly2k")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NpcRombo1/DialogueArea2D"]
 visible = false

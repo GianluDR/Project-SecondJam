@@ -10,8 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://dkfqntuiwig8s" path="res://Scenes/Dialogue/dialogue_area.tscn" id="7_qa0m7"]
 [ext_resource type="Script" uid="uid://d082swllv5wkl" path="res://Scripts/dialogue/dialogue_export_resource.gd" id="8_yxtnq"]
 [ext_resource type="Script" uid="uid://bu54caqonn1bx" path="res://Scripts/dialogue/dialogue_text_resource.gd" id="9_ka3r2"]
-[ext_resource type="Texture2D" uid="uid://cvs8ytedoffh2" path="res://Assets/sprites/redcube.png" id="10_01mhr"]
 [ext_resource type="AudioStream" uid="uid://bv3082wp6ro30" path="res://Assets/Sounds/soundtest.wav" id="11_sk7qh"]
+[ext_resource type="Texture2D" uid="uid://dl68ix80d5870" path="res://Assets/sprites/Busti_64rombopg.png" id="13_ipbmu"]
 [ext_resource type="Script" uid="uid://qf30somm886x" path="res://Scripts/tutorial_area_2d.gd" id="15_ipbmu"]
 [ext_resource type="PackedScene" uid="uid://7va2it4641m0" path="res://Scenes/Characters/player.tscn" id="15_yfuoy"]
 [ext_resource type="PackedScene" uid="uid://k87qm5ukwygx" path="res://Scenes/Interactable/InteractArea.tscn" id="16_rm0hi"]
@@ -348,20 +348,22 @@ sources/1 = SubResource("TileSetAtlasSource_pggu4")
 
 [sub_resource type="Resource" id="Resource_7cotb"]
 script = ExtResource("9_ka3r2")
-speaker_img = ExtResource("10_01mhr")
-text = "Ciao, sono il signor Triangolo!"
+speaker_img = ExtResource("13_ipbmu")
+text = "Ehiii *psss* che ci fai lì"
 text_speed = 15.0
 text_sound = ExtResource("11_sk7qh")
-text_volume_db = -15
+text_volume_db = -20
+text_volume_pitch_max = 1.5
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
 [sub_resource type="Resource" id="Resource_55ph6"]
 script = ExtResource("9_ka3r2")
-speaker_img = ExtResource("10_01mhr")
-text = "Qui ha inizio la tua avventura...."
+speaker_img = ExtResource("13_ipbmu")
+text = "devi tornare nel posto a cui appartieni, sbrigati a scendere."
 text_speed = 15.0
 text_sound = ExtResource("11_sk7qh")
-text_volume_db = -15
+text_volume_db = -20
+text_volume_pitch_max = 1.5
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5cwei"]
