@@ -1,11 +1,11 @@
-[gd_scene load_steps=34 format=4 uid="uid://dypvaultx7nlq"]
+[gd_scene load_steps=34 format=4 uid="uid://gicqkl8wq736"]
 
 [ext_resource type="Script" uid="uid://l8uqxqjy8fq6" path="res://Scripts/menu_panel.gd" id="1_4f1n4"]
 [ext_resource type="Texture2D" uid="uid://bs4qt724a5oe5" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="1_w2rtb"]
 [ext_resource type="Texture2D" uid="uid://djub65ssuic3p" path="res://Assets/sprites/tileset.png" id="2_gprc5"]
 [ext_resource type="Texture2D" uid="uid://bgau2aqvo8ho7" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Plain.png" id="3_ss66i"]
 [ext_resource type="Texture2D" uid="uid://cxac0a1g484jy" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Shadow.png" id="4_pn8ks"]
-[ext_resource type="PackedScene" uid="uid://d16ntihuhttq4" path="res://Scenes/Characters/npc_triangle.tscn" id="5_pn8ks"]
+[ext_resource type="PackedScene" path="res://Scenes/Characters/npc_triangle.tscn" id="5_pn8ks"]
 [ext_resource type="PackedScene" uid="uid://7va2it4641m0" path="res://Scenes/Characters/player.tscn" id="6_kmlea"]
 [ext_resource type="PackedScene" uid="uid://dkfqntuiwig8s" path="res://Scenes/Dialogue/dialogue_area.tscn" id="7_0tayc"]
 [ext_resource type="PackedScene" uid="uid://k87qm5ukwygx" path="res://Scenes/Interactable/InteractArea.tscn" id="7_o36yp"]
@@ -17,7 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://culf0sotauivt" path="res://Scenes/Characters/npc_square.tscn" id="14_ibxpi"]
 [ext_resource type="Texture2D" uid="uid://b6n7i764slo5o" path="res://Assets/sprites/Characters/quadrato_3.png" id="15_jpjhf"]
 [ext_resource type="Texture2D" uid="uid://cwv4iwc5vkpwp" path="res://Assets/sprites/Characters_BordoBianco/quadrato_3_bordobianco.png" id="16_4f1n4"]
-[ext_resource type="PackedScene" uid="uid://b0252fryees5t" path="res://Scenes/Characters/npc_pentagono.tscn" id="18_02eho"]
+[ext_resource type="PackedScene" path="res://Scenes/Characters/npc_pentagono.tscn" id="18_02eho"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jpjhf"]
 texture = ExtResource("4_pn8ks")

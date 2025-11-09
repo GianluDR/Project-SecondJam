@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 AudioManager="*res://Scenes/audio_manager.tscn"
 PauseMenu="*res://Scenes/UI/pause_menu.tscn"
+ConfirmMenu="*res://Scenes/UI/confirm_menu.tscn"
 
 [display]
 

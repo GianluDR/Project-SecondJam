@@ -24,6 +24,7 @@ func _ready():
 
 	
 
+var conferma= false 
 
 func _unhandled_input(event): #QUI IL TRIGGER CON L'INPUT ("pause") CHE SAREBBE ESC
 	if event.is_action_pressed("pause") and not pause_locked:

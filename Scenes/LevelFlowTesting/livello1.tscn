@@ -1,15 +1,14 @@
-[gd_scene load_steps=27 format=4 uid="uid://c7wba2ke1axrd"]
+[gd_scene load_steps=28 format=4 uid="uid://c7wba2ke1axrd"]
 
 [ext_resource type="Texture2D" uid="uid://bs4qt724a5oe5" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="1_62sqh"]
 [ext_resource type="Texture2D" uid="uid://djub65ssuic3p" path="res://Assets/sprites/tileset.png" id="2_fojqm"]
 [ext_resource type="Texture2D" uid="uid://bgau2aqvo8ho7" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Plain.png" id="3_sm3mq"]
 [ext_resource type="Texture2D" uid="uid://cxac0a1g484jy" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Shadow.png" id="4_do1ha"]
-[ext_resource type="PackedScene" uid="uid://d16ntihuhttq4" path="res://Scenes/Characters/npc_triangle.tscn" id="5_ty8qs"]
+[ext_resource type="PackedScene" path="res://Scenes/Characters/npc_triangle.tscn" id="5_ty8qs"]
 [ext_resource type="PackedScene" uid="uid://dkfqntuiwig8s" path="res://Scenes/Dialogue/dialogue_area.tscn" id="6_c3q20"]
 [ext_resource type="Script" uid="uid://d082swllv5wkl" path="res://Scripts/dialogue/dialogue_export_resource.gd" id="7_mg4r5"]
 [ext_resource type="Script" uid="uid://bu54caqonn1bx" path="res://Scripts/dialogue/dialogue_text_resource.gd" id="8_pnnhg"]
 [ext_resource type="Texture2D" uid="uid://cvs8ytedoffh2" path="res://Assets/sprites/redcube.png" id="9_qodau"]
-[ext_resource type="AudioStream" uid="uid://bv3082wp6ro30" path="res://Assets/Sounds/soundtest.wav" id="10_r8m1e"]
 [ext_resource type="PackedScene" uid="uid://7va2it4641m0" path="res://Scenes/Characters/player.tscn" id="11_cs1qk"]
 [ext_resource type="PackedScene" uid="uid://k87qm5ukwygx" path="res://Scenes/Interactable/InteractArea.tscn" id="12_vu26h"]
 [ext_resource type="PackedScene" uid="uid://bclsslqc0cflw" path="res://Scenes/Characters/npc_rombo.tscn" id="13_2rc1t"]
@@ -171,21 +170,27 @@ sources/4 = SubResource("TileSetAtlasSource_w2rtb")
 sources/7 = SubResource("TileSetAtlasSource_y21wc")
 sources/8 = SubResource("TileSetAtlasSource_iojje")
 
+[sub_resource type="Resource" id="Resource_2rsb5"]
+metadata/__load_path__ = "res://Assets/Sounds/soundtest.wav"
+
 [sub_resource type="Resource" id="Resource_7cotb"]
 script = ExtResource("8_pnnhg")
 speaker_img = ExtResource("9_qodau")
 text = "Ciao, sono il signor Triangolo!"
 text_speed = 15.0
-text_sound = ExtResource("10_r8m1e")
+text_sound = SubResource("Resource_2rsb5")
 text_volume_db = -15
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_62sqh"]
+metadata/__load_path__ = "res://Assets/Sounds/soundtest.wav"
 
 [sub_resource type="Resource" id="Resource_55ph6"]
 script = ExtResource("8_pnnhg")
 speaker_img = ExtResource("9_qodau")
 text = "Qui ha inizio la tua avventura...."
 text_speed = 15.0
-text_sound = ExtResource("10_r8m1e")
+text_sound = SubResource("Resource_62sqh")
 text_volume_db = -15
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
@@ -210,6 +215,11 @@ tile_set = SubResource("TileSet_qc4db")
 position = Vector2(-17, 3)
 tile_map_data = PackedByteArray("AAAFAAMACAABAAEAAAAFAAQACAABAAEAAAAEAAQACAABAAEAAAADAAQACAABAAEAAAADAAMACAABAAEAAAAEAAMACAABAAEAAAAFAAIACAABAAEAAAABAAEACAABAAEAAAABAAIACAABAAEAAAABAAMACAABAAEAAAABAAQACAABAAEAAAABAAUACAABAAEAAAABAAYACAABAAEAAAACAAEACAABAAEAAAACAAIACAABAAEAAAACAAMACAABAAEAAAACAAQACAABAAEAAAACAAUACAABAAEAAAACAAYACAABAAEAAAADAAEACAABAAEAAAADAAIACAABAAEAAAADAAUACAABAAEAAAADAAYACAABAAEAAAAEAAEACAABAAEAAAAEAAIACAABAAEAAAAEAAUACAABAAEAAAAEAAYACAABAAEAAAAFAAEACAABAAEAAAAFAAUACAABAAEAAAAFAAYACAABAAEAAAAGAAEACAABAAEAAAAGAAIACAABAAEAAAAGAAMACAABAAEAAAAGAAQACAABAAEAAAAGAAUACAABAAEAAAAGAAYACAABAAEAAAAHAAEACAABAAEAAAAHAAIACAABAAEAAAAHAAMACAABAAEAAAAHAAQACAABAAEAAAAHAAUACAABAAEAAAAHAAYACAABAAEAAAAIAAEABwACAAYAAAAIAAIABwACAAYAAAAIAAMACAABAAEAAAAIAAQACAABAAEAAAAIAAUACAABAAEAAAAIAAYACAABAAEAAAAJAAEACAABAAEAAAAJAAIACAABAAEAAAAJAAMACAABAAEAAAAJAAQACAABAAEAAAAJAAUACAABAAEAAAAJAAYACAABAAEAAAAKAAEACAABAAEAAAAKAAIACAABAAEAAAAKAAMACAABAAEAAAAKAAQACAABAAEAAAAKAAUACAABAAEAAAAKAAYACAABAAEAAAALAAEACAABAAEAAAALAAIACAABAAEAAAALAAMACAABAAEAAAALAAQACAABAAEAAAALAAUACAABAAEAAAALAAYACAABAAEAAAAAAAAABwABAAEAAAAAAAEABwABAAEAAAAAAAIABwABAAEAAAAAAAMABwABAAEAAAAAAAQABwABAAEAAAAAAAUABwABAAEAAAAAAAYABwABAAEAAAAAAAcABwABAAEAAAABAAcABwABAAEAAAACAAcABwABAAEAAAADAAcABwABAAEAAAAEAAcABwABAAEAAAAFAAcABwABAAEAAAAGAAcABwABAAEAAAAHAAcABwABAAEAAAAIAAcABwABAAEAAAAJAAcABwABAAEAAAAKAAcABwABAAEAAAALAAcABwABAAEAAAAMAAcABwABAAEAAAAMAAYABwABAAEAAAAMAAUABwABAAEAAAAMAAQABwABAAEAAAAMAAMABwABAAEAAAAMAAIABwABAAEAAAAMAAEABwABAAEAAAAMAAAABwABAAEAAAALAAAABwABAAEAAAAKAAAABwABAAEAAAAJAAAABwABAAEAAAAIAAAABwABAAEAAAAHAAAABwABAAEAAAAGAAAABwABAAEAAAAFAAAABwABAAEAAAAEAAAABwABAAEAAAADAAAABwABAAEAAAACAAAABwABAAEAAAABAAAABwABAAEAAAA=")
 tile_set = SubResource("TileSet_5wyu1")
+
+[node name="Area2D" parent="Tilemaps" instance=ExtResource("12_vu26h")]
+position = Vector2(151, 139)
+scale = Vector2(5.6400013, 8.4)
+interactionType = 3
 
 [node name="NpcTriangle" parent="." instance=ExtResource("5_ty8qs")]
 position = Vector2(598, 171)
