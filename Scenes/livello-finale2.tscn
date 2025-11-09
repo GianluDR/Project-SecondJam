@@ -497,8 +497,10 @@ scale = Vector2(65.72859, 35.427628)
 color = Color(0.6402972, 0.6402972, 0.6402971, 1)
 
 [node name="Label" type="Label" parent="Fade_White"]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 905.0
+offset_top = 633.0
+offset_right = 945.0
+offset_bottom = 675.0
 label_settings = SubResource("LabelSettings_fkajl")
 
 [node name="NpcContainer" type="Node" parent="."]
