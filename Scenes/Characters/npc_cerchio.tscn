@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://jdfekj7o45xw"]
+
+[ext_resource type="Script" uid="uid://dj7rsoabju6cd" path="res://Scenes/Characters/npc.gd" id="1_288uq"]
+[ext_resource type="Texture2D" uid="uid://btslmsyi153d3" path="res://Assets/sprites/ombra_personaggio.png" id="2_4ct7p"]
+[ext_resource type="Texture2D" uid="uid://bp5gtiumyij3q" path="res://Assets/sprites/Characters/cerchio_di_spalle_1.png" id="3_288uq"]
+[ext_resource type="Texture2D" uid="uid://dnupr6ipyjvlx" path="res://Assets/sprites/Characters_BordoBianco/rombo_1_bordobianco.png" id="4_ajlka"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r0hsv"]
+size = Vector2(37, 81)
+
+[node name="NpcCerchio" type="CharacterBody2D"]
+script = ExtResource("1_288uq")
+
+[node name="Ombra" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.65882355)
+position = Vector2(-2, 0.99999976)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_4ct7p")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_288uq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -7.5)
+shape = SubResource("RectangleShape2D_r0hsv")
+
+[node name="Sprite2D_Highlight" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("4_ajlka")

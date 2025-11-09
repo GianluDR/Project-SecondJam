@@ -1,31 +1,28 @@
-[gd_scene load_steps=40 format=4 uid="uid://bmhs2ch1ai225"]
+[gd_scene load_steps=38 format=4 uid="uid://dshs2l2f4g8sg"]
 
-[ext_resource type="Texture2D" uid="uid://cxac0a1g484jy" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Shadow.png" id="1_k6fuu"]
-[ext_resource type="Script" uid="uid://l8uqxqjy8fq6" path="res://Scripts/menu_panel.gd" id="2_kji8q"]
-[ext_resource type="Texture2D" uid="uid://djub65ssuic3p" path="res://Assets/sprites/tileset.png" id="3_1flts"]
-[ext_resource type="Texture2D" uid="uid://bd510yyqt5xmc" path="res://Assets/sprites/scale.png" id="4_ttkvf"]
-[ext_resource type="Texture2D" uid="uid://buo8ryfnxdmo3" path="res://Assets/sprites/sprite_sheet/Tiles_caverna-sheet.png" id="5_0oo3t"]
-[ext_resource type="Texture2D" uid="uid://dp5rbqv5mkn03" path="res://Assets/sprites/sprite_sheet/scale_interrate_ed_esterne_caverna-sheet.png" id="6_23tx4"]
-[ext_resource type="Texture2D" uid="uid://bs4qt724a5oe5" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="6_r61a1"]
-[ext_resource type="Texture2D" uid="uid://bxogdh5wimye0" path="res://Assets/sprites/sprite_sheet/Tiles_viscerale-sheet.png" id="7_cl30r"]
-[ext_resource type="Texture2D" uid="uid://ccmeojee4kaou" path="res://Assets/sprites/sprite_sheet/pavimento_dio_porco.png" id="8_lpyxo"]
-[ext_resource type="Texture2D" uid="uid://bgau2aqvo8ho7" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Plain.png" id="9_ox1l1"]
-[ext_resource type="Texture2D" uid="uid://cexplvtnq8uwu" path="res://Assets/sprites/sprite_sheet/scale_interrate_caverna.png" id="10_0k88u"]
-[ext_resource type="PackedScene" uid="uid://k87qm5ukwygx" path="res://Scenes/Interactable/InteractArea.tscn" id="11_hydej"]
-[ext_resource type="Texture2D" uid="uid://xelc3kmxderr" path="res://Assets/sprites/Characters/quadrato_2.png" id="14_5sr52"]
-[ext_resource type="PackedScene" uid="uid://b0252fryees5t" path="res://Scenes/Characters/npc_pentagono.tscn" id="14_q88cr"]
-[ext_resource type="Texture2D" uid="uid://b6n7i764slo5o" path="res://Assets/sprites/Characters/quadrato_3.png" id="15_fskgn"]
-[ext_resource type="Texture2D" uid="uid://dotgeehmcfoj6" path="res://Assets/sprites/Characters/pentagono_2.png" id="16_1w3v0"]
-[ext_resource type="Texture2D" uid="uid://bou6qihq2na1c" path="res://Assets/sprites/Characters/pentagono_1.png" id="17_6ux3g"]
-[ext_resource type="Texture2D" uid="uid://2qjta45pyhj5" path="res://Assets/sprites/Characters/pentagono_4_png.png" id="17_32ewt"]
-[ext_resource type="Texture2D" uid="uid://b18ydyb1b21jc" path="res://Assets/sprites/Characters/pentagono_3.png" id="17_66vvc"]
-[ext_resource type="Texture2D" uid="uid://brlf0wu2edfws" path="res://Assets/sprites/Characters_BordoBianco/pentagono_1_bordobianco.png" id="18_oywym"]
-[ext_resource type="Texture2D" uid="uid://l1sebsif881x" path="res://Assets/sprites/Characters/pentagono_5.png" id="18_rw3ar"]
-[ext_resource type="PackedScene" uid="uid://culf0sotauivt" path="res://Scenes/Characters/npc_square.tscn" id="24_eopi5"]
-[ext_resource type="PackedScene" uid="uid://7va2it4641m0" path="res://Scenes/Characters/player.tscn" id="25_wtb5w"]
+[ext_resource type="Texture2D" uid="uid://cxac0a1g484jy" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Shadow.png" id="1_7j4aj"]
+[ext_resource type="Script" uid="uid://l8uqxqjy8fq6" path="res://Scripts/menu_panel.gd" id="2_3hr1e"]
+[ext_resource type="Texture2D" uid="uid://djub65ssuic3p" path="res://Assets/sprites/tileset.png" id="3_c6tvj"]
+[ext_resource type="Texture2D" uid="uid://bd510yyqt5xmc" path="res://Assets/sprites/scale.png" id="4_vpthm"]
+[ext_resource type="Texture2D" uid="uid://bln16tbohkv6l" path="res://Assets/sprites/sprite_sheet/Scale_gay_sopra_e_sotto.png" id="5_3hr1e"]
+[ext_resource type="Texture2D" uid="uid://buo8ryfnxdmo3" path="res://Assets/sprites/sprite_sheet/Tiles_caverna-sheet.png" id="5_7n7lj"]
+[ext_resource type="Texture2D" uid="uid://dp5rbqv5mkn03" path="res://Assets/sprites/sprite_sheet/scale_interrate_ed_esterne_caverna-sheet.png" id="6_wpqw0"]
+[ext_resource type="Texture2D" uid="uid://bs4qt724a5oe5" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="7_rhaum"]
+[ext_resource type="Texture2D" uid="uid://bxogdh5wimye0" path="res://Assets/sprites/sprite_sheet/Tiles_viscerale-sheet.png" id="8_uwjof"]
+[ext_resource type="Texture2D" uid="uid://ccmeojee4kaou" path="res://Assets/sprites/sprite_sheet/pavimento_dio_porco.png" id="9_3ottq"]
+[ext_resource type="Texture2D" uid="uid://bgau2aqvo8ho7" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Plain.png" id="10_e04cs"]
+[ext_resource type="Texture2D" uid="uid://cexplvtnq8uwu" path="res://Assets/sprites/sprite_sheet/scale_interrate_caverna.png" id="11_j81wk"]
+[ext_resource type="PackedScene" uid="uid://k87qm5ukwygx" path="res://Scenes/Interactable/InteractArea.tscn" id="12_ctq4e"]
+[ext_resource type="PackedScene" uid="uid://culf0sotauivt" path="res://Scenes/Characters/npc_square.tscn" id="13_qhhhw"]
+[ext_resource type="Texture2D" uid="uid://077t4gnbsbho" path="res://Assets/sprites/Characters/quadrato_7.png" id="15_c6tvj"]
+[ext_resource type="Texture2D" uid="uid://jw3adamveo6o" path="res://Assets/sprites/Characters/quadrato_8.png" id="16_vpthm"]
+[ext_resource type="Texture2D" uid="uid://cvftlkhsdxt2g" path="res://Assets/sprites/Characters/quadrato_9.png" id="17_c6tvj"]
+[ext_resource type="Texture2D" uid="uid://dkbgayf42s4id" path="res://Assets/sprites/Characters/quadrato_10.png" id="18_c6tvj"]
+[ext_resource type="PackedScene" uid="uid://jdfekj7o45xw" path="res://Scenes/Characters/npc_cerchio.tscn" id="20_ybsp2"]
+[ext_resource type="PackedScene" uid="uid://7va2it4641m0" path="res://Scenes/Characters/player.tscn" id="22_h2tgb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jpjhf"]
-texture = ExtResource("1_k6fuu")
+texture = ExtResource("1_7j4aj")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 1:0/0 = 0
@@ -102,17 +99,27 @@ texture = SubResource("NoiseTexture2D_o14dv")
 modulate_color = Color(0.08, 0.0784, 0.079626665, 1)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_35xla"]
-texture = ExtResource("3_1flts")
+texture = ExtResource("3_c6tvj")
 4:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pggu4"]
-texture = ExtResource("4_ttkvf")
+texture = ExtResource("4_vpthm")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c6tvj"]
+texture = ExtResource("5_3hr1e")
+texture_region_size = Vector2i(64, 64)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, 24, 20, 16, 32, 16, 32, 32, -4, 32)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bwtd0"]
-texture = ExtResource("5_0oo3t")
+texture = ExtResource("5_7n7lj")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, -16, -16, -16, -16, 32, -32, 32)
@@ -141,7 +148,7 @@ texture_region_size = Vector2i(64, 64)
 1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, -16, -32, -16, -16, -32, -16)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1w3v0"]
-texture = ExtResource("6_23tx4")
+texture = ExtResource("6_wpqw0")
 texture_region_size = Vector2i(64, 64)
 1:1/0 = 0
 1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
@@ -151,14 +158,14 @@ texture_region_size = Vector2i(64, 64)
 2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w2rtb"]
-texture = ExtResource("6_r61a1")
+texture = ExtResource("7_rhaum")
 0:0/0 = 0
 0:0/0/terrain_set = 0
 0:0/0/terrain = 1
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 5.5, -8, -8, -8, 8, 8, 8, 8, -8, -8, -8, 8, -8, -8, -8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6alkw"]
-texture = ExtResource("7_cl30r")
+texture = ExtResource("8_uwjof")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, -16, -16, -16, -16, 32, -32, 32)
@@ -187,12 +194,12 @@ texture_region_size = Vector2i(64, 64)
 1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -16, -32, -32, -16, -32, -16, -16)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ceqyn"]
-texture = ExtResource("8_lpyxo")
+texture = ExtResource("9_3ottq")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y21wc"]
-texture = ExtResource("9_ox1l1")
+texture = ExtResource("10_e04cs")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
@@ -301,7 +308,7 @@ texture_region_size = Vector2i(64, 64)
 7:6/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iojje"]
-texture = ExtResource("1_k6fuu")
+texture = ExtResource("1_7j4aj")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
@@ -413,7 +420,7 @@ texture_region_size = Vector2i(64, 64)
 7:6/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1ydfs"]
-texture = ExtResource("10_0k88u")
+texture = ExtResource("11_j81wk")
 texture_region_size = Vector2i(64, 64)
 1:1/0 = 0
 1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, 32, -32, -32, 32, -32, 32, 32)
@@ -436,6 +443,7 @@ sources/5 = SubResource("TileSetAtlasSource_6alkw")
 sources/6 = SubResource("TileSetAtlasSource_ceqyn")
 sources/9 = SubResource("TileSetAtlasSource_1ydfs")
 sources/3 = SubResource("TileSetAtlasSource_1w3v0")
+sources/10 = SubResource("TileSetAtlasSource_c6tvj")
 
 [node name="Test" type="Node2D"]
 
@@ -458,11 +466,11 @@ grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("StyleBoxTexture_r23sa")
-script = ExtResource("2_kji8q")
+script = ExtResource("2_3hr1e")
 
 [node name="terrain" type="TileMapLayer" parent="Tilemaps"]
 position = Vector2(447, 184)
-tile_map_data = PackedByteArray("AAD+/wAAAgAAAAAAAAD+/wEAAgAAAAEAAAD+/wIAAgAAAAIAAAD+/wgAAgABAAIAAAD//wAAAgABAAAAAAD//wEAAgABAAEAAAD//wIAAgABAAIAAAD//wcAAgABAAEAAAD//wgAAgABAAMAAAD//wkAAgAAAAIAAAAAAAAAAgABAAAAAAAAAAEAAgABAAEAAAAAAAIAAgABAAIAAAAAAAcAAgABAAEAAAAAAAgAAgABAAEAAAAAAAkAAgABAAIAAAABAAAAAgABAAAAAAABAAEAAgABAAEAAAABAAIAAgABAAIAAAABAAYAAgABAAEAAAABAAcAAgABAAEAAAABAAgAAgABAAEAAAABAAkAAgABAAIAAAACAAAAAgABAAAAAAACAAEAAgABAAEAAAACAAYAAgABAAEAAAACAAcAAgABAAEAAAACAAgAAgAAAAMAAAACAAkAAgACAAIAAAADAAAAAgACAAAAAAADAAEAAgAAAAQAAAADAAUAAgABAAEAAAADAAYAAgABAAEAAAADAAcAAgABAAEAAAAEAAEAAgACAAAAAAAEAAIAAgACAAEAAAAEAAMAAgACAAEAAAAEAAQAAgAAAAQAAAAEAAUAAgABAAEAAAAEAAYAAgABAAEAAAAFAAQAAgACAAAAAAAFAAUAAgAAAAQAAAAFAAYAAgABAAEAAAAFAAcAAgABAAEAAAAFAAgAAgABAAMAAAAFAAkAAgAAAAIAAAAGAAUAAgABAAAAAAAGAAYAAgABAAEAAAAGAAcAAgABAAEAAAAGAAgAAgABAAEAAAAHAAMAAgAAAAAAAAAHAAQAAgAAAAEAAAAHAAUAAgABAAQAAAAHAAYAAgABAAEAAAAIAAIAAgAAAAAAAAAIAAMAAgABAAQAAAAIAAQAAgABAAEAAAAIAAUAAgABAAEAAAAJAAIAAgABAAAAAAAJAAMAAgABAAEAAAAJAAQAAgAAAAMAAAAJAAUAAgAAAAQAAAAKAAEAAgAAAAAAAAAKAAIAAgABAAQAAAAKAAMAAgAAAAMAAAALAAAAAgAAAAAAAAALAAEAAgABAAQAAAALAAIAAgABAAEAAAALAAYAAgABAAEAAAALAAcAAgABAAIAAAAMAAAAAgABAAAAAAAMAAEAAgABAAEAAAAMAAIAAgABAAEAAAAMAAUAAgABAAQAAAAMAAYAAgAAAAMAAAAMAAcAAgACAAIAAAANAAEAAgABAAEAAAANAAIAAgABAAEAAAANAAMAAgABAAMAAAANAAUAAgABAAEAAAANAAYAAgABAAIAAAAOAAEAAgABAAEAAAAOAAIAAgABAAEAAAAOAAMAAgABAAEAAAAOAAUAAgABAAEAAAAOAAYAAgABAAMAAAAOAAcAAgAAAAEAAAAOAAgAAgAAAAEAAAAPAAEAAgABAAEAAAAPAAIAAgABAAEAAAAPAAMAAgAAAAMAAAAPAAUAAgACAAEAAAAPAAYAAgAAAAQAAAAPAAcAAgABAAEAAAAPAAgAAgABAAEAAAAPAAkAAgABAAEAAAAQAAIAAgABAAEAAAAQAAcAAgABAAEAAAAQAAgAAgABAAEAAAAQAAkAAgABAAEAAAAPAAoAAgABAAIAAAAQAAoAAgABAAMAAAARAAYAAgACAAAAAAARAAcAAgACAAEAAAARAAgAAgAAAAQAAAARAAkAAgABAAEAAAD+/wcAAgABAAEAAAD+/wYAAgABAAQAAAD+/wUAAgAAAAAAAAD//wQAAgAAAAAAAAAAAAQAAgABAAAAAAABAAQAAgABAAAAAAACAAIAAgABAAMAAAADAAIAAgABAAEAAAADAAMAAgABAAEAAAADAAQAAgABAAEAAAACAAQAAgABAAQAAAACAAUAAgABAAEAAAABAAUAAgABAAEAAAAAAAUAAgABAAEAAAAAAAYAAgABAAEAAAD//wYAAgABAAEAAAD//wUAAgABAAQAAAD9/wgAAgAAAAIAAAD9/wkACAACAAYAAAD9/wAACAACAAYAAAD9/wEACAACAAYAAAD9/wIACAACAAYAAAD9/wMACAACAAYAAAD+////CAACAAYAAAD/////CAACAAYAAAAAAP//CAACAAYAAAABAP//CAACAAYAAAACAP//CAACAAYAAAADAP//CAACAAYAAAAEAP//CAACAAYAAAAFAP//CAACAAYAAAAGAP//CAACAAYAAAAHAP//CAACAAYAAAAIAP//CAACAAYAAAAJAP//CAACAAYAAAAKAP//CAACAAYAAAALAP//CAACAAYAAAAMAP//CAACAAYAAAANAAAAAgABAAAAAAAOAAAAAgABAAAAAAAPAAAAAgABAAAAAAAQAAAAAgABAAAAAAAQAAEAAQAAAAAAABARAAEAAgACAAEAAAARAAIAAgACAAEAAAARAAMAAgACAAIAAAAQAAMAAgABAAIAAAAPAAQAAgACAAEAAAAOAAQAAgABAAEAAAANAAQAAgABAAQAAAASAAQACAACAAYAAAASAAUACAACAAYAAAASAAYACAACAAYAAAASAAcACAACAAYAAAASAAgAAgACAAAAAAASAAkAAgACAAEAAAASAAoAAgACAAEAAAASAAsAAgACAAIAAAARAAsAAgABAAIAAAAQAAsAAgAAAAIAAAAMAAsACAACAAYAAAALAAsACAACAAYAAAALAAoAAgABAAIAAAALAAkAAgABAAQAAAAKAAgAAwACAAEAAAAKAAcAAgABAAIAAAAKAAYAAgABAAEAAAAJAAYAAgABAAEAAAAIAAYAAgABAAEAAAAIAAcAAgABAAEAAAAHAAcAAgABAAEAAAAHAAgAAgABAAEAAAAGAAkAAgABAAMAAAAGAAoAAgAAAAIAAAAEAAsACAACAAYAAAADAAsACAACAAYAAAACAAsACAACAAYAAAABAAsACAACAAYAAAAAAAsACAACAAYAAAD//wsACAACAAYAAAD+/wsACAACAAYAAAD9/woACAACAAYAAAD9/wcAAgAAAAEAAAARAAAAAgACAAAAAAAJAAcAAgAAAAMAAAAJAAgAAgACAAEAAAAIAAgAAgABAAEAAAAIAAkAAgABAAEAAAAHAAoAAgABAAIAAAAJAAkAAgAAAAQAAAAKAAkAAwACAAIAAAAKAAoAAgABAAIAAAAJAAoAAgABAAIAAAAIAAoAAgABAAIAAAARAAoAAgABAAEAAAAHAAkAAgABAAEAAAD9/wYAAgAAAAAAAAAEAAgAAgABAAIAAAADAAgAAgABAAIAAAAEAAcAAgABAAEAAAACAAMAAgAAAAEAAAAMAAoAAgABAAIAAAAMAAkAAgABAAEAAAAOAAoAAgAAAAIAAAAOAAkAAgAAAAEAAAAQAAYAAgABAAAAAAALAAgAAgAAAAAAAAAMAAgAAgABAAAAAAANAAgAAgACAAAAAAANAAkAAgACAAEAAAANAAoAAgACAAIAAAAKAAUAAgABAAAAAAALAAUAAgABAAAAAAAMAAQAAgAAAAAAAAAMAAMAAgABAAIAAAALAAMAAgABAAIAAAAKAAQAAgACAAIAAAA=")
+tile_map_data = PackedByteArray("AAD+/wgABQAAAAEAAAD//wAABQABAAAAAAD//wEABgAAAAAAAAD//wIABgAAAAAAAAD//wgABgAAAAAAAAD//wkABgAAAAAAAAAAAAAABQABAAAAAAAAAAEABgAAAAAAAAAAAAIABgAAAAAAAAAAAAgABgAAAAAAAAAAAAkABgAAAAAAAAABAAAABQABAAAAAAABAAEABgAAAAAAAAABAAIABQABAAEAAAABAAYABgAAAAAAAAABAAcABgAAAAAAAAABAAgABgAAAAAAAAABAAkABgAAAAAAAAACAAAABQABAAAAAAACAAEABgAAAAAAAAACAAYABQAAAAQAAAACAAcABgAAAAAAAAACAAgABgAAAAAAAAACAAkABgAAAAAAAAADAAYABQABAAAAAAADAAcABgAAAAAAAAAFAAcABgAAAAAAAAAFAAgABgAAAAAAAAAFAAkABgAAAAAAAAAGAAcABgAAAAAAAAAGAAgABgAAAAAAAAALAAcABgAAAAAAAAAMAAcABgAAAAAAAAAOAAcABgAAAAAAAAAOAAgACgACAAIAAAAPAAYABQABAAAAAAAPAAcABgAAAAAAAAAPAAgABgAAAAAAAAAPAAkABgAAAAAAAAAQAAcABgAAAAAAAAAQAAgABgAAAAAAAAAQAAkABgAAAAAAAAAPAAoABQABAAIAAAAQAAoABQABAAIAAAARAAYABQACAAAAAAARAAcABQACAAEAAAARAAgABQACAAEAAAARAAkABQACAAEAAAAAAAQABgAAAAAAAAABAAQABgAAAAAAAAACAAQABQAAAAMAAAACAAUABQACAAEAAAABAAUABgAAAAAAAAAAAAUABgAAAAAAAAD9/wAACAACAAYAAAD9/wEACAACAAYAAAD9/wIACAACAAYAAAD9/wMACAACAAYAAAD+////CAACAAYAAAASAAQACAACAAYAAAASAAUACAACAAYAAAASAAYACAACAAYAAAAMAAsACAACAAYAAAALAAsACAACAAYAAAALAAoABQABAAIAAAALAAkABgAAAAAAAAAKAAgABgAAAAAAAAAKAAcABgAAAAAAAAAIAAcABgAAAAAAAAAHAAcABgAAAAAAAAAHAAgABgAAAAAAAAAGAAkABgAAAAAAAAAEAAsACAACAAYAAAADAAsACAACAAYAAAACAAsACAACAAYAAAABAAsACAACAAYAAAAAAAsACAACAAYAAAD//wsACAACAAYAAAD+/wsACAACAAYAAAAJAAcABgAAAAAAAAAJAAgABgAAAAAAAAAIAAgABgAAAAAAAAAKAAkABgAAAAAAAAAKAAoABQABAAIAAAARAAoABQACAAIAAAAHAAkABgAAAAAAAAAEAAgABgAAAAAAAAADAAgABgAAAAAAAAACAAMABgAAAAAAAAAMAAoABQABAAIAAAAMAAkABgAAAAAAAAAOAAoABQABAAIAAAAOAAkABgAAAAAAAAAQAAYABQABAAAAAAALAAgABgAAAAAAAAAMAAgABgAAAAAAAAANAAgABgAAAAAAAAANAAkABgAAAAAAAAANAAoABQABAAIAAAD+/wkABQAAAAEAAAD+/woABQAAAAIAAAD//wMABgAAAAAAAAD//woABQABAAIAAAAAAAMABgAAAAAAAAAAAAoABQABAAIAAAABAAMABgAAAAAAAAABAAoABQABAAIAAAACAAoABQABAAIAAAADAAkABgAAAAAAAAADAAoABQABAAIAAAAEAAkABgAAAAAAAAAEAAoABQABAAIAAAAFAAoABQABAAIAAAANAAcABgAAAAAAAAALAAYABQABAAAAAAAKAAYABQABAAAAAAAJAAYABQABAAAAAAAIAAYABQABAAAAAAAMAAYABQABAAAAAAANAAYABQABAAAAAAAHAAYABQABAAAAAAACAAIABgAAAAAAAAAEAAcABgAAAAAAAAAIAAkABgAAAAAAAAAJAAkABgAAAAAAAAAJAAoABQABAAIAAAAGAAYABQABAAAAAAAFAAYABQABAAAAAAAEAAYABQABAAAAAAAOAAYABQABAAAAAAAAAAcABgAAAAAAAAD//wcABgAAAAAAAAD//wYABgAAAAAAAAAAAAYABgAAAAAAAAD//wUABgAAAAAAAAD//wQABgAAAAAAAAAIAAoABQABAAIAAAAHAAoABQABAAIAAAAGAAoABQABAAIAAAD+/wEABQAAAAEAAAD+/wIABQAAAAEAAAD+/wMABQAAAAEAAAD+/wQABQAAAAEAAAD+/wUABQAAAAEAAAD+/wYABQAAAAEAAAD+/wcABQAAAAEAAAD+/wAABQAAAAAAAAAFAAIACgABAAEAABADAAMABgAAAAAAAAAEAAMABgAAAAAAAAAFAAMABgAAAAAAAAAGAAMABgAAAAAAAAAGAAIABgAAAAAAAAAFAAQABQABAAIAAAAEAAQABQABAAIAAAADAAQABQABAAIAAAAGAAEABgAAAAAAAAAFAAEABgAAAAAAAAAEAAEABgAAAAAAAAADAAEABgAAAAAAAAADAAIABgAAAAAAAAAEAAIABgAAAAAAAAADAAAABQABAAAAAAAEAAAABQABAAAAAAAFAAAABQABAAAAAAAGAAAABQABAAAAAAAGAAQABQABAAIAAAAHAAQABQACAAIAAAAHAAAABQACAAAAAAAHAAEABQACAAEAAAAHAAIABQACAAEAAAAHAAMABQACAAEAAAA=")
 tile_set = SubResource("TileSet_5wyu1")
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
@@ -471,53 +479,66 @@ color = Color(0.83889705, 0.83889705, 0.838897, 1)
 energy = 1.2
 blend_mode = 1
 
-[node name="Area2D2" parent="." instance=ExtResource("11_hydej")]
-position = Vector2(1501, 275)
+[node name="Area2D2" parent="." instance=ExtResource("12_ctq4e")]
+position = Vector2(796, 346)
 
-[node name="Area2D4" parent="." instance=ExtResource("11_hydej")]
-position = Vector2(1118.0001, 790)
+[node name="Area2D5" parent="." instance=ExtResource("12_ctq4e")]
+position = Vector2(1372, 728)
 
-[node name="Area2D5" parent="." instance=ExtResource("11_hydej")]
-position = Vector2(397, 623)
-
-[node name="NpcSquare2" parent="." instance=ExtResource("24_eopi5")]
-position = Vector2(1504, 339)
+[node name="NpcSquare7" parent="." instance=ExtResource("13_qhhhw")]
+position = Vector2(1154, 812)
 scale = Vector2(1.2, 1.2)
-npc_texture = ExtResource("14_5sr52")
+npc_texture = ExtResource("15_c6tvj")
 
-[node name="NpcSquare3" parent="." instance=ExtResource("24_eopi5")]
-position = Vector2(567, 200)
+[node name="NpcSquare8" parent="." instance=ExtResource("13_qhhhw")]
+position = Vector2(705, 425)
 scale = Vector2(1.2, 1.2)
-npc_texture = ExtResource("15_fskgn")
+npc_texture = ExtResource("16_vpthm")
 
-[node name="NpcPentagono1" parent="." instance=ExtResource("14_q88cr")]
-position = Vector2(397, 632)
-scale = Vector2(1.6, 1.6)
-npc_texture = ExtResource("17_6ux3g")
-highlight_texture = ExtResource("18_oywym")
+[node name="NpcSquare9" parent="." instance=ExtResource("13_qhhhw")]
+position = Vector2(707, 230)
+scale = Vector2(1.2, 1.2)
+npc_texture = ExtResource("17_c6tvj")
 
-[node name="NpcPentagono2" parent="." instance=ExtResource("14_q88cr")]
-position = Vector2(430, 211)
-scale = Vector2(1.6, 1.6)
-npc_texture = ExtResource("16_1w3v0")
+[node name="NpcSquare10" parent="." instance=ExtResource("13_qhhhw")]
+position = Vector2(509, 801.00006)
+scale = Vector2(1.2, 1.2)
+npc_texture = ExtResource("18_c6tvj")
 
-[node name="NpcPentagono3" parent="." instance=ExtResource("14_q88cr")]
-position = Vector2(1142, 263)
-scale = Vector2(1.6, 1.6)
-npc_texture = ExtResource("17_66vvc")
+[node name="NpcCerchio" parent="." instance=ExtResource("20_ybsp2")]
+position = Vector2(966, 642)
+scale = Vector2(1.2, 1.2)
 
-[node name="NpcPentagono4" parent="." instance=ExtResource("14_q88cr")]
-position = Vector2(1512, 755)
-scale = Vector2(1.6, 1.6)
-npc_texture = ExtResource("17_32ewt")
+[node name="NpcCerchio2" parent="." instance=ExtResource("20_ybsp2")]
+position = Vector2(724, 642)
+scale = Vector2(1.2, 1.2)
 
-[node name="NpcPentagono5" parent="." instance=ExtResource("14_q88cr")]
-position = Vector2(865, 510)
-scale = Vector2(1.6, 1.6)
-npc_texture = ExtResource("18_rw3ar")
+[node name="NpcCerchio3" parent="." instance=ExtResource("20_ybsp2")]
+position = Vector2(366, 750)
+scale = Vector2(1.2, 1.2)
 
-[node name="Player" parent="." instance=ExtResource("25_wtb5w")]
-position = Vector2(1021, 782)
+[node name="NpcCerchio4" parent="." instance=ExtResource("20_ybsp2")]
+position = Vector2(368.00003, 594)
+scale = Vector2(1.2, 1.2)
+
+[node name="NpcCerchio5" parent="." instance=ExtResource("20_ybsp2")]
+position = Vector2(368, 448)
+scale = Vector2(1.2, 1.2)
+
+[node name="NpcCerchio6" parent="." instance=ExtResource("20_ybsp2")]
+position = Vector2(369, 321)
+scale = Vector2(1.2, 1.2)
+
+[node name="NpcCerchio7" parent="." instance=ExtResource("20_ybsp2")]
+position = Vector2(512, 254)
+scale = Vector2(1.2, 1.2)
+
+[node name="NpcCerchio8" parent="." instance=ExtResource("20_ybsp2")]
+position = Vector2(849, 817)
+scale = Vector2(1.2, 1.2)
+
+[node name="Player" parent="." instance=ExtResource("22_h2tgb")]
+position = Vector2(1254, 725)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(961, 542)
