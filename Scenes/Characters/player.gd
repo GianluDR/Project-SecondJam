@@ -19,8 +19,8 @@ func _physics_process(delta):
 	#print(dist)
 
 	# Calcolo intensità (regola i valori come vuoi)
-	var intensityTextureScale = clamp(2000.0 / dist, 2.5, 8.0)
-	var intensityEnergy = clamp(500.0 / dist, 1.0, 2.0)
+	var intensityTextureScale = clamp(2000.0 / dist, 3.0, 9.0)
+	var intensityEnergy = clamp(500.0 / dist, 1.0, 1.8)
 
 	# Transizione morbida
 	light.energy = lerp(light.energy, intensityEnergy, 0.1)

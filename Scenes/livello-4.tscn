@@ -100,18 +100,18 @@ texture_region_size = Vector2i(64, 64)
 tile_size = Vector2i(64, 64)
 sources/0 = SubResource("TileSetAtlasSource_jpjhf")
 
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_02eho"]
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_qhhhw"]
 seed = 1
-frequency = 0.0024
+frequency = 0.02
 offset = Vector3(0, 0, 0.73)
 fractal_octaves = 10
 
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_o14dv"]
-noise = SubResource("FastNoiseLite_02eho")
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_qhhhw"]
+noise = SubResource("FastNoiseLite_qhhhw")
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r23sa"]
-texture = SubResource("NoiseTexture2D_o14dv")
-modulate_color = Color(0.08, 0.0784, 0.079626665, 1)
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u7iiv"]
+texture = SubResource("NoiseTexture2D_qhhhw")
+modulate_color = Color(0.13077217, 0.13077211, 0.13077211, 1)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_35xla"]
 texture = ExtResource("3_c6tvj")
@@ -473,7 +473,7 @@ metadata/_custom_type_script = "uid://bu54caqonn1bx"
 [sub_resource type="Resource" id="Resource_flh7p"]
 script = ExtResource("29_u7iiv")
 speaker_img = ExtResource("30_qhhhw")
-text = "Conti i giorni, smetti di contarli"
+text = "Conti i giorni, smetti di contarli..."
 text_speed = 15.5
 text_sound = ExtResource("31_u7iiv")
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
@@ -481,7 +481,7 @@ metadata/_custom_type_script = "uid://bu54caqonn1bx"
 [sub_resource type="Resource" id="Resource_p2uih"]
 script = ExtResource("29_u7iiv")
 speaker_img = ExtResource("30_qhhhw")
-text = "odi chi ti controlla, smetti di odiarliodi chi ti controlla, smetti di odiarli"
+text = "Odi chi ti controlla, smetti di odiarli..."
 text_speed = 15.0
 text_sound = ExtResource("31_u7iiv")
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
@@ -489,7 +489,7 @@ metadata/_custom_type_script = "uid://bu54caqonn1bx"
 [sub_resource type="Resource" id="Resource_8vg31"]
 script = ExtResource("29_u7iiv")
 speaker_img = ExtResource("30_qhhhw")
-text = "è stancante ricordarsi di essere qualcuno ogni giorno"
+text = "È stancante ricordarsi di essere qualcuno ogni giorno"
 text_speed = 15.0
 text_sound = ExtResource("31_u7iiv")
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
@@ -497,7 +497,7 @@ metadata/_custom_type_script = "uid://bu54caqonn1bx"
 [sub_resource type="Resource" id="Resource_xvitk"]
 script = ExtResource("29_u7iiv")
 speaker_img = ExtResource("30_qhhhw")
-text = "ho smesso di provare qualsiasi cosa, ho smesso di voler essere me stesso"
+text = "Ho smesso di provare qualsiasi cosa, ho smesso di voler essere me stesso"
 text_speed = 15.0
 text_sound = ExtResource("31_u7iiv")
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
@@ -505,7 +505,7 @@ metadata/_custom_type_script = "uid://bu54caqonn1bx"
 [sub_resource type="Resource" id="Resource_2c1bv"]
 script = ExtResource("29_u7iiv")
 speaker_img = ExtResource("30_qhhhw")
-text = " se non si è dei quattro lati allora che senso ha la nostra esistenza?"
+text = "Se non si è dei quattro lati allora che senso ha la nostra esistenza?"
 text_speed = 15.0
 text_sound = ExtResource("31_u7iiv")
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
@@ -542,7 +542,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_styles/panel = SubResource("StyleBoxTexture_r23sa")
+theme_override_styles/panel = SubResource("StyleBoxTexture_u7iiv")
 script = ExtResource("2_3hr1e")
 
 [node name="terrain" type="TileMapLayer" parent="Tilemaps"]
@@ -556,7 +556,6 @@ interactionType = 1
 testoPG = "Hmpf"
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
-visible = false
 color = Color(0.83889705, 0.83889705, 0.838897, 1)
 energy = 1.2
 blend_mode = 1

@@ -2,7 +2,7 @@ extends NodeState
 
 @export var player: Player
 @export var animated_sprite_2d: AnimatedSprite2D
-@export var speed: int = 50
+@export var speed: int = 100
 
 var step_playing := false  # lock per non sovrapporre passi
 var step_volume_range := Vector2(-3,3)  # in dB
