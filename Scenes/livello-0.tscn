@@ -85,7 +85,6 @@ sources/0 = SubResource("TileSetAtlasSource_jpjhf")
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_02eho"]
 seed = 1
-frequency = 0.0024
 offset = Vector3(0, 0, 0.73)
 fractal_octaves = 10
 
@@ -94,7 +93,7 @@ noise = SubResource("FastNoiseLite_02eho")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r23sa"]
 texture = SubResource("NoiseTexture2D_o14dv")
-modulate_color = Color(0.08, 0.0784, 0.079626665, 1)
+modulate_color = Color(0.13077217, 0.13077211, 0.13077211, 1)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_35xla"]
 texture = ExtResource("3_4wufx")
@@ -391,7 +390,7 @@ sources/3 = SubResource("TileSetAtlasSource_4wufx")
 [sub_resource type="Resource" id="Resource_7cotb"]
 script = ExtResource("9_ka3r2")
 speaker_img = ExtResource("13_ipbmu")
-text = "Ehiii *psss* che ci fai lì"
+text = "Ehiii *psss* che ci fai lì?!"
 text_speed = 15.0
 text_sound = ExtResource("11_sk7qh")
 text_volume_db = -20
@@ -401,7 +400,7 @@ metadata/_custom_type_script = "uid://bu54caqonn1bx"
 [sub_resource type="Resource" id="Resource_55ph6"]
 script = ExtResource("9_ka3r2")
 speaker_img = ExtResource("13_ipbmu")
-text = "devi tornare nel posto a cui appartieni, sbrigati a scendere."
+text = "Devi tornare nel posto a cui appartieni, sbrigati a scendere!"
 text_speed = 15.0
 text_sound = ExtResource("11_sk7qh")
 text_volume_db = -20
