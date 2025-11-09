@@ -463,7 +463,6 @@ tile_set = SubResource("TileSet_5wyu1")
 script = ExtResource("7_pggu4")
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
-visible = false
 color = Color(0.83889705, 0.83889705, 0.838897, 1)
 energy = 1.2
 blend_mode = 1
