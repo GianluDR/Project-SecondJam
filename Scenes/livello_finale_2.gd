@@ -12,7 +12,7 @@ func scelta_stagno():
 	await fade.fade_in(1.5)
 
 	# 2. Mostra il testo finale
-	await fade.show_text("Tutto svanisce nel buio...")
+	await fade.show_text("Non serve conoscere la verità, basta che tutto sembri al suo posto")
 
 	# 3. Attendi un paio di secondi
 	await get_tree().create_timer(10).timeout
@@ -70,7 +70,7 @@ func scelta_verita():
 	for npc in spawned_npcs:
 		npc.queue_free()
 
-	await fade.show_text("Siamo tutti uguali.")
+	await fade.show_text("Non siamo mai stati forme… solo paure che hanno imparato a disegnarsi.")
 	await get_tree().create_timer(10).timeout
 	await fade.hide_text(1.0)
 
@@ -132,7 +132,7 @@ func scelta_trasformazione():
 	npc_evil.queue_free()
 
 	# mostra la scritta
-	await fade.show_text("Non avresti dovuto vedere.", 1.5)
+	await fade.show_text("Lo sappiamo solo io e te :) ", 1.5)
 	await get_tree().create_timer(10).timeout
 
 	var root = get_tree().current_scene

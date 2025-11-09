@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=4 uid="uid://bn3kd7y6v2nhs"]
+[gd_scene load_steps=50 format=4 uid="uid://bn3kd7y6v2nhs"]
 
 [ext_resource type="Script" uid="uid://diehair3ibbf0" path="res://Scenes/livello_finale_2.gd" id="1_uh8j4"]
 [ext_resource type="Texture2D" uid="uid://cxac0a1g484jy" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Shadow.png" id="2_sg1y4"]
@@ -15,13 +15,14 @@
 [ext_resource type="Texture2D" uid="uid://bfttwh7xsw1lw" path="res://Assets/sprites/Characters_BordoBianco/quadrato_1_bordobianco.png" id="12_fi3st"]
 [ext_resource type="Script" uid="uid://d082swllv5wkl" path="res://Scripts/dialogue/dialogue_export_resource.gd" id="13_2ss3u"]
 [ext_resource type="Script" uid="uid://bu54caqonn1bx" path="res://Scripts/dialogue/dialogue_text_resource.gd" id="14_rg1mw"]
-[ext_resource type="Texture2D" uid="uid://cvs8ytedoffh2" path="res://Assets/sprites/redcube.png" id="15_qqqm4"]
+[ext_resource type="Texture2D" uid="uid://dncfor8toiq8x" path="res://Assets/sprites/Busti_64quadratopg.png" id="16_fi3st"]
 [ext_resource type="AudioStream" uid="uid://bv3082wp6ro30" path="res://Assets/Sounds/soundtest.wav" id="16_nlbjn"]
 [ext_resource type="Script" uid="uid://ccrxyewdjtc26" path="res://Scripts/dialogue/dialogue_function_resource.gd" id="17_mdl78"]
 [ext_resource type="Script" uid="uid://u8yk3eqa3l6l" path="res://Scripts/dialogue/dialogue_choice_resource.gd" id="18_ugmb4"]
 [ext_resource type="PackedScene" uid="uid://7va2it4641m0" path="res://Scenes/Characters/player.tscn" id="19_pwl7h"]
 [ext_resource type="Script" uid="uid://df7lssld1owem" path="res://Scenes/fade.gd" id="20_g4oth"]
 [ext_resource type="Script" uid="uid://d2lksjni08uc2" path="res://Scenes/fade_white.gd" id="21_rxm3f"]
+[ext_resource type="FontFile" uid="uid://d1rkf5yux54bf" path="res://Assets/Fonts/PixelifySans-Regular.ttf" id="23_fi3st"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jpjhf"]
 texture = ExtResource("2_sg1y4")
@@ -388,22 +389,64 @@ sources/1 = SubResource("TileSetAtlasSource_pggu4")
 sources/2 = SubResource("TileSetAtlasSource_fi3st")
 sources/3 = SubResource("TileSetAtlasSource_w1dgl")
 
-[sub_resource type="Resource" id="Resource_tui7n"]
+[sub_resource type="Resource" id="Resource_uh8j4"]
 script = ExtResource("14_rg1mw")
-speaker_img = ExtResource("15_qqqm4")
-text = "Sei finalmente dinanzi al termine del tuo viaggio."
+speaker_img = ExtResource("16_fi3st")
+text = "Piccolo Circulus..."
 text_speed = 15.0
 text_sound = ExtResource("16_nlbjn")
-text_volume_db = -15
+text_volume_db = -25
+text_volume_pitch_max = 0.2
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
-[sub_resource type="Resource" id="Resource_pwgfm"]
+[sub_resource type="Resource" id="Resource_w1dgl"]
 script = ExtResource("14_rg1mw")
-speaker_img = ExtResource("15_qqqm4")
-text = "Fai la tua scelta..."
+speaker_img = ExtResource("16_fi3st")
+text = "l’ordine non è una gabbia, è una forma perfetta"
 text_speed = 15.0
 text_sound = ExtResource("16_nlbjn")
-text_volume_db = -15
+text_volume_db = -25
+text_volume_pitch_max = 0.2
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_chudf"]
+script = ExtResource("14_rg1mw")
+speaker_img = ExtResource("16_fi3st")
+text = "e noi… siamo la perfezione."
+text_speed = 15.0
+text_sound = ExtResource("16_nlbjn")
+text_volume_db = -25
+text_volume_pitch_max = 0.2
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_acwhf"]
+script = ExtResource("14_rg1mw")
+speaker_img = ExtResource("16_fi3st")
+text = "Ogni angolo è un pensiero ben definito, ogni lato un confine che ci separa dal delirio."
+text_speed = 15.0
+text_sound = ExtResource("16_nlbjn")
+text_volume_db = -25
+text_volume_pitch_max = 0.2
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_sg1y4"]
+script = ExtResource("14_rg1mw")
+speaker_img = ExtResource("16_fi3st")
+text = "Tu sei il nostro errore, il punto dove l’ordine si piega; noi scegliamo di essere quattro lati, di vivere come quattro lati, di esistere come quattro lati."
+text_speed = 15.0
+text_sound = ExtResource("16_nlbjn")
+text_volume_db = -25
+text_volume_pitch_max = 0.2
+metadata/_custom_type_script = "uid://bu54caqonn1bx"
+
+[sub_resource type="Resource" id="Resource_fi3st"]
+script = ExtResource("14_rg1mw")
+speaker_img = ExtResource("16_fi3st")
+text = "ora a te la scelta, se vuoi sopravvivere serve ADATTARSI"
+text_speed = 15.0
+text_sound = ExtResource("16_nlbjn")
+text_volume_db = -25
+text_volume_pitch_max = 0.2
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
 [sub_resource type="Resource" id="Resource_d0e2s"]
@@ -426,6 +469,8 @@ metadata/_custom_type_script = "uid://ccrxyewdjtc26"
 
 [sub_resource type="Resource" id="Resource_d7lnp"]
 script = ExtResource("18_ugmb4")
+speaker_img = ExtResource("16_fi3st")
+text = "gli spigoli fanno male solo a chi non ne ha…"
 choice_text = Array[String](["Stagno", "Verità", "Trasformazione"])
 choice_function_call = Array[ExtResource("17_mdl78")]([SubResource("Resource_d0e2s"), SubResource("Resource_xtblj"), SubResource("Resource_sbunp")])
 metadata/_custom_type_script = "uid://u8yk3eqa3l6l"
@@ -487,7 +532,7 @@ npc_texture = ExtResource("11_sg1y4")
 highlight_texture = ExtResource("12_fi3st")
 
 [node name="DialogueArea2D" parent="NpcSquare" instance=ExtResource("12_f2lc6")]
-dialogue = Array[ExtResource("13_2ss3u")]([SubResource("Resource_tui7n"), SubResource("Resource_pwgfm"), SubResource("Resource_d7lnp")])
+dialogue = Array[ExtResource("13_2ss3u")]([SubResource("Resource_uh8j4"), SubResource("Resource_w1dgl"), SubResource("Resource_chudf"), SubResource("Resource_acwhf"), SubResource("Resource_sg1y4"), SubResource("Resource_fi3st"), SubResource("Resource_d7lnp")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NpcSquare/DialogueArea2D"]
 position = Vector2(-1.9073486e-06, 9.000002)
@@ -533,10 +578,11 @@ scale = Vector2(65.72859, 35.427628)
 color = Color(0.6402972, 0.6402972, 0.6402971, 1)
 
 [node name="Label" type="Label" parent="Fade_White"]
-offset_left = 905.0
-offset_top = 633.0
-offset_right = 945.0
-offset_bottom = 675.0
+offset_left = 638.0
+offset_top = 485.0
+offset_right = 678.0
+offset_bottom = 527.0
+theme_override_fonts/font = ExtResource("23_fi3st")
 label_settings = SubResource("LabelSettings_fkajl")
 
 [node name="NpcContainer" type="Node" parent="."]
