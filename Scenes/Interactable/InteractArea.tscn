@@ -20,7 +20,7 @@ fill_from = Vector2(0.5, 0.5)
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_qxccg")
 testoPG = "Prova"
-scene_paths = ["res://scenes/livello-0", "res://scenes/livello-1", "res://scenes/livello-2", "res://scenes/livello-3", "res://scenes/livello-4", "res://scenes/livello-5"]
+scene_paths = ["res://Scenes/livello-0.tscn", "res://Scenes/livello-1.tscn", "res://Scenes/livello-2.tscn", "res://Scenes/livello-3.tscn", "res://Scenes/livello-4.tscn", "res://Scenes/livello-5.tscn"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_6evr2")
