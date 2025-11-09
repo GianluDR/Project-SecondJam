@@ -93,18 +93,18 @@ texture_region_size = Vector2i(64, 64)
 tile_size = Vector2i(64, 64)
 sources/0 = SubResource("TileSetAtlasSource_jpjhf")
 
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_02eho"]
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_ttkvf"]
 seed = 1
-frequency = 0.0024
+frequency = 0.02
 offset = Vector3(0, 0, 0.73)
 fractal_octaves = 10
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_o14dv"]
-noise = SubResource("FastNoiseLite_02eho")
+noise = SubResource("FastNoiseLite_ttkvf")
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r23sa"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0oo3t"]
 texture = SubResource("NoiseTexture2D_o14dv")
-modulate_color = Color(0.08, 0.0784, 0.079626665, 1)
+modulate_color = Color(0.13077217, 0.13077211, 0.13077211, 1)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_35xla"]
 texture = ExtResource("3_1flts")
@@ -516,7 +516,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_styles/panel = SubResource("StyleBoxTexture_r23sa")
+theme_override_styles/panel = SubResource("StyleBoxTexture_0oo3t")
 script = ExtResource("2_kji8q")
 
 [node name="terrain" type="TileMapLayer" parent="Tilemaps"]

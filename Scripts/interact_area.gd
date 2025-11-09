@@ -17,7 +17,7 @@ var player_body_in: bool = false
 var player_node: CharacterBody2D = null
 
 func _ready() -> void:
-	if interactionType != 2:
+	if interactionType != 1:
 		add_to_group("Interactable")
 	for i in get_tree().get_nodes_in_group("player"):
 		player_node = i

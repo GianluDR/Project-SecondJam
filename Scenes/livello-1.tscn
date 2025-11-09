@@ -91,18 +91,18 @@ texture_region_size = Vector2i(64, 64)
 tile_size = Vector2i(64, 64)
 sources/0 = SubResource("TileSetAtlasSource_jpjhf")
 
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_02eho"]
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_1ydfs"]
 seed = 1
-frequency = 0.0024
+frequency = 0.02
 offset = Vector3(0, 0, 0.73)
 fractal_octaves = 10
 
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_o14dv"]
-noise = SubResource("FastNoiseLite_02eho")
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_1ydfs"]
+noise = SubResource("FastNoiseLite_1ydfs")
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r23sa"]
-texture = SubResource("NoiseTexture2D_o14dv")
-modulate_color = Color(0.08, 0.0784, 0.079626665, 1)
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w8l3c"]
+texture = SubResource("NoiseTexture2D_1ydfs")
+modulate_color = Color(0.13077217, 0.13077211, 0.13077211, 1)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_35xla"]
 texture = ExtResource("3_u1mpn")
@@ -453,7 +453,7 @@ metadata/_custom_type_script = "uid://bu54caqonn1bx"
 [sub_resource type="Resource" id="Resource_55ph6"]
 script = ExtResource("11_6alkw")
 speaker_img = ExtResource("23_1ydfs")
-text = "io a differenza degli altri però sento che c’è qualcosa di strano… come se mi fossi svegliato con il piede storto… o forse la testa eh eh eh."
+text = "Io a differenza degli altri però sento che c’è qualcosa di strano… come se mi fossi svegliato con il piede storto… o forse la testa eh eh eh"
 text_speed = 15.0
 text_sound = ExtResource("13_1ydfs")
 text_volume_db = -30
@@ -463,7 +463,7 @@ metadata/_custom_type_script = "uid://bu54caqonn1bx"
 [sub_resource type="Resource" id="Resource_1ydfs"]
 script = ExtResource("11_6alkw")
 speaker_img = ExtResource("23_1ydfs")
-text = "Cerchiamo di fuggire da noi stessi, di reprimere il nostro essere per cercare di somigliare a qualcuno che in realtà non fa altro che screditarci e ridicolizzarci"
+text = "Cerchiamo di fuggire da noi stessi, di reprimere il nostro essere per cercare di somigliare a qualcuno che in realtà non fa altro che screditarci e ridicolizzarci."
 text_speed = 15.0
 text_sound = ExtResource("13_1ydfs")
 text_volume_db = -30
@@ -473,7 +473,7 @@ metadata/_custom_type_script = "uid://bu54caqonn1bx"
 [sub_resource type="Resource" id="Resource_wef0v"]
 script = ExtResource("11_6alkw")
 speaker_img = ExtResource("23_1ydfs")
-text = "ogni volta che ci guardiamo in faccia è come se mentissimo a noi stessi con lo sguardo"
+text = "Ogni volta che ci guardiamo in faccia è come se mentissimo a noi stessi con lo sguardo."
 text_speed = 15.0
 text_sound = ExtResource("13_1ydfs")
 text_volume_db = -30
@@ -497,6 +497,7 @@ text = "Vabbè… il mondo è bello perchè è quadrato…
 "
 text_speed = 15.0
 text_sound = ExtResource("13_1ydfs")
+text_volume_db = -30
 text_volume_pitch_max = 1.5
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
@@ -516,15 +517,14 @@ rendering_quadrant_size = 64
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 2.0
-offset_top = 3.0
-offset_right = 1923.0
-offset_bottom = 1084.0
+offset_top = 1.0
+offset_right = 1921.0
+offset_bottom = 1082.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_styles/panel = SubResource("StyleBoxTexture_r23sa")
+theme_override_styles/panel = SubResource("StyleBoxTexture_w8l3c")
 script = ExtResource("2_7l75n")
 
 [node name="terrain" type="TileMapLayer" parent="Tilemaps"]

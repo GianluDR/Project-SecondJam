@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dnupr6ipyjvlx" path="res://Assets/sprites/Characters_BordoBianco/rombo_1_bordobianco.png" id="1_r0hsv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r0hsv"]
-size = Vector2(31, 66)
+size = Vector2(31, 56)
 
 [node name="NpcRombo" type="CharacterBody2D"]
 script = ExtResource("1_k630d")
@@ -21,7 +21,7 @@ texture = ExtResource("1_m5t41")
 texture = ExtResource("1_bgkra")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -4)
+position = Vector2(-0.5, 1)
 shape = SubResource("RectangleShape2D_r0hsv")
 
 [node name="Sprite2D_Highlight" type="Sprite2D" parent="."]
