@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=4 uid="uid://ctg1rtpkjwhjs"]
+[gd_scene load_steps=41 format=4 uid="uid://cfc6ml0tk05wq"]
 
 [ext_resource type="Texture2D" uid="uid://cxac0a1g484jy" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Shadow.png" id="1_eg5m1"]
 [ext_resource type="Script" uid="uid://l8uqxqjy8fq6" path="res://Scripts/menu_panel.gd" id="2_7y4il"]
@@ -484,9 +484,12 @@ blend_mode = 1
 
 [node name="Area2D2" parent="." instance=ExtResource("12_quacf")]
 position = Vector2(1501, 275)
+interactionType = 3
 
 [node name="Area2D5" parent="." instance=ExtResource("12_quacf")]
 position = Vector2(1372, 728)
+interactionType = 2
+scene_index = 4
 
 [node name="NpcSquare4" parent="." instance=ExtResource("13_4gcxp")]
 position = Vector2(1282, 630)

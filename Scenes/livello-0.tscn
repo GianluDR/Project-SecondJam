@@ -449,6 +449,7 @@ tile_set = SubResource("TileSet_5wyu1")
 script = ExtResource("7_pggu4")
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+visible = false
 color = Color(0.83889705, 0.83889705, 0.838897, 1)
 energy = 1.2
 blend_mode = 1
@@ -459,7 +460,8 @@ scale = Vector2(0.25, 0.25)
 
 [node name="StairArea" parent="." instance=ExtResource("16_rm0hi")]
 position = Vector2(416, 282)
-interactionType = 1
+interactionType = 2
+scene_index = 1
 
 [node name="NpcRombo" parent="." instance=ExtResource("17_ftp5k")]
 position = Vector2(1408, 696)

@@ -503,7 +503,7 @@ metadata/_custom_type_script = "uid://bu54caqonn1bx"
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5cwei"]
 size = Vector2(48.571434, 78.75003)
 
-[node name="Test" type="Node2D"]
+[node name="Test2" type="Node2D"]
 
 [node name="Tilemaps" type="Node2D" parent="."]
 
@@ -543,9 +543,12 @@ position = Vector2(1499, 256)
 
 [node name="Area2D3" parent="." instance=ExtResource("7_35q4w")]
 position = Vector2(416.00003, 282)
+interactionType = 3
 
 [node name="Area2D4" parent="." instance=ExtResource("7_35q4w")]
 position = Vector2(1118.0001, 790)
+interactionType = 2
+scene_index = 2
 
 [node name="NpcRombo4" parent="." instance=ExtResource("8_2rses")]
 position = Vector2(1052, 199.00003)
