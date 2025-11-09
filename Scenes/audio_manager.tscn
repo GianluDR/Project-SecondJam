@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://corw37r5uvyj8"]
+[gd_scene load_steps=9 format=3 uid="uid://corw37r5uvyj8"]
 
 [ext_resource type="Script" uid="uid://cdfsee4bf0j22" path="res://Scripts/audio_manager.gd" id="1_sm2tf"]
 [ext_resource type="AudioStream" uid="uid://cecq7cl7occg" path="res://Assets/Sounds/SFX/GUI/on_hover.wav" id="2_qixve"]
@@ -7,6 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://dn14pfd41401v" path="res://Assets/Sounds/Music/menuBg.mp3" id="4_qixve"]
 [ext_resource type="AudioStream" uid="uid://q87niikw0443" path="res://Assets/Sounds/SFX/fuoco.mp3" id="5_5kf6k"]
 [ext_resource type="AudioStream" uid="uid://bayegahblbsyl" path="res://Assets/Sounds/SFX/soffio.mp3" id="6_5kf6k"]
+[ext_resource type="AudioStream" uid="uid://dr1hoc3il3vpe" path="res://Assets/Sounds/SFX/step.mp3" id="7_tnn7g"]
 
 [node name="AudioManager" type="Node"]
 script = ExtResource("1_sm2tf")
@@ -35,6 +36,10 @@ parameters/looping = true
 stream = ExtResource("6_5kf6k")
 volume_db = -6.005
 pitch_scale = 0.96
+
+[node name="StepSfx" type="AudioStreamPlayer" parent="Sfx"]
+stream = ExtResource("7_tnn7g")
+bus = &"SFX"
 
 [node name="Music" type="Node" parent="."]
 
