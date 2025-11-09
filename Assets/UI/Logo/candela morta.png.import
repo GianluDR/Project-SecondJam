@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnw52et3ls4gk"
-path="res://.godot/imported/Sprite-candela.png-910732b6fa81365addf2980e621a5003.ctex"
+uid="uid://u5pvotk2tlmd"
+path="res://.godot/imported/candela morta.png-fb1b5328cf730b5f70d7fb83c68cf00c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UI/Logo/Sprite-candela.png"
-dest_files=["res://.godot/imported/Sprite-candela.png-910732b6fa81365addf2980e621a5003.ctex"]
+source_file="res://Assets/UI/Logo/candela morta.png"
+dest_files=["res://.godot/imported/candela morta.png-fb1b5328cf730b5f70d7fb83c68cf00c.ctex"]
 
 [params]
 

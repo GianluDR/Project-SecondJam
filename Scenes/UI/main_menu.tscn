@@ -1,11 +1,13 @@
-[gd_scene load_steps=18 format=3 uid="uid://ci7tpbjwuxpl5"]
+[gd_scene load_steps=39 format=3 uid="uid://ci7tpbjwuxpl5"]
 
 [ext_resource type="Script" uid="uid://3xruftj3gh1m" path="res://Scripts/main_menu.gd" id="1_u7lva"]
 [ext_resource type="FontFile" uid="uid://4uw73reh3jtr" path="res://Assets/Fonts/PixelifySans-VariableFont_wght.ttf" id="2_i2xx2"]
 [ext_resource type="Script" uid="uid://l8uqxqjy8fq6" path="res://Scripts/menu_panel.gd" id="2_o14dv"]
 [ext_resource type="Script" uid="uid://cq0dr35bf3ghn" path="res://Scripts/btn_outline.gd" id="4_4pqbp"]
-[ext_resource type="Texture2D" uid="uid://dnw52et3ls4gk" path="res://Assets/UI/Logo/Sprite-candela.png" id="4_u7lva"]
 [ext_resource type="PackedScene" uid="uid://ccci65hiwv7wl" path="res://Scenes/Effects/fade.tscn" id="5_mrfpk"]
+[ext_resource type="Texture2D" uid="uid://djwuxn5ftp4fr" path="res://Assets/UI/Logo/Candela_aa.png" id="6_gih0s"]
+[ext_resource type="Texture2D" uid="uid://cyetq6ykwnnti" path="res://Assets/UI/Logo/Candela_off_anim-export.png" id="7_k33u3"]
+[ext_resource type="Texture2D" uid="uid://u5pvotk2tlmd" path="res://Assets/UI/Logo/candela morta.png" id="7_lrjdf"]
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_i2xx2"]
 seed = 1
@@ -39,6 +41,148 @@ baseline_offset = -0.065
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4pqbp"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gih0s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lrjdf"]
+atlas = ExtResource("6_gih0s")
+region = Rect2(0, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wqme5"]
+atlas = ExtResource("6_gih0s")
+region = Rect2(64, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jewm6"]
+atlas = ExtResource("6_gih0s")
+region = Rect2(128, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cejvf"]
+atlas = ExtResource("6_gih0s")
+region = Rect2(192, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ru8vt"]
+atlas = ExtResource("6_gih0s")
+region = Rect2(256, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ypsd1"]
+atlas = ExtResource("6_gih0s")
+region = Rect2(320, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xp0kt"]
+atlas = ExtResource("6_gih0s")
+region = Rect2(384, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1yfdm"]
+atlas = ExtResource("6_gih0s")
+region = Rect2(448, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3h8o7"]
+atlas = ExtResource("7_k33u3")
+region = Rect2(0, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6o50"]
+atlas = ExtResource("7_k33u3")
+region = Rect2(64, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_46hhv"]
+atlas = ExtResource("7_k33u3")
+region = Rect2(128, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oslnl"]
+atlas = ExtResource("7_k33u3")
+region = Rect2(192, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tr32r"]
+atlas = ExtResource("7_k33u3")
+region = Rect2(256, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hbsmt"]
+atlas = ExtResource("7_k33u3")
+region = Rect2(320, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0gipi"]
+atlas = ExtResource("7_k33u3")
+region = Rect2(384, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ayn3n"]
+atlas = ExtResource("7_k33u3")
+region = Rect2(448, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_py2ge"]
+atlas = ExtResource("7_k33u3")
+region = Rect2(512, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ifxty"]
+atlas = ExtResource("7_k33u3")
+region = Rect2(576, 0, 64, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wm46x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lrjdf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wqme5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jewm6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cejvf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ru8vt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ypsd1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xp0kt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1yfdm")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3h8o7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q6o50")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_46hhv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oslnl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tr32r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hbsmt")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_0gipi")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_ayn3n")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_py2ge")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_ifxty")
+}, {
+"duration": 0.01,
+"texture": ExtResource("7_lrjdf")
+}],
+"loop": false,
+"name": &"soffio",
+"speed": 5.0
+}]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -135,25 +279,6 @@ text = "Esci dal gioco"
 alignment = 0
 script = ExtResource("4_4pqbp")
 
-[node name="TextureRect" type="TextureRect" parent="."]
-visibility_layer = 2
-layout_mode = 0
-offset_left = -89.0
-offset_top = -465.0
-offset_right = 1023.0
-offset_bottom = 1203.0
-mouse_filter = 2
-texture = ExtResource("4_u7lva")
-
-[node name="Fade" parent="." instance=ExtResource("5_mrfpk")]
-visible = false
-visibility_layer = 2
-layout_mode = 0
-mouse_filter = 2
-
-[node name="fadeTimer" type="Timer" parent="Fade"]
-wait_time = 4.136
-
 [node name="blocker" type="TextureRect" parent="."]
 visible = false
 visibility_layer = 2
@@ -164,6 +289,22 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 0
+
+[node name="Logo" type="AnimatedSprite2D" parent="."]
+position = Vector2(369, 495)
+scale = Vector2(12.00781, 12.007812)
+sprite_frames = SubResource("SpriteFrames_wm46x")
+animation = &"soffio"
+autoplay = "idle"
+
+[node name="Fade" parent="." instance=ExtResource("5_mrfpk")]
+visible = false
+visibility_layer = 2
+layout_mode = 0
+mouse_filter = 2
+
+[node name="fadeTimer" type="Timer" parent="Fade"]
+wait_time = 4.136
 
 [connection signal="mouse_entered" from="StartBtn" to="." method="_on_start_btn_mouse_entered"]
 [connection signal="pressed" from="StartBtn" to="." method="_on_start_btn_pressed"]

@@ -62,11 +62,11 @@ func _on_no_btn_pressed() -> void: #QUELLO CHE SUCCEDE QUANDO SCEGLI NOOOOOOOOOO
 
 func _on_no_btn_mouse_entered() -> void:
 	AudioManager.on_hover_btn.play()
-
+	
 
 func _on_yes_btn_pressed() -> void: #QUELLO CHE SUCCEDE QUANDO SCEGLI SIIIIIII
 	AudioManager.on_click_btn.play()
-
+	get_tree().quit()
 
 func _on_yes_btn_mouse_entered() -> void:
 	AudioManager.on_hover_btn.play()

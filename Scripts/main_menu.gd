@@ -2,8 +2,7 @@ extends Control
 
 @onready var blocker: TextureRect = $blocker
 
-@onready var tex_rect = $TextureRect
-var new_tex = load("res://Assets/UI/Logo/Sprite-candela-spenta.png")
+@onready var logo: AnimatedSprite2D = $Logo
 
 func _ready() -> void:
 	start_wait(3)
@@ -28,7 +27,8 @@ func _on_start_btn_pressed() -> void:
 	$StartBtn.visible = false
 	$ExitBtn.visible = false
 	AudioManager.soffio_sfx.play()
-	tex_rect.texture = new_tex
+	$Logo.animation = "soffio"
+	$Logo.play()
 	$Fade.show()
 	$Fade/fadeTimer.start()
 	$Fade/AnimationPlayer.play("fadeOut")
