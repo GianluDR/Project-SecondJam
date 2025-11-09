@@ -33,11 +33,13 @@ texture = SubResource("GradientTexture2D_tdxfm")
 
 [node name="Label" type="Label" parent="."]
 visible = false
-offset_left = -63.0
-offset_top = -95.0
-offset_right = 67.0
-offset_bottom = -72.0
-text = "TESTO PENSIERO"
+offset_left = -212.0
+offset_top = -110.0
+offset_right = 213.0
+offset_bottom = -62.333332
+theme_override_fonts/font = ExtResource("2_tdxfm")
+text = "sai cosa mangia a colazione un cannibale? 
+Tè e biscotti."
 horizontal_alignment = 1
 vertical_alignment = 1
 

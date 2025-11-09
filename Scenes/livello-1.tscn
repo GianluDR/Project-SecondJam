@@ -533,7 +533,6 @@ tile_map_data = PackedByteArray("AAD+/wAAAgAAAAAAAAD+/wEAAgAAAAEAAAD+/wIAAgAAAAI
 tile_set = SubResource("TileSet_5wyu1")
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
-visible = false
 color = Color(0.83889705, 0.83889705, 0.838897, 1)
 energy = 1.2
 blend_mode = 1
@@ -551,7 +550,7 @@ interactionType = 2
 scene_index = 2
 
 [node name="NpcRombo4" parent="." instance=ExtResource("8_2rses")]
-position = Vector2(1052, 199.00003)
+position = Vector2(1064, 224)
 scale = Vector2(1.4, 1.4)
 npc_texture = ExtResource("9_n4v74")
 highlight_texture = ExtResource("10_35q4w")
@@ -581,6 +580,11 @@ position = Vector2(-1.4285581, -7.8571167)
 scale = Vector2(0.9999994, 0.9999994)
 shape = SubResource("RectangleShape2D_5cwei")
 
+[node name="Area2D" parent="NpcRombo1" instance=ExtResource("7_35q4w")]
+position = Vector2(-714.28564, 274.28568)
+interactionType = 1
+testoPG = "Hmpf"
+
 [node name="NpcSquare1" parent="." instance=ExtResource("21_2rses")]
 position = Vector2(498, 619)
 scale = Vector2(1.2, 1.2)
@@ -591,3 +595,18 @@ position = Vector2(514, 271)
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(961, 542)
 zoom = Vector2(1.3, 1.3)
+
+[node name="Area2D" parent="." instance=ExtResource("7_35q4w")]
+position = Vector2(1063, 246)
+interactionType = 1
+testoPG = "(che ne dici di un grattino?)"
+
+[node name="Area2D5" parent="." instance=ExtResource("7_35q4w")]
+position = Vector2(915, 455)
+interactionType = 1
+testoPG = "(area = lato al quadrato)"
+
+[node name="Area2D6" parent="." instance=ExtResource("7_35q4w")]
+position = Vector2(1327, 605)
+interactionType = 1
+testoPG = "sai cosa mangia a colazione un cannibale? Tè e biscotti."

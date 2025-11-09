@@ -485,7 +485,7 @@ scale = Vector2(0.9999996, 0.9999996)
 shape = SubResource("RectangleShape2D_pggu4")
 
 [node name="Player" parent="." instance=ExtResource("15_yfuoy")]
-position = Vector2(490, 752)
+position = Vector2(492, 751)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(961, 542)
