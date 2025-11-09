@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=4 uid="uid://vv2yeqa6utsu"]
+[gd_scene load_steps=38 format=4 uid="uid://vv2yeqa6utsu"]
 
 [ext_resource type="Texture2D" uid="uid://cxac0a1g484jy" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Shadow.png" id="1_d0e2s"]
 [ext_resource type="Script" uid="uid://bmv4a3pfqvq70" path="res://Scenes/livello_finale.gd" id="1_xtblj"]
@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://7va2it4641m0" path="res://Scenes/Characters/player.tscn" id="15_w3wfe"]
 [ext_resource type="PackedScene" uid="uid://k87qm5ukwygx" path="res://Scenes/Interactable/InteractArea.tscn" id="16_axvrv"]
 [ext_resource type="Script" uid="uid://df7lssld1owem" path="res://Scenes/fade.gd" id="19_xtblj"]
+[ext_resource type="Script" uid="uid://d2lksjni08uc2" path="res://Scenes/fade_white.gd" id="20_sbunp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jpjhf"]
 texture = ExtResource("1_d0e2s")
@@ -1109,24 +1110,24 @@ metadata/_custom_type_script = "uid://bu54caqonn1bx"
 [sub_resource type="Resource" id="Resource_d0e2s"]
 script = ExtResource("14_d7lnp")
 target_path = NodePath("../..")
-function_name = "scelta_sbura"
+function_name = "scelta_stagno"
 metadata/_custom_type_script = "uid://ccrxyewdjtc26"
 
 [sub_resource type="Resource" id="Resource_xtblj"]
 script = ExtResource("14_d7lnp")
 target_path = NodePath("../..")
-function_name = "scelta_cacca"
+function_name = "scelta_verita"
 metadata/_custom_type_script = "uid://ccrxyewdjtc26"
 
 [sub_resource type="Resource" id="Resource_sbunp"]
 script = ExtResource("14_d7lnp")
 target_path = NodePath("../..")
-function_name = "scelta_pipi"
+function_name = "scelta_trasformazione"
 metadata/_custom_type_script = "uid://ccrxyewdjtc26"
 
 [sub_resource type="Resource" id="Resource_d7lnp"]
 script = ExtResource("15_d0e2s")
-choice_text = Array[String](["sbura", "cacca", "pipi"])
+choice_text = Array[String](["Stagno", "Verità", "Trasformazione"])
 choice_function_call = Array[ExtResource("14_d7lnp")]([SubResource("Resource_d0e2s"), SubResource("Resource_xtblj"), SubResource("Resource_sbunp")])
 metadata/_custom_type_script = "uid://u8yk3eqa3l6l"
 
@@ -1177,7 +1178,7 @@ scale = Vector2(0.9999996, 0.9999996)
 shape = SubResource("RectangleShape2D_ibxpi")
 
 [node name="Player" parent="." instance=ExtResource("15_w3wfe")]
-position = Vector2(394, 421)
+position = Vector2(402, 417)
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
 visible = false
@@ -1207,3 +1208,20 @@ offset_left = 383.0
 offset_top = 211.0
 offset_right = 423.0
 offset_bottom = 234.0
+
+[node name="Fade_White" type="CanvasLayer" parent="."]
+script = ExtResource("20_sbunp")
+
+[node name="ColorRect" type="ColorRect" parent="Fade_White"]
+visible = false
+offset_left = -588.0
+offset_top = -343.0
+offset_right = -548.0
+offset_bottom = -303.0
+scale = Vector2(65.72859, 35.427628)
+
+[node name="Label" type="Label" parent="Fade_White"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="NpcContainer" type="Node" parent="."]
