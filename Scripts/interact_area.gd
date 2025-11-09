@@ -33,7 +33,6 @@ func _process(_delta: float) -> void:
 				player_body_in = false
 				get_tree().change_scene_to_file(scene_paths[scene_index])
 			elif interactionType == 3:
-				
 				ConfirmMenu.pause()
 
 func _on_body_entered(body: Node2D) -> void:

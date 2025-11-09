@@ -50,7 +50,7 @@ func _activate_dialogue() -> void:
 			desired_dialogue_pos = dialogue_top_pos
 		new_dialogue.global_position = desired_dialogue_pos
 		new_dialogue.dialogue = dialogue
-		get_tree().get_current_scene().add_child(new_dialogue)
+		get_tree().get_current_scene().get_child(0).add_child(new_dialogue)
 		new_dialogue.global_position.x = get_viewport().get_camera_2d().get_screen_center_position().x
 
 func _on_body_entered(body: Node2D) -> void:
