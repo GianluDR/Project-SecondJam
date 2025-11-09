@@ -10,9 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://bgau2aqvo8ho7" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Plain.png" id="7_c8gai"]
 [ext_resource type="Texture2D" uid="uid://ccmeojee4kaou" path="res://Assets/sprites/sprite_sheet/pavimento_dio_porco.png" id="7_fi3st"]
 [ext_resource type="PackedScene" uid="uid://culf0sotauivt" path="res://Scenes/Characters/npc_square.tscn" id="9_rkdh4"]
-[ext_resource type="Texture2D" uid="uid://b6n7i764slo5o" path="res://Assets/sprites/Characters/quadrato_3.png" id="10_bwl1g"]
-[ext_resource type="Texture2D" uid="uid://cwv4iwc5vkpwp" path="res://Assets/sprites/Characters_BordoBianco/quadrato_3_bordobianco.png" id="11_5xuhp"]
+[ext_resource type="Texture2D" uid="uid://ba4hnc18ev3e0" path="res://Assets/sprites/Characters/quadrato_1.png" id="11_sg1y4"]
 [ext_resource type="PackedScene" uid="uid://dkfqntuiwig8s" path="res://Scenes/Dialogue/dialogue_area.tscn" id="12_f2lc6"]
+[ext_resource type="Texture2D" uid="uid://bfttwh7xsw1lw" path="res://Assets/sprites/Characters_BordoBianco/quadrato_1_bordobianco.png" id="12_fi3st"]
 [ext_resource type="Script" uid="uid://d082swllv5wkl" path="res://Scripts/dialogue/dialogue_export_resource.gd" id="13_2ss3u"]
 [ext_resource type="Script" uid="uid://bu54caqonn1bx" path="res://Scripts/dialogue/dialogue_text_resource.gd" id="14_rg1mw"]
 [ext_resource type="Texture2D" uid="uid://cvs8ytedoffh2" path="res://Assets/sprites/redcube.png" id="15_qqqm4"]
@@ -483,8 +483,8 @@ blend_mode = 1
 [node name="NpcSquare" parent="." instance=ExtResource("9_rkdh4")]
 position = Vector2(901, 459)
 scale = Vector2(1.5, 1.5)
-npc_texture = ExtResource("10_bwl1g")
-highlight_texture = ExtResource("11_5xuhp")
+npc_texture = ExtResource("11_sg1y4")
+highlight_texture = ExtResource("12_fi3st")
 
 [node name="DialogueArea2D" parent="NpcSquare" instance=ExtResource("12_f2lc6")]
 dialogue = Array[ExtResource("13_2ss3u")]([SubResource("Resource_tui7n"), SubResource("Resource_pwgfm"), SubResource("Resource_d7lnp")])
@@ -514,10 +514,10 @@ scale = Vector2(58.961952, 28.500362)
 color = Color(8.731843e-06, 8.731842e-06, 8.731842e-06, 1)
 
 [node name="Label" type="Label" parent="Fade"]
-offset_left = 820.0
-offset_top = 491.0
-offset_right = 860.0
-offset_bottom = 514.0
+offset_left = 706.0
+offset_top = 454.0
+offset_right = 746.0
+offset_bottom = 496.0
 label_settings = SubResource("LabelSettings_b4h5s")
 
 [node name="Fade_White" type="CanvasLayer" parent="."]

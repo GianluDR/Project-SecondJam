@@ -15,7 +15,7 @@ func scelta_stagno():
 	await fade.show_text("Tutto svanisce nel buio...")
 
 	# 3. Attendi un paio di secondi
-	await get_tree().create_timer(2.0).timeout
+	await get_tree().create_timer(10).timeout
 
 	# 4. Dissolvenza del testo e torna al menu
 	await fade.hide_text(1.0)
@@ -64,16 +64,16 @@ func scelta_verita():
 
 	var dissolve_tween = get_tree().create_tween()
 	for npc in spawned_npcs:
-		dissolve_tween.tween_property(npc, "modulate:a", 0.0, 1.5)
+		dissolve_tween.tween_property(npc, "modulate:a", 0.0, 1)
 	await dissolve_tween.finished
 
 	for npc in spawned_npcs:
 		npc.queue_free()
 
 	await fade.show_text("Siamo tutti uguali.")
-	await get_tree().create_timer(2.5).timeout
+	await get_tree().create_timer(10).timeout
 	await fade.hide_text(1.0)
-	await fade.fade_out(1.0)
+
 	var root = get_tree().current_scene
 
 	for child in root.get_children():
@@ -122,7 +122,7 @@ func scelta_trasformazione():
 	await tween2.finished
 
 	# attesa prima della scomparsa
-	await get_tree().create_timer(2.0).timeout
+	await get_tree().create_timer(3.0).timeout
 
 	# fade-out e rimozione
 	var tween3 = create_tween()
@@ -133,7 +133,7 @@ func scelta_trasformazione():
 
 	# mostra la scritta
 	await fade.show_text("Non avresti dovuto vedere.", 1.5)
-	await get_tree().create_timer(4.0).timeout
+	await get_tree().create_timer(10).timeout
 
 	var root = get_tree().current_scene
 	for child in root.get_children():
