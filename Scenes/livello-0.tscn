@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=4 uid="uid://b3n3la0geajb6"]
+[gd_scene load_steps=43 format=4 uid="uid://b3n3la0geajb6"]
 
 [ext_resource type="Script" uid="uid://dbyeklqrkhghx" path="res://Scenes/livello_0.gd" id="1_jm38t"]
 [ext_resource type="Texture2D" uid="uid://cxac0a1g484jy" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Shadow.png" id="1_v5nmd"]
@@ -17,9 +17,13 @@
 [ext_resource type="AudioStream" uid="uid://bv3082wp6ro30" path="res://Assets/Sounds/soundtest.wav" id="11_sk7qh"]
 [ext_resource type="Texture2D" uid="uid://dl68ix80d5870" path="res://Assets/sprites/Busti_64rombopg.png" id="13_ipbmu"]
 [ext_resource type="Script" uid="uid://qf30somm886x" path="res://Scripts/tutorial_area_2d.gd" id="15_ipbmu"]
+[ext_resource type="Script" uid="uid://p8otvqablrxd" path="res://Scenes/Dialogue/dialogue_area_tutorial.gd" id="15_jm38t"]
 [ext_resource type="PackedScene" uid="uid://7va2it4641m0" path="res://Scenes/Characters/player.tscn" id="15_yfuoy"]
 [ext_resource type="PackedScene" uid="uid://k87qm5ukwygx" path="res://Scenes/Interactable/InteractArea.tscn" id="16_rm0hi"]
 [ext_resource type="PackedScene" uid="uid://bclsslqc0cflw" path="res://Scenes/Characters/npc_rombo.tscn" id="17_ftp5k"]
+[ext_resource type="FontFile" uid="uid://d1rkf5yux54bf" path="res://Assets/Fonts/PixelifySans-Regular.ttf" id="19_qa0m7"]
+[ext_resource type="FontFile" uid="uid://nnyqryeaumh5" path="res://Assets/Fonts/PixelifySans-Bold.ttf" id="20_yxtnq"]
+[ext_resource type="Script" uid="uid://duhndpjouhw4y" path="res://Scripts/dialogue/dialogue_continue.gd" id="21_ka3r2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jpjhf"]
 texture = ExtResource("1_v5nmd")
@@ -407,7 +411,7 @@ speaker_img = ExtResource("13_ipbmu")
 text = "Ehiii *psss* che ci fai lì?!"
 text_speed = 15.0
 text_sound = ExtResource("11_sk7qh")
-text_volume_db = -20
+text_volume_db = -30
 text_volume_pitch_max = 1.5
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
@@ -417,7 +421,7 @@ speaker_img = ExtResource("13_ipbmu")
 text = "Devi tornare nel posto a cui appartieni, sbrigati a scendere!"
 text_speed = 15.0
 text_sound = ExtResource("11_sk7qh")
-text_volume_db = -20
+text_volume_db = -30
 text_volume_pitch_max = 1.5
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
@@ -457,6 +461,7 @@ tile_map_data = PackedByteArray("AAD+/wAAAgAAAAAAAAD+/wEAAgAAAAEAAAD+/wIAAgAAAAE
 tile_set = SubResource("TileSet_5wyu1")
 
 [node name="terrain2" type="TileMapLayer" parent="Tilemaps"]
+visible = false
 position = Vector2(447, 184)
 tile_map_data = PackedByteArray("AAD//wEAAwABAAEAAAA=")
 tile_set = SubResource("TileSet_5wyu1")
@@ -481,13 +486,36 @@ position = Vector2(1408, 696)
 scale = Vector2(1.4, 1.4)
 
 [node name="DialogueArea2D" parent="NpcRombo" instance=ExtResource("7_qa0m7")]
+script = ExtResource("15_jm38t")
 dialogue = Array[ExtResource("8_yxtnq")]([SubResource("Resource_7cotb"), SubResource("Resource_55ph6")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NpcRombo/DialogueArea2D"]
-visible = false
 position = Vector2(-1.4285581, -7.8571167)
 scale = Vector2(0.9999994, 0.9999994)
 shape = SubResource("RectangleShape2D_5cwei")
+
+[node name="ContinueText" type="RichTextLabel" parent="NpcRombo/DialogueArea2D"]
+visible = false
+offset_left = -28.571445
+offset_top = -54.285732
+offset_right = 46.428555
+offset_bottom = -26.285732
+scale = Vector2(0.7683283, 0.7683283)
+size_flags_vertical = 3
+theme_override_fonts/normal_font = ExtResource("19_qa0m7")
+theme_override_fonts/bold_font = ExtResource("20_yxtnq")
+theme_override_font_sizes/normal_font_size = 22
+bbcode_enabled = true
+text = "[u]spazio[/u]"
+fit_content = true
+scroll_active = false
+vertical_alignment = 1
+visible_characters_behavior = 1
+script = ExtResource("21_ka3r2")
+
+[node name="Timer" type="Timer" parent="NpcRombo/DialogueArea2D/ContinueText"]
+wait_time = 0.5
+autostart = true
 
 [node name="Area2D" type="Area2D" parent="NpcRombo"]
 script = ExtResource("15_ipbmu")
@@ -504,5 +532,6 @@ position = Vector2(492, 751)
 position = Vector2(961, 542)
 zoom = Vector2(1.3, 1.3)
 
+[connection signal="timeout" from="NpcRombo/DialogueArea2D/ContinueText/Timer" to="NpcRombo/DialogueArea2D/ContinueText" method="_on_timer_timeout"]
 [connection signal="body_entered" from="NpcRombo/Area2D" to="NpcRombo/Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="NpcRombo/Area2D" to="NpcRombo/Area2D" method="_on_body_exited"]

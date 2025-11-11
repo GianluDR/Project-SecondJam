@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://3xruftj3gh1m" path="res://Scripts/main_menu.gd" id="1_u7lva"]
 [ext_resource type="FontFile" uid="uid://4uw73reh3jtr" path="res://Assets/Fonts/PixelifySans-VariableFont_wght.ttf" id="2_i2xx2"]
 [ext_resource type="Script" uid="uid://l8uqxqjy8fq6" path="res://Scripts/menu_panel.gd" id="2_o14dv"]
-[ext_resource type="Script" uid="uid://cq0dr35bf3ghn" path="res://Scripts/btn_outline.gd" id="4_4pqbp"]
+[ext_resource type="Script" path="res://Scripts/btn_outline.gd" id="4_4pqbp"]
 [ext_resource type="PackedScene" uid="uid://ccci65hiwv7wl" path="res://Scenes/Effects/fade.tscn" id="5_mrfpk"]
 [ext_resource type="Texture2D" uid="uid://djwuxn5ftp4fr" path="res://Assets/UI/Logo/Candela_aa.png" id="6_gih0s"]
 [ext_resource type="Texture2D" uid="uid://cyetq6ykwnnti" path="res://Assets/UI/Logo/Candela_off_anim-export.png" id="7_k33u3"]

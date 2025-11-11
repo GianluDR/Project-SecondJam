@@ -11,7 +11,7 @@
 [ext_resource type="AudioStream" uid="uid://cw06re8lqiapc" path="res://Assets/Sounds/SFX/slash.ogg" id="8_5nrbi"]
 [ext_resource type="AudioStream" uid="uid://crc4uuyd6w478" path="res://Assets/Sounds/SFX/paperbag.mp3" id="9_pn88s"]
 [ext_resource type="AudioStream" uid="uid://dd0uefrx3h8tb" path="res://Assets/Sounds/SFX/bodyfall.mp3" id="10_fasow"]
-[ext_resource type="AudioStream" uid="uid://c8t40mbv5cad6" path="res://Assets/Sounds/Music/Ambience.mp3" id="12_fasow"]
+[ext_resource type="AudioStream" uid="uid://5x8w87wduj3s" path="res://Scenes/Ambience.mp3" id="12_fasow"]
 [ext_resource type="AudioStream" uid="uid://bncf4wvi33jyw" path="res://Assets/Sounds/Music/music.mp3" id="13_1bal0"]
 
 [node name="AudioManager" type="Node"]
@@ -59,14 +59,15 @@ stream = ExtResource("10_fasow")
 
 [node name="MenuMusic" type="AudioStreamPlayer" parent="Music"]
 stream = ExtResource("4_qixve")
-volume_db = -14.268
+volume_db = -10.0
 bus = &"Music"
 playback_type = 1
 parameters/looping = true
 
 [node name="AmbienceMusic" type="AudioStreamPlayer" parent="Music"]
 stream = ExtResource("12_fasow")
+volume_db = -20.0
 
 [node name="FinalMusic" type="AudioStreamPlayer" parent="Music"]
 stream = ExtResource("13_1bal0")
-autoplay = true
+volume_db = -20.0

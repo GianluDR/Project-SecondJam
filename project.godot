@@ -13,6 +13,7 @@ config_version=5
 config/name="SecondJam"
 run/main_scene="uid://ci7tpbjwuxpl5"
 config/features=PackedStringArray("4.5", "Forward Plus")
+run/max_fps=60
 config/icon="res://icon.svg"
 
 [autoload]
@@ -30,6 +31,12 @@ window/size/window_width_override=1920
 window/size/window_height_override=1080
 window/stretch/mode="viewport"
 window/stretch/scale_mode="integer"
+
+[editor]
+
+export/disable_vsync=false
+export/vsync/vsync_mode=1
+export/max_fps=0
 
 [gui]
 

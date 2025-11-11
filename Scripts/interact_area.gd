@@ -10,6 +10,7 @@ extends Area2D
 	"res://scenes/levelflowtesting/level2.tscn",
 	"res://scenes/levelflowtesting/level3.tscn",
 	"res://scenes/levelflowtesting/level4.tscn",
+	"res://scenes/levelflowtesting/level5.tscn",
 ]
 
 var player_body_in: bool = false

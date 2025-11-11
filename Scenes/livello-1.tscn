@@ -1,8 +1,6 @@
-
 [gd_scene load_steps=52 format=4 uid="uid://bembuapns823c"]
 
 [ext_resource type="Texture2D" uid="uid://cxac0a1g484jy" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Shadow.png" id="1_bnv5w"]
-[ext_resource type="Script" uid="uid://s7xhojslws4g" path="res://Scenes/livello_1.gd" id="1_w8l3c"]
 [ext_resource type="Script" uid="uid://l8uqxqjy8fq6" path="res://Scripts/menu_panel.gd" id="2_7l75n"]
 [ext_resource type="Texture2D" uid="uid://djub65ssuic3p" path="res://Assets/sprites/tileset.png" id="3_u1mpn"]
 [ext_resource type="Texture2D" uid="uid://bd510yyqt5xmc" path="res://Assets/sprites/scale.png" id="4_n3jbm"]
@@ -519,7 +517,6 @@ metadata/_custom_type_script = "uid://bu54caqonn1bx"
 size = Vector2(48.571434, 78.75003)
 
 [node name="Test2" type="Node2D"]
-script = ExtResource("1_w8l3c")
 
 [node name="Tilemaps" type="Node2D" parent="."]
 

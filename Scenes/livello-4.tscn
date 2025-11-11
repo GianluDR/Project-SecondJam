@@ -1,7 +1,6 @@
-[gd_scene load_steps=61 format=4 uid="uid://dshs2l2f4g8sg"]
+[gd_scene load_steps=60 format=4 uid="uid://dshs2l2f4g8sg"]
 
 [ext_resource type="Texture2D" uid="uid://cxac0a1g484jy" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Shadow.png" id="1_7j4aj"]
-[ext_resource type="Script" uid="uid://b5dwofy6qv5qg" path="res://Scenes/livello_4.gd" id="1_u7iiv"]
 [ext_resource type="Script" uid="uid://l8uqxqjy8fq6" path="res://Scripts/menu_panel.gd" id="2_3hr1e"]
 [ext_resource type="Texture2D" uid="uid://djub65ssuic3p" path="res://Assets/sprites/tileset.png" id="3_c6tvj"]
 [ext_resource type="Texture2D" uid="uid://bd510yyqt5xmc" path="res://Assets/sprites/scale.png" id="4_vpthm"]
@@ -476,6 +475,7 @@ speaker_img = ExtResource("30_qhhhw")
 text = "Conti i giorni, smetti di contarli..."
 text_speed = 15.5
 text_sound = ExtResource("31_u7iiv")
+text_volume_db = -30
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
 [sub_resource type="Resource" id="Resource_p2uih"]
@@ -484,6 +484,7 @@ speaker_img = ExtResource("30_qhhhw")
 text = "Odi chi ti controlla, smetti di odiarli..."
 text_speed = 15.0
 text_sound = ExtResource("31_u7iiv")
+text_volume_db = -30
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
 [sub_resource type="Resource" id="Resource_8vg31"]
@@ -492,6 +493,7 @@ speaker_img = ExtResource("30_qhhhw")
 text = "È stancante ricordarsi di essere qualcuno ogni giorno"
 text_speed = 15.0
 text_sound = ExtResource("31_u7iiv")
+text_volume_db = -30
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
 [sub_resource type="Resource" id="Resource_xvitk"]
@@ -500,6 +502,7 @@ speaker_img = ExtResource("30_qhhhw")
 text = "Ho smesso di provare qualsiasi cosa, ho smesso di voler essere me stesso"
 text_speed = 15.0
 text_sound = ExtResource("31_u7iiv")
+text_volume_db = -30
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
 [sub_resource type="Resource" id="Resource_2c1bv"]
@@ -508,6 +511,7 @@ speaker_img = ExtResource("30_qhhhw")
 text = "Se non si è dei quattro lati allora che senso ha la nostra esistenza?"
 text_speed = 15.0
 text_sound = ExtResource("31_u7iiv")
+text_volume_db = -30
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
 [sub_resource type="Resource" id="Resource_ive0b"]
@@ -516,13 +520,13 @@ speaker_img = ExtResource("30_qhhhw")
 text = "..."
 text_speed = 15.0
 text_sound = ExtResource("31_u7iiv")
+text_volume_db = -30
 metadata/_custom_type_script = "uid://bu54caqonn1bx"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h2tgb"]
 size = Vector2(48.571434, 78.75003)
 
 [node name="Test" type="Node2D"]
-script = ExtResource("1_u7iiv")
 
 [node name="Tilemaps" type="Node2D" parent="."]
 
@@ -559,9 +563,6 @@ testoPG = "Hmpf"
 color = Color(0.83889705, 0.83889705, 0.838897, 1)
 energy = 1.2
 blend_mode = 1
-
-[node name="Area2D2" parent="." instance=ExtResource("12_ctq4e")]
-position = Vector2(796, 346)
 
 [node name="Area2D5" parent="." instance=ExtResource("12_ctq4e")]
 position = Vector2(1372, 728)
@@ -693,3 +694,8 @@ testoPG = "Hmpf"
 position = Vector2(710, 259)
 interactionType = 1
 testoPG = "Hmpf"
+
+[node name="Area2D13" parent="." instance=ExtResource("12_ctq4e")]
+position = Vector2(802, 345)
+interactionType = 2
+scene_index = 5

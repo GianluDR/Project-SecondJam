@@ -5,6 +5,7 @@ extends Control
 @onready var logo: AnimatedSprite2D = $Logo
 
 func _ready() -> void:
+	AudioManager.final_music.stop()
 	start_wait(3)
 	AudioManager.fiammifero_sfx.play()
 	AudioManager.menu_music.play()

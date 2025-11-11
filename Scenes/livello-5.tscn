@@ -1,6 +1,6 @@
 [gd_scene load_steps=50 format=4 uid="uid://bn3kd7y6v2nhs"]
 
-[ext_resource type="Script" uid="uid://diehair3ibbf0" path="res://Scenes/livello_finale_2.gd" id="1_uh8j4"]
+[ext_resource type="Script" uid="uid://diehair3ibbf0" path="res://Scenes/livello_finale.gd" id="1_uh8j4"]
 [ext_resource type="Texture2D" uid="uid://cxac0a1g484jy" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/[64x64] Dungeon Bricks Shadow.png" id="2_sg1y4"]
 [ext_resource type="Script" uid="uid://l8uqxqjy8fq6" path="res://Scripts/menu_panel.gd" id="3_fi3st"]
 [ext_resource type="Texture2D" uid="uid://djub65ssuic3p" path="res://Assets/sprites/tileset.png" id="4_w1dgl"]
@@ -559,10 +559,10 @@ scale = Vector2(58.961952, 28.500362)
 color = Color(8.731843e-06, 8.731842e-06, 8.731842e-06, 1)
 
 [node name="Label" type="Label" parent="Fade"]
-offset_left = 706.0
-offset_top = 454.0
-offset_right = 746.0
-offset_bottom = 496.0
+offset_left = 483.0
+offset_top = 397.0
+offset_right = 523.0
+offset_bottom = 439.0
 label_settings = SubResource("LabelSettings_b4h5s")
 
 [node name="Fade_White" type="CanvasLayer" parent="."]
@@ -578,10 +578,10 @@ scale = Vector2(65.72859, 35.427628)
 color = Color(0.6402972, 0.6402972, 0.6402971, 1)
 
 [node name="Label" type="Label" parent="Fade_White"]
-offset_left = 638.0
-offset_top = 485.0
-offset_right = 678.0
-offset_bottom = 527.0
+offset_left = 482.0
+offset_top = 402.0
+offset_right = 522.0
+offset_bottom = 444.0
 theme_override_fonts/font = ExtResource("23_fi3st")
 label_settings = SubResource("LabelSettings_fkajl")
 
